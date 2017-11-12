@@ -14,6 +14,7 @@ describe("context-switcher", function () {
   });
 
   beforeEach(function () {
+    console.log('PLUGIN_NAME', PLUGIN_NAME);
     waitsForPromise(() => atom.packages.activatePackage(PLUGIN_NAME));
     waitsForPromise(() => atom.packages.activatePackage('tree-view'));
     waitsForPromise(() => atom.packages.activatePackage('status-bar'));

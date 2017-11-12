@@ -3,7 +3,7 @@
   "project": {
     "deserializer": "Project",
     "paths": [
-      "/Users/guimaraesj/personal/devel/atom-project-viewer-x"
+      "/Users/guimaraesj/personal/devel/atom-project-viewer-plus"
     ],
     "buffers": [
       {
@@ -23,7 +23,7 @@
         "encoding": "utf8",
         "preferredLineEnding": "\n",
         "nextMarkerId": 11806,
-        "filePath": "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/services/context-switcher.js",
+        "filePath": "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/lib/services/context-switcher.js",
         "digestWhenLastPersisted": "e9115c6b5feb6956",
         "outstandingChanges": {
           "type": "Buffer",
@@ -68,7 +68,7 @@
         "encoding": "utf8",
         "preferredLineEnding": "\n",
         "nextMarkerId": 812,
-        "filePath": "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/services/database.js",
+        "filePath": "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/lib/services/database.js",
         "digestWhenLastPersisted": "46f76d32505e43be",
         "outstandingChanges": {
           "type": "Buffer",
@@ -134,34 +134,34 @@
       "/Users/guimaraesj/devel/rum/rum-provider-fmg/lib/index.js",
       "/Users/guimaraesj/devel/rum/rum-provider-fmg/package.json",
       "/Users/guimaraesj/devel/rum/rum-provider-fmg/lib/fmg.js",
-      "/Users/guimaraesj/personal/devel/atom-project-viewer-x/.git/config",
-      "/Users/guimaraesj/personal/devel/atom-project-viewer-x/.git/hooks/pre-commit",
+      "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/.git/config",
+      "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/.git/hooks/pre-commit",
       "atom://deprecation-cop",
       "/Users/guimaraesj/.atom/database.json",
       "atom://styleguide",
       "atom://find-and-replace/project-results",
-      "/Users/guimaraesj/personal/devel/atom-project-viewer-x/spec/base-spec.js",
-      "/Users/guimaraesj/personal/devel/atom-project-viewer-x/spec/fixtures/database.json",
-      "/Users/guimaraesj/personal/devel/atom-project-viewer-x/spec/package-spec.js",
-      "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/containers/main-container.js",
-      "/Users/guimaraesj/personal/devel/atom-project-viewer-x/spec/fixtures/storage/editor-01f3722d93a49e69c5bc04e8039ebbde449a180d",
-      "/Users/guimaraesj/personal/devel/atom-project-viewer-x/.editorconfig",
-      "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/containers/groups-container.js",
-      "/Users/guimaraesj/personal/devel/atom-project-viewer-x/.eslintrc",
-      "/Users/guimaraesj/personal/devel/atom-project-viewer-x/package.json",
-      "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/main.js",
-      "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/package.js",
-      "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/components/empty-component.js",
-      "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/components/group-component.js",
-      "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/components/main-component.js",
-      "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/components/project-component.js",
-      "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/components/select-list-component.js",
-      "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/constants/base.js",
-      "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/constants/config.js",
+      "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/spec/base-spec.js",
+      "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/spec/fixtures/database.json",
+      "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/spec/package-spec.js",
+      "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/lib/containers/main-container.js",
+      "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/spec/fixtures/storage/editor-01f3722d93a49e69c5bc04e8039ebbde449a180d",
+      "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/.editorconfig",
+      "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/lib/containers/groups-container.js",
+      "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/.eslintrc",
+      "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/package.json",
+      "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/lib/main.js",
+      "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/lib/package.js",
+      "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/lib/components/empty-component.js",
+      "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/lib/components/group-component.js",
+      "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/lib/components/main-component.js",
+      "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/lib/components/project-component.js",
+      "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/lib/components/select-list-component.js",
+      "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/lib/constants/base.js",
+      "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/lib/constants/config.js",
       "atom-github://dock-item/git",
-      "/Users/guimaraesj/personal/devel/atom-project-viewer-x/spec/fixtures/1.x.x-state.js",
-      "/Users/guimaraesj/personal/devel/atom-project-viewer-x/spec/fixtures/2.x.x-state.json",
-      "atom://project-viewer-x",
+      "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/spec/fixtures/1.x.x-state.js",
+      "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/spec/fixtures/2.x.x-state.json",
+      "atom://project-viewer-plus",
       "atom://config",
       "atom://linter-ui-default"
     ],
@@ -182,7 +182,7 @@
               "displayBuffer": {
                 "tokenizedBuffer": {
                   "deserializer": "TokenizedBuffer",
-                  "bufferPath": "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/services/context-switcher.js",
+                  "bufferPath": "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/lib/services/context-switcher.js",
                   "bufferId": "8f95588147dbad060174ce6408faa38f",
                   "tabLength": 2,
                   "largeFileMode": false
@@ -190,7 +190,7 @@
               },
               "tokenizedBuffer": {
                 "deserializer": "TokenizedBuffer",
-                "bufferPath": "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/services/context-switcher.js",
+                "bufferPath": "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/lib/services/context-switcher.js",
                 "bufferId": "8f95588147dbad060174ce6408faa38f",
                 "tabLength": 2,
                 "largeFileMode": false
@@ -227,7 +227,7 @@
               "displayBuffer": {
                 "tokenizedBuffer": {
                   "deserializer": "TokenizedBuffer",
-                  "bufferPath": "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/services/database.js",
+                  "bufferPath": "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/lib/services/database.js",
                   "bufferId": "dc2951dc8db2439ab5e37d0585f7718a",
                   "tabLength": 2,
                   "largeFileMode": false
@@ -235,7 +235,7 @@
               },
               "tokenizedBuffer": {
                 "deserializer": "TokenizedBuffer",
-                "bufferPath": "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/services/database.js",
+                "bufferPath": "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/lib/services/database.js",
                 "bufferId": "dc2951dc8db2439ab5e37d0585f7718a",
                 "tabLength": 2,
                 "largeFileMode": false
@@ -289,7 +289,7 @@
             "items": [
               {
                 "directoryExpansionStates": {
-                  "/Users/guimaraesj/personal/devel/atom-project-viewer-x": {
+                  "/Users/guimaraesj/personal/devel/atom-project-viewer-plus": {
                     "isExpanded": true,
                     "entries": {
                       ".git": {
@@ -350,7 +350,7 @@
                   }
                 },
                 "deserializer": "TreeView",
-                "selectedPath": "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/services",
+                "selectedPath": "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/lib/services",
                 "scrollLeft": 0,
                 "scrollTop": 0,
                 "width": 0
@@ -417,16 +417,16 @@
       }
     },
     "fuzzy-finder": {
-      "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/services/context-switcher.js": 1509608947590
+      "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/lib/services/context-switcher.js": 1509608947590
     },
     "github": {
-      "activeRepositoryPath": "/Users/guimaraesj/personal/devel/atom-project-viewer-x",
+      "activeRepositoryPath": "/Users/guimaraesj/personal/devel/atom-project-viewer-plus",
       "firstRun": false
     },
     "metrics": {
       "sessionLength": 9200
     },
-    "project-viewer-x": {
+    "project-viewer-plus": {
       "deserializer": "ProjectViewerDatabase",
       "data": {
         "map": {
@@ -624,13 +624,13 @@
             "id": "cb941341-07b7-46af-a651-5abd5c3c3679",
             "type": "project",
             "model": {
-              "name": "project-viewer-x",
+              "name": "project-viewer-plus",
               "icon": "package",
               "color": "",
               "devMode": false,
               "config": {},
               "paths": [
-                "/Users/guimaraesj/personal/devel/atom-project-viewer-x"
+                "/Users/guimaraesj/personal/devel/atom-project-viewer-plus"
               ]
             },
             "children": [],
@@ -1640,7 +1640,7 @@
     },
     "file-icons": {
       "paths": {
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/services/context-switcher.js": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/lib/services/context-switcher.js": {
           "icon": [
             1,
             676,
@@ -1648,7 +1648,7 @@
           ],
           "inode": 80178148
         },
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/components/project-component.js": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/lib/components/project-component.js": {
           "icon": [
             1,
             676,
@@ -1656,7 +1656,7 @@
           ],
           "inode": 80178074
         },
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/services/database.js": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/lib/services/database.js": {
           "icon": [
             1,
             676,
@@ -1664,7 +1664,7 @@
           ],
           "inode": 80178112
         },
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/.all-contributorsrc": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/.all-contributorsrc": {
           "icon": [
             1,
             1300,
@@ -1672,7 +1672,7 @@
           ],
           "inode": 80178094
         },
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/.babelrc": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/.babelrc": {
           "icon": [
             1,
             275,
@@ -1680,7 +1680,7 @@
           ],
           "inode": 76245410
         },
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/.editorconfig": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/.editorconfig": {
           "icon": [
             1,
             459,
@@ -1688,7 +1688,7 @@
           ],
           "inode": 63397582
         },
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/.eslintignore": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/.eslintignore": {
           "icon": [
             1,
             72,
@@ -1696,7 +1696,7 @@
           ],
           "inode": 68429557
         },
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/.eslintrc": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/.eslintrc": {
           "icon": [
             1,
             73,
@@ -1704,7 +1704,7 @@
           ],
           "inode": 80180065
         },
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/.gitignore": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/.gitignore": {
           "icon": [
             1,
             576,
@@ -1712,7 +1712,7 @@
           ],
           "inode": 76245412
         },
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/.nvmrc": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/.nvmrc": {
           "icon": [
             1,
             873,
@@ -1720,7 +1720,7 @@
           ],
           "inode": 63397014
         },
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/.travis.yml": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/.travis.yml": {
           "icon": [
             1,
             162,
@@ -1728,7 +1728,7 @@
           ],
           "inode": 80178095
         },
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/appveyor.yml": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/appveyor.yml": {
           "icon": [
             1,
             14,
@@ -1736,7 +1736,7 @@
           ],
           "inode": 80178097
         },
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/CHANGELOG.md": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/CHANGELOG.md": {
           "icon": [
             1,
             758,
@@ -1744,7 +1744,7 @@
           ],
           "inode": 76245413
         },
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/circle.yml": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/circle.yml": {
           "icon": [
             1,
             47,
@@ -1752,7 +1752,7 @@
           ],
           "inode": 80178105
         },
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/CODE_OF_CONDUCT.md": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/CODE_OF_CONDUCT.md": {
           "icon": [
             1,
             758,
@@ -1760,7 +1760,7 @@
           ],
           "inode": 64349122
         },
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/CONTRIBUTING.md": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/CONTRIBUTING.md": {
           "icon": [
             1,
             758,
@@ -1768,7 +1768,7 @@
           ],
           "inode": 76245414
         },
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/LICENSE.md": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/LICENSE.md": {
           "icon": [
             1,
             758,
@@ -1776,7 +1776,7 @@
           ],
           "inode": 66727979
         },
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/package.json": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/package.json": {
           "icon": [
             1,
             126,
@@ -1784,7 +1784,7 @@
           ],
           "inode": 80178113
         },
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/README.md": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/README.md": {
           "icon": [
             1,
             141,
@@ -1792,11 +1792,11 @@
           ],
           "inode": 80178096
         },
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus": {
           "icon": null,
           "inode": 63389324
         },
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/.git": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/.git": {
           "icon": [
             1,
             9,
@@ -1804,19 +1804,19 @@
           ],
           "inode": 63734506
         },
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/bundle": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/bundle": {
           "icon": null,
           "inode": 80177877
         },
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/keymaps": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/keymaps": {
           "icon": null,
           "inode": 63410615
         },
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/lib": {
           "icon": null,
           "inode": 63389369
         },
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/node_modules": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/node_modules": {
           "icon": [
             1,
             14,
@@ -1824,15 +1824,15 @@
           ],
           "inode": 77696805
         },
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/spec": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/spec": {
           "icon": null,
           "inode": 76245444
         },
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/styles": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/styles": {
           "icon": null,
           "inode": 63422872
         },
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/keymaps/project-viewer-x.json": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/keymaps/project-viewer-plus.json": {
           "icon": [
             1,
             414,
@@ -1840,7 +1840,7 @@
           ],
           "inode": 63410616
         },
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/main.js": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/lib/main.js": {
           "icon": [
             1,
             676,
@@ -1848,7 +1848,7 @@
           ],
           "inode": 63389376
         },
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/package.js": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/lib/package.js": {
           "icon": [
             1,
             676,
@@ -1856,23 +1856,23 @@
           ],
           "inode": 80178110
         },
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/components": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/lib/components": {
           "icon": null,
           "inode": 75606706
         },
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/constants": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/lib/constants": {
           "icon": null,
           "inode": 76245435
         },
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/containers": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/lib/containers": {
           "icon": null,
           "inode": 75606700
         },
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/services": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/lib/services": {
           "icon": null,
           "inode": 76245441
         },
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/components/empty-component.js": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/lib/components/empty-component.js": {
           "icon": [
             1,
             676,
@@ -1880,7 +1880,7 @@
           ],
           "inode": 80178106
         },
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/components/group-component.js": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/lib/components/group-component.js": {
           "icon": [
             1,
             676,
@@ -1888,7 +1888,7 @@
           ],
           "inode": 80178073
         },
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/components/main-component.js": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/lib/components/main-component.js": {
           "icon": [
             1,
             676,
@@ -1896,7 +1896,7 @@
           ],
           "inode": 80178045
         },
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/components/select-list-component.js": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/lib/components/select-list-component.js": {
           "icon": [
             1,
             676,
@@ -1904,7 +1904,7 @@
           ],
           "inode": 80178075
         },
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/constants/base.js": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/lib/constants/base.js": {
           "icon": [
             1,
             676,
@@ -1912,7 +1912,7 @@
           ],
           "inode": 80178146
         },
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/constants/config.js": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/lib/constants/config.js": {
           "icon": [
             1,
             676,
@@ -1920,7 +1920,7 @@
           ],
           "inode": 80178108
         },
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/containers/groups-container.js": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/lib/containers/groups-container.js": {
           "icon": [
             1,
             676,
@@ -1928,7 +1928,7 @@
           ],
           "inode": 80178024
         },
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/containers/main-container.js": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/lib/containers/main-container.js": {
           "icon": [
             1,
             676,
@@ -1936,7 +1936,7 @@
           ],
           "inode": 80178147
         },
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/containers/projects-container.js": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/lib/containers/projects-container.js": {
           "icon": [
             1,
             676,
@@ -1944,7 +1944,7 @@
           ],
           "inode": 80178025
         },
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/containers/select-list-container.js": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/lib/containers/select-list-container.js": {
           "icon": [
             1,
             676,
@@ -1952,7 +1952,7 @@
           ],
           "inode": 80178076
         },
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/containers/status-container.js": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/lib/containers/status-container.js": {
           "icon": [
             1,
             676,
@@ -1960,7 +1960,7 @@
           ],
           "inode": 80178077
         },
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/spec/_base-spec.js": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/spec/_base-spec.js": {
           "icon": [
             1,
             185,
@@ -1968,7 +1968,7 @@
           ],
           "inode": 80177972
         },
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/spec/package-spec.js": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/spec/package-spec.js": {
           "icon": [
             1,
             185,
@@ -1976,15 +1976,15 @@
           ],
           "inode": 80178115
         },
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/spec/fixtures": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/spec/fixtures": {
           "icon": null,
           "inode": 80177934
         },
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/spec/services": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/spec/services": {
           "icon": null,
           "inode": 80178116
         },
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/spec/fixtures/database.json": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/spec/fixtures/database.json": {
           "icon": [
             1,
             414,
@@ -1992,7 +1992,7 @@
           ],
           "inode": 80178114
         },
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/1.x.x-state.js": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/lib/1.x.x-state.js": {
           "icon": [
             1,
             676,
@@ -2000,7 +2000,7 @@
           ],
           "inode": 80843296
         },
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/spec/fixtures/1.x.x-state.js": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/spec/fixtures/1.x.x-state.js": {
           "icon": [
             1,
             676,
@@ -2008,7 +2008,7 @@
           ],
           "inode": 80843296
         },
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/spec/fixtures/2.x.x-state.js": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/spec/fixtures/2.x.x-state.js": {
           "icon": [
             1,
             676,
@@ -2016,7 +2016,7 @@
           ],
           "inode": 80843314
         },
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/spec/fixtures/2.x.x-state.json": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/spec/fixtures/2.x.x-state.json": {
           "icon": [
             1,
             414,
@@ -2024,7 +2024,7 @@
           ],
           "inode": 80843314
         },
-        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/spec/fixtures/1.x.x-state.json": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/spec/fixtures/1.x.x-state.json": {
           "icon": [
             1,
             414,
@@ -2105,17 +2105,17 @@
         "buffers": {
           "2": {
             "id": 2,
-            "path": "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/services/context-switcher.js",
+            "path": "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/lib/services/context-switcher.js",
             "colorMarkers": []
           },
           "11": {
             "id": 11,
-            "path": "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/services/database.js",
+            "path": "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/lib/services/database.js",
             "colorMarkers": []
           }
         },
         "paths": [
-          "/Users/guimaraesj/personal/devel/atom-project-viewer-x/styles/project-viewer-x.less"
+          "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/styles/project-viewer-plus.less"
         ],
         "variables": {
           "deserializer": "VariablesCollection",
@@ -2140,7 +2140,7 @@
   },
   "treeView": {
     "directoryExpansionStates": {
-      "/Users/guimaraesj/personal/devel/atom-project-viewer-x": {
+      "/Users/guimaraesj/personal/devel/atom-project-viewer-plus": {
         "isExpanded": true,
         "entries": {
           ".git": {
@@ -2201,7 +2201,7 @@
       }
     },
     "deserializer": "TreeView",
-    "selectedPath": "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/services",
+    "selectedPath": "/Users/guimaraesj/personal/devel/atom-project-viewer-plus/lib/services",
     "scrollLeft": 0,
     "scrollTop": 0,
     "width": 0

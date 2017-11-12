@@ -1,0 +1,6 @@
+{
+  ".platform-darwin": {
+    "shift-ctrl-alt-v": "project-viewer-plus:toggle-visibility",
+    "shift-ctrl-alt-c": "project-viewer-plus:toggle-focus"
+  }
+}
