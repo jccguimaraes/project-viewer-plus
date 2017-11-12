@@ -1,0 +1,33 @@
+
+language: node_js
+node_js:
+- 7.4.0
+sudo: false
+dist: trusty
+
+addons:
+  apt:
+    packages:
+    - clang-3.9
+    - build-essential
+
+git:
+  depth: 10
+
+branches:
+  only:
+  - master
+
+script:
+- npm run test
+
+env:
+  global:
+  - CC=clang
+  - CXX=clang++
+  - npm_config_clang=1
+
+notifications:
+  email:
+    on_success: never
+    on_failure: change

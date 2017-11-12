@@ -1,0 +1,27 @@
+image: Visual Studio 2015
+
+cache:
+  - '%HOMEDRIVE%%HOMEPATH%\.node-gyp'
+  - '%APPDATA%\npm-cache'
+
+environment:
+  nodejs_version: "7.4.0"
+
+platform:
+  - x86
+  - x64
+
+build: off
+
+install:
+  - ps: Install-Product node $env:nodejs_version
+  - npm config set msvs_version 2015
+  - npm install
+
+test_script:
+- npm run test
+
+shallow_clone: true
+clone_depth: 5
+
+skip_branch_with_pr: true

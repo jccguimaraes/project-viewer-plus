@@ -1,0 +1,93 @@
+@import "ui-variables";
+
+.pv-notice-warning {
+  color: @text-color-error;
+}
+
+.pv-notice-info {
+  color: @text-color-info;
+}
+
+.project-viewer-x {
+  display: flex;
+  flex-direction: column;
+
+  contain: size;
+  overflow: auto;
+  z-index: 2;
+
+  > .list-tree {
+    flex: 1;
+    overflow: auto;
+    padding: 10px;
+  }
+
+  footer {
+    height: 20px;
+  }
+
+  .list-nested-item > .list-item:hover {
+    cursor: pointer;
+    color: @text-color-highlight;
+    transition: color 0.2s;
+  }
+
+  .list-item.pv-project,
+  .list-item.pv-group {
+    -webkit-app-region: no-drag;
+
+    &.dragging + .list-tree {
+      opacity: 0.3;
+      transition: opacity 0.2s;
+    }
+  }
+
+  .list-item.pv-project,
+  .list-item.pv-project span {
+    transition: padding 0.2s;
+
+    &:hover {
+      cursor: pointer;
+      color: @text-color-highlight;
+      padding-left: 10px;
+      transition: color 0.2s;
+    }
+  }
+
+  .list-item.pv-project {
+    &:not(.selected)::before {
+      position: absolute;
+      left: 0;
+      height: @component-line-height;
+      content: "";
+      width: 4px;
+      background-color: @text-color-selected;
+      visibility: hidden;
+      transform: scaleY(0);
+      transition: transform 0.2s, visibility 0.2s;
+      padding-left: 0;
+    }
+
+    &:not(.selected):hover::before {
+      visibility: visible;
+      transform: scaleY(1);
+    }
+  }
+
+  .pv-status-bar {
+    // height: @component-line-height;
+  }
+
+  .background-message .icon::before {
+    font-size: inherit;
+  }
+
+  // change this
+  // .list-item.pv-project.selected {
+  //   color: @app-background-color;
+  //
+  //   &::before {
+  //     background-color: @text-color-success;
+  //   }
+  // }
+}

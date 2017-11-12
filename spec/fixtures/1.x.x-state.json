@@ -1,0 +1,2209 @@
+{
+  "version": 1,
+  "project": {
+    "deserializer": "Project",
+    "paths": [
+      "/Users/guimaraesj/personal/devel/atom-project-viewer-x"
+    ],
+    "buffers": [
+      {
+        "id": "8f95588147dbad060174ce6408faa38f",
+        "defaultMarkerLayerId": "0",
+        "markerLayers": {},
+        "displayLayers": {
+          "0": {
+            "id": 0,
+            "foldsMarkerLayerId": "339",
+            "foldIdCounter": 1
+          }
+        },
+        "nextMarkerLayerId": 357,
+        "nextDisplayLayerId": 1,
+        "history": {},
+        "encoding": "utf8",
+        "preferredLineEnding": "\n",
+        "nextMarkerId": 11806,
+        "filePath": "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/services/context-switcher.js",
+        "digestWhenLastPersisted": "e9115c6b5feb6956",
+        "outstandingChanges": {
+          "type": "Buffer",
+          "data": [
+            118,
+            15,
+            0,
+            0,
+            145,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      {
+        "id": "dc2951dc8db2439ab5e37d0585f7718a",
+        "defaultMarkerLayerId": "0",
+        "markerLayers": {},
+        "displayLayers": {
+          "0": {
+            "id": 0,
+            "foldsMarkerLayerId": "326",
+            "foldIdCounter": 1
+          }
+        },
+        "nextMarkerLayerId": 344,
+        "nextDisplayLayerId": 1,
+        "history": {},
+        "encoding": "utf8",
+        "preferredLineEnding": "\n",
+        "nextMarkerId": 812,
+        "filePath": "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/services/database.js",
+        "digestWhenLastPersisted": "46f76d32505e43be",
+        "outstandingChanges": {
+          "type": "Buffer",
+          "data": [
+            32,
+            24,
+            0,
+            0,
+            3,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    ]
+  },
+  "workspace": {
+    "deserializer": "Workspace",
+    "packagesWithActiveGrammars": [
+      "language-babel",
+      "language-hyperlink",
+      "language-todo"
+    ],
+    "destroyedItemURIs": [
+      "/Users/guimaraesj/.atom/styles.less",
+      "atom://incompatible-packages",
+      "/Users/guimaraesj/devel/rum/rum-provider-fmg/npm-debug.log",
+      "/Users/guimaraesj/devel/rum/rum-provider-fmg/pom.xml",
+      "/Users/guimaraesj/devel/rum/rum-provider-fmg/test/mocks.js",
+      "/Users/guimaraesj/devel/rum/rum-provider-fmg/target/ppb-sportsbook-domain-1.13.jar",
+      "/Users/guimaraesj/devel/rum/rum-provider-fmg/.nycrc",
+      "/Users/guimaraesj/devel/rum/rum-provider-fmg/lib/config.js",
+      "/Users/guimaraesj/devel/rum/rum-provider-fmg/ppb-sportsbook-domain-1.13.jar",
+      "markdown-preview:///Users/guimaraesj/devel/rum/rum-provider-fmg/README.md",
+      "markdown-preview://editor/699",
+      "/Users/guimaraesj/devel/rum/rum-provider-fmg/README.md",
+      "/Users/guimaraesj/devel/rum/rum-provider-fmg/lib/.npmignore",
+      "/Users/guimaraesj/devel/rum/rum-provider-fmg/.npmignore",
+      "/Users/guimaraesj/devel/rum/rum-provider-fmg/.gitignore",
+      "/Users/guimaraesj/devel/rum/rum-provider-fmg/test/unit/fmg-spec.js",
+      "/Users/guimaraesj/devel/rum/rum-provider-fmg/.nvmrc",
+      "/Users/guimaraesj/.Trash/.lolcommits/fcn-gin-settings/config.yml",
+      "/Users/guimaraesj/.lolcommits/rum-provider-fmg/config.yml",
+      "/Users/guimaraesj/.config/fish/config.fish",
+      "/Users/guimaraesj/devel/rum/rum-provider-fmg/.git/hooks/post-commit",
+      "/Users/guimaraesj/devel/rum/rum-provider-fmg/.eslintrc",
+      "/Users/guimaraesj/devel/rum/rum-provider-fmg/.eslintignore",
+      "/Users/guimaraesj/devel/rum/rum-provider-fmg/test/unit/index-spec.js",
+      "/Users/guimaraesj/devel/rum/rum-provider-fmg/test/.eslintrc",
+      "/Users/guimaraesj/devel/rum/rum-provider-fmg/lib/index.js",
+      "/Users/guimaraesj/devel/rum/rum-provider-fmg/package.json",
+      "/Users/guimaraesj/devel/rum/rum-provider-fmg/lib/fmg.js",
+      "/Users/guimaraesj/personal/devel/atom-project-viewer-x/.git/config",
+      "/Users/guimaraesj/personal/devel/atom-project-viewer-x/.git/hooks/pre-commit",
+      "atom://deprecation-cop",
+      "/Users/guimaraesj/.atom/database.json",
+      "atom://styleguide",
+      "atom://find-and-replace/project-results",
+      "/Users/guimaraesj/personal/devel/atom-project-viewer-x/spec/base-spec.js",
+      "/Users/guimaraesj/personal/devel/atom-project-viewer-x/spec/fixtures/database.json",
+      "/Users/guimaraesj/personal/devel/atom-project-viewer-x/spec/package-spec.js",
+      "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/containers/main-container.js",
+      "/Users/guimaraesj/personal/devel/atom-project-viewer-x/spec/fixtures/storage/editor-01f3722d93a49e69c5bc04e8039ebbde449a180d",
+      "/Users/guimaraesj/personal/devel/atom-project-viewer-x/.editorconfig",
+      "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/containers/groups-container.js",
+      "/Users/guimaraesj/personal/devel/atom-project-viewer-x/.eslintrc",
+      "/Users/guimaraesj/personal/devel/atom-project-viewer-x/package.json",
+      "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/main.js",
+      "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/package.js",
+      "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/components/empty-component.js",
+      "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/components/group-component.js",
+      "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/components/main-component.js",
+      "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/components/project-component.js",
+      "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/components/select-list-component.js",
+      "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/constants/base.js",
+      "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/constants/config.js",
+      "atom-github://dock-item/git",
+      "/Users/guimaraesj/personal/devel/atom-project-viewer-x/spec/fixtures/1.x.x-state.js",
+      "/Users/guimaraesj/personal/devel/atom-project-viewer-x/spec/fixtures/2.x.x-state.json",
+      "atom://project-viewer-x",
+      "atom://config",
+      "atom://linter-ui-default"
+    ],
+    "paneContainer": {
+      "version": 2
+    },
+    "paneContainers": {
+      "center": {
+        "deserializer": "PaneContainer",
+        "version": 1,
+        "root": {
+          "deserializer": "Pane",
+          "id": 1,
+          "items": [
+            {
+              "deserializer": "TextEditor",
+              "version": 1,
+              "displayBuffer": {
+                "tokenizedBuffer": {
+                  "deserializer": "TokenizedBuffer",
+                  "bufferPath": "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/services/context-switcher.js",
+                  "bufferId": "8f95588147dbad060174ce6408faa38f",
+                  "tabLength": 2,
+                  "largeFileMode": false
+                }
+              },
+              "tokenizedBuffer": {
+                "deserializer": "TokenizedBuffer",
+                "bufferPath": "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/services/context-switcher.js",
+                "bufferId": "8f95588147dbad060174ce6408faa38f",
+                "tabLength": 2,
+                "largeFileMode": false
+              },
+              "displayLayerId": 0,
+              "selectionsMarkerLayerId": "341",
+              "initialScrollTopRow": 51,
+              "initialScrollLeftColumn": 0,
+              "atomicSoftTabs": true,
+              "softWrapHangingIndentLength": 0,
+              "id": 2,
+              "softTabs": true,
+              "softWrapped": false,
+              "softWrapAtPreferredLineLength": false,
+              "preferredLineLength": 80,
+              "mini": false,
+              "editorWidthInChars": 91,
+              "width": null,
+              "largeFileMode": false,
+              "registered": true,
+              "invisibles": {
+                "eol": "¬",
+                "space": "·",
+                "tab": "»",
+                "cr": "¤"
+              },
+              "showInvisibles": false,
+              "showIndentGuide": true,
+              "autoHeight": false
+            },
+            {
+              "deserializer": "TextEditor",
+              "version": 1,
+              "displayBuffer": {
+                "tokenizedBuffer": {
+                  "deserializer": "TokenizedBuffer",
+                  "bufferPath": "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/services/database.js",
+                  "bufferId": "dc2951dc8db2439ab5e37d0585f7718a",
+                  "tabLength": 2,
+                  "largeFileMode": false
+                }
+              },
+              "tokenizedBuffer": {
+                "deserializer": "TokenizedBuffer",
+                "bufferPath": "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/services/database.js",
+                "bufferId": "dc2951dc8db2439ab5e37d0585f7718a",
+                "tabLength": 2,
+                "largeFileMode": false
+              },
+              "displayLayerId": 0,
+              "selectionsMarkerLayerId": "328",
+              "initialScrollTopRow": 222,
+              "initialScrollLeftColumn": 0,
+              "atomicSoftTabs": true,
+              "softWrapHangingIndentLength": 0,
+              "id": 11,
+              "softTabs": true,
+              "softWrapped": false,
+              "softWrapAtPreferredLineLength": false,
+              "preferredLineLength": 80,
+              "mini": false,
+              "editorWidthInChars": 79,
+              "width": null,
+              "largeFileMode": false,
+              "registered": true,
+              "invisibles": {
+                "eol": "¬",
+                "space": "·",
+                "tab": "»",
+                "cr": "¤"
+              },
+              "showInvisibles": false,
+              "showIndentGuide": true,
+              "autoHeight": false
+            }
+          ],
+          "itemStackIndices": [
+            1,
+            0
+          ],
+          "activeItemIndex": 0,
+          "focused": false,
+          "flexScale": 1
+        },
+        "activePaneId": 1
+      },
+      "left": {
+        "deserializer": "Dock",
+        "size": 213,
+        "paneContainer": {
+          "deserializer": "PaneContainer",
+          "version": 1,
+          "root": {
+            "deserializer": "Pane",
+            "id": 2,
+            "items": [
+              {
+                "directoryExpansionStates": {
+                  "/Users/guimaraesj/personal/devel/atom-project-viewer-x": {
+                    "isExpanded": true,
+                    "entries": {
+                      ".git": {
+                        "isExpanded": false,
+                        "entries": {}
+                      },
+                      "bundle": {
+                        "isExpanded": false,
+                        "entries": {}
+                      },
+                      "keymaps": {
+                        "isExpanded": false,
+                        "entries": {}
+                      },
+                      "lib": {
+                        "isExpanded": true,
+                        "entries": {
+                          "components": {
+                            "isExpanded": false,
+                            "entries": {}
+                          },
+                          "constants": {
+                            "isExpanded": true,
+                            "entries": {}
+                          },
+                          "containers": {
+                            "isExpanded": true,
+                            "entries": {}
+                          },
+                          "services": {
+                            "isExpanded": false,
+                            "entries": {}
+                          }
+                        }
+                      },
+                      "node_modules": {
+                        "isExpanded": false,
+                        "entries": {}
+                      },
+                      "spec": {
+                        "isExpanded": true,
+                        "entries": {
+                          "fixtures": {
+                            "isExpanded": true,
+                            "entries": {}
+                          },
+                          "services": {
+                            "isExpanded": false,
+                            "entries": {}
+                          }
+                        }
+                      },
+                      "styles": {
+                        "isExpanded": false,
+                        "entries": {}
+                      }
+                    }
+                  }
+                },
+                "deserializer": "TreeView",
+                "selectedPath": "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/services",
+                "scrollLeft": 0,
+                "scrollTop": 0,
+                "width": 0
+              }
+            ],
+            "itemStackIndices": [
+              0
+            ],
+            "activeItemIndex": 0,
+            "focused": false,
+            "flexScale": 1
+          },
+          "activePaneId": 2
+        },
+        "visible": true
+      },
+      "right": {
+        "deserializer": "Dock",
+        "size": null,
+        "paneContainer": {
+          "deserializer": "PaneContainer",
+          "version": 1,
+          "root": {
+            "deserializer": "Pane",
+            "id": 3,
+            "items": [],
+            "itemStackIndices": [],
+            "activeItemIndex": -1,
+            "focused": false,
+            "flexScale": 1
+          },
+          "activePaneId": 3
+        },
+        "visible": false
+      },
+      "bottom": {
+        "deserializer": "Dock",
+        "size": null,
+        "paneContainer": {
+          "deserializer": "PaneContainer",
+          "version": 1,
+          "root": {
+            "deserializer": "Pane",
+            "id": 4,
+            "items": [],
+            "itemStackIndices": [],
+            "activeItemIndex": -1,
+            "focused": false,
+            "flexScale": 1
+          },
+          "activePaneId": 4
+        },
+        "visible": false
+      }
+    }
+  },
+  "packageStates": {
+    "bookmarks": {
+      "2": {
+        "markerLayerId": "342"
+      },
+      "11": {
+        "markerLayerId": "329"
+      }
+    },
+    "fuzzy-finder": {
+      "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/services/context-switcher.js": 1509608947590
+    },
+    "github": {
+      "activeRepositoryPath": "/Users/guimaraesj/personal/devel/atom-project-viewer-x",
+      "firstRun": false
+    },
+    "metrics": {
+      "sessionLength": 9200
+    },
+    "project-viewer-x": {
+      "deserializer": "ProjectViewerDatabase",
+      "data": {
+        "map": {
+          "8d6f8a28-2741-48fc-b919-0930642f0384": {
+            "id": "8d6f8a28-2741-48fc-b919-0930642f0384",
+            "type": "group",
+            "model": {},
+            "children": [
+              "6d03ee8c-950b-4243-97a3-ce2f9373067b",
+              "1bc9f99c-a61c-454e-a039-0d16a03e6072"
+            ]
+          },
+          "6d03ee8c-950b-4243-97a3-ce2f9373067b": {
+            "id": "6d03ee8c-950b-4243-97a3-ce2f9373067b",
+            "type": "group",
+            "model": {
+              "collapsed": false,
+              "color": "#d8dad1",
+              "icon": "beaker",
+              "name": "Personal",
+              "sortBy": "position"
+            },
+            "children": [
+              "8c8f66ff-901d-466a-875e-f609ac90ffec",
+              "947a70af-5bf3-49e8-b388-0fe2822e5436",
+              "733494fa-eea6-4336-98ee-e775a0590480"
+            ],
+            "parentId": "8d6f8a28-2741-48fc-b919-0930642f0384"
+          },
+          "8c8f66ff-901d-466a-875e-f609ac90ffec": {
+            "id": "8c8f66ff-901d-466a-875e-f609ac90ffec",
+            "type": "group",
+            "model": {
+              "collapsed": true,
+              "color": "#d8dad3",
+              "icon": "",
+              "name": "Zybra",
+              "sortBy": "position"
+            },
+            "children": [
+              "f5c7cb73-6191-4738-aa53-9651e1410766"
+            ],
+            "parentId": "6d03ee8c-950b-4243-97a3-ce2f9373067b"
+          },
+          "f5c7cb73-6191-4738-aa53-9651e1410766": {
+            "id": "f5c7cb73-6191-4738-aa53-9651e1410766",
+            "type": "project",
+            "model": {
+              "name": "zybra",
+              "icon": "",
+              "color": "",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/personal/devel/zybra"
+              ]
+            },
+            "children": [],
+            "parentId": "8c8f66ff-901d-466a-875e-f609ac90ffec"
+          },
+          "947a70af-5bf3-49e8-b388-0fe2822e5436": {
+            "id": "947a70af-5bf3-49e8-b388-0fe2822e5436",
+            "type": "group",
+            "model": {
+              "name": "Taglr",
+              "sortBy": "position",
+              "icon": "",
+              "color": "#d8dad3",
+              "collapsed": true
+            },
+            "children": [
+              "ccc70aea-afe3-4488-b3a1-34323663d117",
+              "eaf1cf8c-8445-4e8c-a5c4-05a039500b14",
+              "7a05d03f-4621-4daa-a064-939e1cba2674",
+              "6b70e180-cbed-4830-bf18-6665ebe2ccdb"
+            ],
+            "parentId": "6d03ee8c-950b-4243-97a3-ce2f9373067b"
+          },
+          "ccc70aea-afe3-4488-b3a1-34323663d117": {
+            "id": "ccc70aea-afe3-4488-b3a1-34323663d117",
+            "type": "project",
+            "model": {
+              "name": "taglr-core",
+              "icon": "",
+              "color": "",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/personal/devel/taglr/taglr-core"
+              ]
+            },
+            "children": [],
+            "parentId": "947a70af-5bf3-49e8-b388-0fe2822e5436"
+          },
+          "eaf1cf8c-8445-4e8c-a5c4-05a039500b14": {
+            "id": "eaf1cf8c-8445-4e8c-a5c4-05a039500b14",
+            "type": "project",
+            "model": {
+              "name": "taglr-app",
+              "icon": "",
+              "color": "",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/personal/devel/taglr/app"
+              ]
+            },
+            "children": [],
+            "parentId": "947a70af-5bf3-49e8-b388-0fe2822e5436"
+          },
+          "7a05d03f-4621-4daa-a064-939e1cba2674": {
+            "id": "7a05d03f-4621-4daa-a064-939e1cba2674",
+            "type": "project",
+            "model": {
+              "name": "taglr-server",
+              "icon": "",
+              "color": "",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/personal/devel/taglr/server"
+              ]
+            },
+            "children": [],
+            "parentId": "947a70af-5bf3-49e8-b388-0fe2822e5436"
+          },
+          "6b70e180-cbed-4830-bf18-6665ebe2ccdb": {
+            "id": "6b70e180-cbed-4830-bf18-6665ebe2ccdb",
+            "type": "project",
+            "model": {
+              "name": "taglr-cli",
+              "icon": "",
+              "color": "",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/personal/devel/taglr/taglr-cli"
+              ]
+            },
+            "children": [],
+            "parentId": "947a70af-5bf3-49e8-b388-0fe2822e5436"
+          },
+          "733494fa-eea6-4336-98ee-e775a0590480": {
+            "id": "733494fa-eea6-4336-98ee-e775a0590480",
+            "type": "group",
+            "model": {
+              "name": "GitHub",
+              "sortBy": "position",
+              "icon": "",
+              "color": "#d8dad3",
+              "collapsed": false
+            },
+            "children": [
+              "ec8a9f57-641d-49e0-8a54-79f8f22550d2",
+              "898e21aa-e9b9-43a0-ab8a-96a3135d5519",
+              "cb941341-07b7-46af-a651-5abd5c3c3679",
+              "267f9404-0601-4191-b96b-ec907bb88074",
+              "6baf8e6b-36f7-4b7d-ba85-52f7052a5fa8"
+            ],
+            "parentId": "6d03ee8c-950b-4243-97a3-ce2f9373067b"
+          },
+          "ec8a9f57-641d-49e0-8a54-79f8f22550d2": {
+            "id": "ec8a9f57-641d-49e0-8a54-79f8f22550d2",
+            "type": "project",
+            "model": {
+              "name": "project-viewer",
+              "icon": "",
+              "color": "",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/personal/devel/atom-project-viewer"
+              ]
+            },
+            "children": [],
+            "parentId": "733494fa-eea6-4336-98ee-e775a0590480"
+          },
+          "898e21aa-e9b9-43a0-ab8a-96a3135d5519": {
+            "id": "898e21aa-e9b9-43a0-ab8a-96a3135d5519",
+            "type": "project",
+            "model": {
+              "name": "canopy-syntax",
+              "icon": "puzzle",
+              "color": "",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/personal/devel/canopy-syntax"
+              ]
+            },
+            "children": [],
+            "parentId": "733494fa-eea6-4336-98ee-e775a0590480"
+          },
+          "cb941341-07b7-46af-a651-5abd5c3c3679": {
+            "id": "cb941341-07b7-46af-a651-5abd5c3c3679",
+            "type": "project",
+            "model": {
+              "name": "project-viewer-x",
+              "icon": "package",
+              "color": "",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/personal/devel/atom-project-viewer-x"
+              ]
+            },
+            "children": [],
+            "parentId": "733494fa-eea6-4336-98ee-e775a0590480",
+            "selected": true
+          },
+          "267f9404-0601-4191-b96b-ec907bb88074": {
+            "id": "267f9404-0601-4191-b96b-ec907bb88074",
+            "type": "project",
+            "model": {
+              "name": "couliris",
+              "icon": "",
+              "color": "",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/personal/devel/couliris"
+              ]
+            },
+            "children": [],
+            "parentId": "733494fa-eea6-4336-98ee-e775a0590480"
+          },
+          "6baf8e6b-36f7-4b7d-ba85-52f7052a5fa8": {
+            "id": "6baf8e6b-36f7-4b7d-ba85-52f7052a5fa8",
+            "type": "project",
+            "model": {
+              "name": "reclog",
+              "icon": "",
+              "color": "",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/personal/devel/reclog"
+              ]
+            },
+            "children": [],
+            "parentId": "733494fa-eea6-4336-98ee-e775a0590480"
+          },
+          "1bc9f99c-a61c-454e-a039-0d16a03e6072": {
+            "id": "1bc9f99c-a61c-454e-a039-0d16a03e6072",
+            "type": "group",
+            "model": {
+              "collapsed": true,
+              "color": "#d8dad3",
+              "icon": "inbox",
+              "name": "Blip",
+              "sortBy": "position"
+            },
+            "children": [
+              "137f3243-3608-4cf1-9693-78ad8f852f5d",
+              "3236f665-2b81-4a78-9e98-9f59701bbd9c",
+              "85b493d9-474a-404b-9ad9-1b103cfb3b53",
+              "0721cb08-6c27-4897-b215-b46d5a876554",
+              "80126e04-e7bb-4671-b49f-de55ca0df087"
+            ],
+            "parentId": "8d6f8a28-2741-48fc-b919-0930642f0384"
+          },
+          "137f3243-3608-4cf1-9693-78ad8f852f5d": {
+            "id": "137f3243-3608-4cf1-9693-78ad8f852f5d",
+            "type": "group",
+            "model": {
+              "collapsed": true,
+              "color": "#d8dad3",
+              "name": "fcn",
+              "sortBy": "position"
+            },
+            "children": [
+              "f18eec32-d10c-4ae7-b301-8fac09adf5e5",
+              "883494ae-84e8-4555-9a01-824d063c7e33",
+              "793ea68a-b20f-4c9a-bb84-a3a4dbae23b2",
+              "e2c53b19-fd25-4811-b314-74e79da3191a",
+              "1a1c0585-902d-4010-9463-1d0843e684f1",
+              "ff6ca98f-ab6c-477c-8394-6bcd111134fa",
+              "3382e863-faca-4ecc-8941-7663f2f71bfb",
+              "266b2539-1ffa-4a94-9b00-216845cfe963",
+              "9f8978e8-cfcc-4a0e-8490-30582799b54e",
+              "7e886293-1518-4c00-9882-3ab6110eb064",
+              "67ee54d7-ed54-4d49-8ffb-e49d354e9f4d",
+              "665aeddf-ccd6-4ebc-9f17-061b511b106f",
+              "f1c8b38c-9882-4faa-a5db-197b9d1474c3",
+              "5214a7a4-2d93-45c8-9dca-5f3bfb16e3b8",
+              "4173d2b6-ddf1-4cb8-91e9-f5198c08fec1",
+              "9e45b177-dc1c-4766-b925-042d0300d753",
+              "08d3c828-a02d-40ba-882b-10db2f3c0779",
+              "796a84c3-ec01-46fe-8333-afb8951c3016"
+            ],
+            "parentId": "1bc9f99c-a61c-454e-a039-0d16a03e6072"
+          },
+          "f18eec32-d10c-4ae7-b301-8fac09adf5e5": {
+            "id": "f18eec32-d10c-4ae7-b301-8fac09adf5e5",
+            "type": "project",
+            "model": {
+              "name": "fcn-core-ui",
+              "icon": "devicons-angular",
+              "color": "",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/devel/fcn/fcn-core-ui"
+              ]
+            },
+            "children": [],
+            "parentId": "137f3243-3608-4cf1-9693-78ad8f852f5d"
+          },
+          "883494ae-84e8-4555-9a01-824d063c7e33": {
+            "id": "883494ae-84e8-4555-9a01-824d063c7e33",
+            "type": "project",
+            "model": {
+              "name": "postcss-fcn-theming",
+              "icon": "devicons-angular",
+              "color": "#29b0ff",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/devel/fcn/postcss-fcn-theming"
+              ]
+            },
+            "children": [],
+            "parentId": "137f3243-3608-4cf1-9693-78ad8f852f5d"
+          },
+          "793ea68a-b20f-4c9a-bb84-a3a4dbae23b2": {
+            "id": "793ea68a-b20f-4c9a-bb84-a3a4dbae23b2",
+            "type": "project",
+            "model": {
+              "name": "fcn-spa-cenas",
+              "icon": "devicons-angular",
+              "color": "#29b0ff",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/devel/fcn/fcn-spa-cenas"
+              ]
+            },
+            "children": [],
+            "parentId": "137f3243-3608-4cf1-9693-78ad8f852f5d"
+          },
+          "e2c53b19-fd25-4811-b314-74e79da3191a": {
+            "id": "e2c53b19-fd25-4811-b314-74e79da3191a",
+            "type": "project",
+            "model": {
+              "name": "fcn-theme-v8",
+              "icon": "devicons-angular",
+              "color": "#29b0ff",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/devel/fcn/fcn-theme-v8"
+              ]
+            },
+            "children": [],
+            "parentId": "137f3243-3608-4cf1-9693-78ad8f852f5d"
+          },
+          "1a1c0585-902d-4010-9463-1d0843e684f1": {
+            "id": "1a1c0585-902d-4010-9463-1d0843e684f1",
+            "type": "project",
+            "model": {
+              "name": "fcn-theme-v7",
+              "icon": "devicons-angular",
+              "color": "#29b0ff",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/devel/fcn/fcn-theme-v7"
+              ]
+            },
+            "children": [],
+            "parentId": "137f3243-3608-4cf1-9693-78ad8f852f5d"
+          },
+          "ff6ca98f-ab6c-477c-8394-6bcd111134fa": {
+            "id": "ff6ca98f-ab6c-477c-8394-6bcd111134fa",
+            "type": "project",
+            "model": {
+              "name": "eslint-config-fcn",
+              "icon": "devicons-nodejs_small",
+              "color": "",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/devel/fcn/eslint-config-fcn"
+              ]
+            },
+            "children": [],
+            "parentId": "137f3243-3608-4cf1-9693-78ad8f852f5d"
+          },
+          "3382e863-faca-4ecc-8941-7663f2f71bfb": {
+            "id": "3382e863-faca-4ecc-8941-7663f2f71bfb",
+            "type": "project",
+            "model": {
+              "name": "fcn-dev-hub",
+              "icon": "icon-ruby",
+              "color": "",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/devel/fcn/fcn-dev-hub"
+              ]
+            },
+            "children": [],
+            "parentId": "137f3243-3608-4cf1-9693-78ad8f852f5d"
+          },
+          "266b2539-1ffa-4a94-9b00-216845cfe963": {
+            "id": "266b2539-1ffa-4a94-9b00-216845cfe963",
+            "type": "project",
+            "model": {
+              "name": "fcn-spa-core",
+              "icon": "",
+              "color": "",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/devel/fcn/fcn-spa-core"
+              ]
+            },
+            "children": [],
+            "parentId": "137f3243-3608-4cf1-9693-78ad8f852f5d"
+          },
+          "9f8978e8-cfcc-4a0e-8490-30582799b54e": {
+            "id": "9f8978e8-cfcc-4a0e-8490-30582799b54e",
+            "type": "project",
+            "model": {
+              "name": "fcn-core-inputs",
+              "icon": "",
+              "color": "",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/devel/fcn/fcn-core-inputs"
+              ]
+            },
+            "children": [],
+            "parentId": "137f3243-3608-4cf1-9693-78ad8f852f5d"
+          },
+          "7e886293-1518-4c00-9882-3ab6110eb064": {
+            "id": "7e886293-1518-4c00-9882-3ab6110eb064",
+            "type": "project",
+            "model": {
+              "name": "fcn-core-buttons",
+              "icon": "",
+              "color": "",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/devel/fcn/fcn-core-buttons"
+              ]
+            },
+            "children": [],
+            "parentId": "137f3243-3608-4cf1-9693-78ad8f852f5d"
+          },
+          "67ee54d7-ed54-4d49-8ffb-e49d354e9f4d": {
+            "id": "67ee54d7-ed54-4d49-8ffb-e49d354e9f4d",
+            "type": "project",
+            "model": {
+              "name": "fcn-core-components",
+              "icon": "",
+              "color": "",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/devel/fcn/fcn-core-components"
+              ]
+            },
+            "children": [],
+            "parentId": "137f3243-3608-4cf1-9693-78ad8f852f5d"
+          },
+          "665aeddf-ccd6-4ebc-9f17-061b511b106f": {
+            "id": "665aeddf-ccd6-4ebc-9f17-061b511b106f",
+            "type": "project",
+            "model": {
+              "name": "fcn-core-notifications",
+              "icon": "",
+              "color": "",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/devel/fcn/fcn-core-notifications"
+              ]
+            },
+            "children": [],
+            "parentId": "137f3243-3608-4cf1-9693-78ad8f852f5d"
+          },
+          "f1c8b38c-9882-4faa-a5db-197b9d1474c3": {
+            "id": "f1c8b38c-9882-4faa-a5db-197b9d1474c3",
+            "type": "project",
+            "model": {
+              "name": "fcn-core-services",
+              "icon": "",
+              "color": "",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/devel/fcn/fcn-core-services"
+              ]
+            },
+            "children": [],
+            "parentId": "137f3243-3608-4cf1-9693-78ad8f852f5d"
+          },
+          "5214a7a4-2d93-45c8-9dca-5f3bfb16e3b8": {
+            "id": "5214a7a4-2d93-45c8-9dca-5f3bfb16e3b8",
+            "type": "project",
+            "model": {
+              "name": "fcn-core-styles",
+              "icon": "",
+              "color": "",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/devel/fcn/fcn-core-styles"
+              ]
+            },
+            "children": [],
+            "parentId": "137f3243-3608-4cf1-9693-78ad8f852f5d"
+          },
+          "4173d2b6-ddf1-4cb8-91e9-f5198c08fec1": {
+            "id": "4173d2b6-ddf1-4cb8-91e9-f5198c08fec1",
+            "type": "project",
+            "model": {
+              "name": "fcn-spa-dashboard",
+              "icon": "",
+              "color": "",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/devel/fcn/fcn-spa-dashboard"
+              ]
+            },
+            "children": [],
+            "parentId": "137f3243-3608-4cf1-9693-78ad8f852f5d"
+          },
+          "9e45b177-dc1c-4766-b925-042d0300d753": {
+            "id": "9e45b177-dc1c-4766-b925-042d0300d753",
+            "type": "project",
+            "model": {
+              "name": "fcn-core-theme-dark",
+              "icon": "",
+              "color": "",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/devel/fcn/fcn-core-theme-dark"
+              ]
+            },
+            "children": [],
+            "parentId": "137f3243-3608-4cf1-9693-78ad8f852f5d"
+          },
+          "08d3c828-a02d-40ba-882b-10db2f3c0779": {
+            "id": "08d3c828-a02d-40ba-882b-10db2f3c0779",
+            "type": "project",
+            "model": {
+              "name": "fcn-core-elements",
+              "icon": "",
+              "color": "#29b0ff",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/devel/fcn/fcn-core-elements"
+              ]
+            },
+            "children": [],
+            "parentId": "137f3243-3608-4cf1-9693-78ad8f852f5d"
+          },
+          "796a84c3-ec01-46fe-8333-afb8951c3016": {
+            "id": "796a84c3-ec01-46fe-8333-afb8951c3016",
+            "type": "project",
+            "model": {
+              "name": "fcn-core-vendor",
+              "icon": "",
+              "color": "#29b0ff",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/devel/fcn/fcn-core-vendor"
+              ]
+            },
+            "children": [],
+            "parentId": "137f3243-3608-4cf1-9693-78ad8f852f5d"
+          },
+          "3236f665-2b81-4a78-9e98-9f59701bbd9c": {
+            "id": "3236f665-2b81-4a78-9e98-9f59701bbd9c",
+            "type": "group",
+            "model": {
+              "collapsed": true,
+              "color": "#d8dad3",
+              "name": "gin-tests",
+              "sortBy": "position"
+            },
+            "children": [
+              "1fd7cb70-365b-4fed-9410-7e8fa36d1c8a"
+            ],
+            "parentId": "1bc9f99c-a61c-454e-a039-0d16a03e6072"
+          },
+          "1fd7cb70-365b-4fed-9410-7e8fa36d1c8a": {
+            "id": "1fd7cb70-365b-4fed-9410-7e8fa36d1c8a",
+            "type": "project",
+            "model": {
+              "name": "fcn-gin-functional-tests",
+              "icon": "",
+              "color": "",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/devel/gin/fcn-gin-functional-tests"
+              ]
+            },
+            "children": [],
+            "parentId": "3236f665-2b81-4a78-9e98-9f59701bbd9c"
+          },
+          "85b493d9-474a-404b-9ad9-1b103cfb3b53": {
+            "id": "85b493d9-474a-404b-9ad9-1b103cfb3b53",
+            "type": "group",
+            "model": {
+              "collapsed": false,
+              "color": "#d8dad3",
+              "name": "gin",
+              "sortBy": "position"
+            },
+            "children": [
+              "4221e74a-d9fd-4a04-a615-6f3e1b4871f3",
+              "a307e462-e6c5-4ef4-9e75-1b458a796d12",
+              "0d74222b-c823-494a-88fa-e7c0a11b15d8",
+              "460da562-5bed-45f9-a52a-7be8caec2556",
+              "2131dfca-a8db-4baa-ae09-ba7c2a29f6fd",
+              "15f6c6e3-c000-4ade-ae71-079613fba68e",
+              "a2498000-7d04-42cf-9874-c0af87369d00",
+              "ed3000ca-13df-488a-9040-f548a1740623",
+              "3b820587-009d-40e9-a590-97a0dbf06cd2",
+              "96f1a7fe-b75e-4366-a955-a175cef09d4b",
+              "d24b68b9-7810-4d5b-a063-3c0be919a78d",
+              "3a281a05-8f0b-4e73-b4b8-e48d6babe288",
+              "c4e57273-3522-4b84-a441-82f70cb39a9c",
+              "14608665-e6ed-4bd1-b3d2-0b94240eb710",
+              "067f2534-5746-4779-93dd-50bf2adca6ec",
+              "4cfcd691-05e8-49a6-980f-33d96eb75676",
+              "5f223dce-8b1f-4acc-91bb-c5defdafbfde"
+            ],
+            "parentId": "1bc9f99c-a61c-454e-a039-0d16a03e6072"
+          },
+          "4221e74a-d9fd-4a04-a615-6f3e1b4871f3": {
+            "id": "4221e74a-d9fd-4a04-a615-6f3e1b4871f3",
+            "type": "project",
+            "model": {
+              "name": "gin-redux-helpers",
+              "icon": "",
+              "color": "",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/devel/gin/gin-redux-helpers"
+              ]
+            },
+            "children": [],
+            "parentId": "85b493d9-474a-404b-9ad9-1b103cfb3b53"
+          },
+          "a307e462-e6c5-4ef4-9e75-1b458a796d12": {
+            "id": "a307e462-e6c5-4ef4-9e75-1b458a796d12",
+            "type": "project",
+            "model": {
+              "name": "fcn-gin-mocks",
+              "icon": "",
+              "color": "",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/devel/gin/fcn-gin-mocks"
+              ]
+            },
+            "children": [],
+            "parentId": "85b493d9-474a-404b-9ad9-1b103cfb3b53"
+          },
+          "0d74222b-c823-494a-88fa-e7c0a11b15d8": {
+            "id": "0d74222b-c823-494a-88fa-e7c0a11b15d8",
+            "type": "project",
+            "model": {
+              "name": "fcn-gin-rum",
+              "icon": "",
+              "color": "",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/devel/rum/fcn-gin-rum"
+              ]
+            },
+            "children": [],
+            "parentId": "85b493d9-474a-404b-9ad9-1b103cfb3b53"
+          },
+          "460da562-5bed-45f9-a52a-7be8caec2556": {
+            "id": "460da562-5bed-45f9-a52a-7be8caec2556",
+            "type": "project",
+            "model": {
+              "name": "fcn-gin-ice",
+              "icon": "",
+              "color": "",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/devel/gin/fcn-gin-ice"
+              ]
+            },
+            "children": [],
+            "parentId": "85b493d9-474a-404b-9ad9-1b103cfb3b53"
+          },
+          "2131dfca-a8db-4baa-ae09-ba7c2a29f6fd": {
+            "id": "2131dfca-a8db-4baa-ae09-ba7c2a29f6fd",
+            "type": "project",
+            "model": {
+              "name": "fcn-gin-blurbs",
+              "icon": "",
+              "color": "",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/devel/gin/fcn-gin-blurbs"
+              ]
+            },
+            "children": [],
+            "parentId": "85b493d9-474a-404b-9ad9-1b103cfb3b53"
+          },
+          "15f6c6e3-c000-4ade-ae71-079613fba68e": {
+            "id": "15f6c6e3-c000-4ade-ae71-079613fba68e",
+            "type": "project",
+            "model": {
+              "name": "fcn-gin-cards",
+              "icon": "",
+              "color": "#f75468",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/devel/gin/fcn-gin-cards"
+              ]
+            },
+            "children": [],
+            "parentId": "85b493d9-474a-404b-9ad9-1b103cfb3b53"
+          },
+          "a2498000-7d04-42cf-9874-c0af87369d00": {
+            "id": "a2498000-7d04-42cf-9874-c0af87369d00",
+            "type": "project",
+            "model": {
+              "name": "fcn-gin-components",
+              "icon": "",
+              "color": "",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/devel/gin/fcn-gin-components"
+              ]
+            },
+            "children": [],
+            "parentId": "85b493d9-474a-404b-9ad9-1b103cfb3b53"
+          },
+          "ed3000ca-13df-488a-9040-f548a1740623": {
+            "id": "ed3000ca-13df-488a-9040-f548a1740623",
+            "type": "project",
+            "model": {
+              "name": "fcn-gin-settings",
+              "icon": "",
+              "color": "",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/devel/gin/fcn-gin-settings"
+              ]
+            },
+            "children": [],
+            "parentId": "85b493d9-474a-404b-9ad9-1b103cfb3b53"
+          },
+          "3b820587-009d-40e9-a590-97a0dbf06cd2": {
+            "id": "3b820587-009d-40e9-a590-97a0dbf06cd2",
+            "type": "project",
+            "model": {
+              "name": "fcn-gin-sports",
+              "icon": "",
+              "color": "",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/devel/gin/fcn-gin-sports"
+              ]
+            },
+            "children": [],
+            "parentId": "85b493d9-474a-404b-9ad9-1b103cfb3b53"
+          },
+          "96f1a7fe-b75e-4366-a955-a175cef09d4b": {
+            "id": "96f1a7fe-b75e-4366-a955-a175cef09d4b",
+            "type": "project",
+            "model": {
+              "name": "fcn-spa-gin",
+              "icon": "",
+              "color": "",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/devel/gin/fcn-spa-gin"
+              ]
+            },
+            "children": [],
+            "parentId": "85b493d9-474a-404b-9ad9-1b103cfb3b53"
+          },
+          "d24b68b9-7810-4d5b-a063-3c0be919a78d": {
+            "id": "d24b68b9-7810-4d5b-a063-3c0be919a78d",
+            "type": "project",
+            "model": {
+              "name": "fcn-gin-services",
+              "icon": "devicons-mozilla",
+              "color": "",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/devel/gin/fcn-gin-services"
+              ]
+            },
+            "children": [],
+            "parentId": "85b493d9-474a-404b-9ad9-1b103cfb3b53"
+          },
+          "3a281a05-8f0b-4e73-b4b8-e48d6babe288": {
+            "id": "3a281a05-8f0b-4e73-b4b8-e48d6babe288",
+            "type": "project",
+            "model": {
+              "name": "fcn-gin-coupons",
+              "icon": "",
+              "color": "",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/devel/gin/fcn-gin-coupons"
+              ]
+            },
+            "children": [],
+            "parentId": "85b493d9-474a-404b-9ad9-1b103cfb3b53"
+          },
+          "c4e57273-3522-4b84-a441-82f70cb39a9c": {
+            "id": "c4e57273-3522-4b84-a441-82f70cb39a9c",
+            "type": "project",
+            "model": {
+              "name": "fcn-gin-az-sports",
+              "icon": "",
+              "color": "#f75468",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/devel/gin/fcn-gin-az-sports"
+              ]
+            },
+            "children": [],
+            "parentId": "85b493d9-474a-404b-9ad9-1b103cfb3b53"
+          },
+          "14608665-e6ed-4bd1-b3d2-0b94240eb710": {
+            "id": "14608665-e6ed-4bd1-b3d2-0b94240eb710",
+            "type": "project",
+            "model": {
+              "name": "fcn-gin-facet",
+              "icon": "",
+              "color": "",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/devel/gin/fcn-gin-facet"
+              ]
+            },
+            "children": [],
+            "parentId": "85b493d9-474a-404b-9ad9-1b103cfb3b53"
+          },
+          "067f2534-5746-4779-93dd-50bf2adca6ec": {
+            "id": "067f2534-5746-4779-93dd-50bf2adca6ec",
+            "type": "project",
+            "model": {
+              "name": "fcn-gin-inplay",
+              "icon": "",
+              "color": "#f75468",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/devel/gin/fcn-gin-inplay"
+              ]
+            },
+            "children": [],
+            "parentId": "85b493d9-474a-404b-9ad9-1b103cfb3b53"
+          },
+          "4cfcd691-05e8-49a6-980f-33d96eb75676": {
+            "id": "4cfcd691-05e8-49a6-980f-33d96eb75676",
+            "type": "project",
+            "model": {
+              "name": "fcn-gin-promotions",
+              "icon": "",
+              "color": "#f75468",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/devel/gin/fcn-gin-promotions"
+              ]
+            },
+            "children": [],
+            "parentId": "85b493d9-474a-404b-9ad9-1b103cfb3b53"
+          },
+          "5f223dce-8b1f-4acc-91bb-c5defdafbfde": {
+            "id": "5f223dce-8b1f-4acc-91bb-c5defdafbfde",
+            "type": "project",
+            "model": {
+              "name": "fcn-gin-navigation",
+              "icon": "",
+              "color": "#f75468",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/devel/gin/fcn-gin-navigation"
+              ]
+            },
+            "children": [],
+            "parentId": "85b493d9-474a-404b-9ad9-1b103cfb3b53"
+          },
+          "0721cb08-6c27-4897-b215-b46d5a876554": {
+            "id": "0721cb08-6c27-4897-b215-b46d5a876554",
+            "type": "group",
+            "model": {
+              "collapsed": false,
+              "color": "#d8dad3",
+              "name": "rum",
+              "sortBy": "position"
+            },
+            "children": [
+              "093a6ac8-d509-4961-b6c7-a13dd8ca1a4e",
+              "74beaf4a-ea7b-4a77-ad3f-1bfea400cca7"
+            ],
+            "parentId": "1bc9f99c-a61c-454e-a039-0d16a03e6072"
+          },
+          "093a6ac8-d509-4961-b6c7-a13dd8ca1a4e": {
+            "id": "093a6ac8-d509-4961-b6c7-a13dd8ca1a4e",
+            "type": "group",
+            "model": {
+              "collapsed": false,
+              "color": "#d8dad3",
+              "name": "providers",
+              "sortBy": "position"
+            },
+            "children": [
+              "f61e278c-68f4-4a95-aae5-9f923bc043e2",
+              "e17ba88c-2f28-4423-a1d7-4e6f9e604260",
+              "7e855b56-0c67-4c4d-8206-819dade5b849",
+              "3afdf5d6-c8cf-494b-a615-f946202f53f0"
+            ],
+            "parentId": "0721cb08-6c27-4897-b215-b46d5a876554"
+          },
+          "f61e278c-68f4-4a95-aae5-9f923bc043e2": {
+            "id": "f61e278c-68f4-4a95-aae5-9f923bc043e2",
+            "type": "project",
+            "model": {
+              "name": "rum-provider-alfresco",
+              "icon": "",
+              "color": "#f75468",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/devel/rum/rum-provider-alfresco"
+              ]
+            },
+            "children": [],
+            "parentId": "093a6ac8-d509-4961-b6c7-a13dd8ca1a4e"
+          },
+          "e17ba88c-2f28-4423-a1d7-4e6f9e604260": {
+            "id": "e17ba88c-2f28-4423-a1d7-4e6f9e604260",
+            "type": "project",
+            "model": {
+              "name": "rum-provider-facet",
+              "icon": "",
+              "color": "#f75468",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/devel/rum/rum-provider-facet"
+              ]
+            },
+            "children": [],
+            "parentId": "093a6ac8-d509-4961-b6c7-a13dd8ca1a4e"
+          },
+          "7e855b56-0c67-4c4d-8206-819dade5b849": {
+            "id": "7e855b56-0c67-4c4d-8206-819dade5b849",
+            "type": "project",
+            "model": {
+              "name": "rum-provider-fmg",
+              "icon": "",
+              "color": "#f75468",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/devel/rum/rum-provider-fmg"
+              ]
+            },
+            "children": [],
+            "parentId": "093a6ac8-d509-4961-b6c7-a13dd8ca1a4e"
+          },
+          "3afdf5d6-c8cf-494b-a615-f946202f53f0": {
+            "id": "3afdf5d6-c8cf-494b-a615-f946202f53f0",
+            "type": "project",
+            "model": {
+              "name": "rum-provider-workflow",
+              "icon": "",
+              "color": "#f75468",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/devel/rum/rum-provider-workflow"
+              ]
+            },
+            "children": [],
+            "parentId": "093a6ac8-d509-4961-b6c7-a13dd8ca1a4e"
+          },
+          "74beaf4a-ea7b-4a77-ad3f-1bfea400cca7": {
+            "id": "74beaf4a-ea7b-4a77-ad3f-1bfea400cca7",
+            "type": "group",
+            "model": {
+              "collapsed": false,
+              "color": "#d8dad3",
+              "name": "routers",
+              "sortBy": "position"
+            },
+            "children": [
+              "a8c75030-d687-4bd1-9903-453a6705c2a4",
+              "92e3096e-da03-4aab-a523-183176e6d432",
+              "dade85ac-f3d6-406d-93ed-337ad38c1dd6",
+              "cb9f6962-2800-4a4d-9b0c-5e3419a51a42",
+              "59d975cc-86a5-44da-b394-b5b51a49408e",
+              "7beec83c-8298-46cb-80b7-f466b3ac3255"
+            ],
+            "parentId": "0721cb08-6c27-4897-b215-b46d5a876554"
+          },
+          "a8c75030-d687-4bd1-9903-453a6705c2a4": {
+            "id": "a8c75030-d687-4bd1-9903-453a6705c2a4",
+            "type": "project",
+            "model": {
+              "name": "rum-router-fmg",
+              "icon": "",
+              "color": "#f75468",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/devel/rum/rum-router-fmg"
+              ]
+            },
+            "children": [],
+            "parentId": "74beaf4a-ea7b-4a77-ad3f-1bfea400cca7"
+          },
+          "92e3096e-da03-4aab-a523-183176e6d432": {
+            "id": "92e3096e-da03-4aab-a523-183176e6d432",
+            "type": "project",
+            "model": {
+              "name": "rum-router-market-groupings",
+              "icon": "",
+              "color": "#f75468",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/devel/rum/rum-router-market-groupings"
+              ]
+            },
+            "children": [],
+            "parentId": "74beaf4a-ea7b-4a77-ad3f-1bfea400cca7"
+          },
+          "dade85ac-f3d6-406d-93ed-337ad38c1dd6": {
+            "id": "dade85ac-f3d6-406d-93ed-337ad38c1dd6",
+            "type": "project",
+            "model": {
+              "name": "rum-router-az-sports",
+              "icon": "",
+              "color": "#f75468",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/devel/rum/rum-router-az-sports"
+              ]
+            },
+            "children": [],
+            "parentId": "74beaf4a-ea7b-4a77-ad3f-1bfea400cca7"
+          },
+          "cb9f6962-2800-4a4d-9b0c-5e3419a51a42": {
+            "id": "cb9f6962-2800-4a4d-9b0c-5e3419a51a42",
+            "type": "project",
+            "model": {
+              "name": "rum-router-facet",
+              "icon": "",
+              "color": "#f75468",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/devel/rum/rum-router-facet"
+              ]
+            },
+            "children": [],
+            "parentId": "74beaf4a-ea7b-4a77-ad3f-1bfea400cca7"
+          },
+          "59d975cc-86a5-44da-b394-b5b51a49408e": {
+            "id": "59d975cc-86a5-44da-b394-b5b51a49408e",
+            "type": "project",
+            "model": {
+              "name": "rum-router-badges",
+              "icon": "",
+              "color": "#f75468",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/devel/rum/rum-router-badges"
+              ]
+            },
+            "children": [],
+            "parentId": "74beaf4a-ea7b-4a77-ad3f-1bfea400cca7"
+          },
+          "7beec83c-8298-46cb-80b7-f466b3ac3255": {
+            "id": "7beec83c-8298-46cb-80b7-f466b3ac3255",
+            "type": "project",
+            "model": {
+              "name": "rum-router-publish",
+              "icon": "",
+              "color": "#f75468",
+              "devMode": false,
+              "config": {},
+              "paths": [
+                "/Users/guimaraesj/devel/rum/rum-router-publish"
+              ]
+            },
+            "children": [],
+            "parentId": "74beaf4a-ea7b-4a77-ad3f-1bfea400cca7"
+          },
+          "80126e04-e7bb-4671-b49f-de55ca0df087": {
+            "id": "80126e04-e7bb-4671-b49f-de55ca0df087",
+            "type": "group",
+            "model": {
+              "collapsed": false,
+              "color": "#d8dad3",
+              "name": "cookbooks",
+              "sortBy": "position"
+            },
+            "children": [],
+            "parentId": "1bc9f99c-a61c-454e-a039-0d16a03e6072"
+          }
+        },
+        "ids": [
+          "8d6f8a28-2741-48fc-b919-0930642f0384",
+          "6d03ee8c-950b-4243-97a3-ce2f9373067b",
+          "8c8f66ff-901d-466a-875e-f609ac90ffec",
+          "f5c7cb73-6191-4738-aa53-9651e1410766",
+          "947a70af-5bf3-49e8-b388-0fe2822e5436",
+          "ccc70aea-afe3-4488-b3a1-34323663d117",
+          "eaf1cf8c-8445-4e8c-a5c4-05a039500b14",
+          "7a05d03f-4621-4daa-a064-939e1cba2674",
+          "6b70e180-cbed-4830-bf18-6665ebe2ccdb",
+          "733494fa-eea6-4336-98ee-e775a0590480",
+          "ec8a9f57-641d-49e0-8a54-79f8f22550d2",
+          "898e21aa-e9b9-43a0-ab8a-96a3135d5519",
+          "cb941341-07b7-46af-a651-5abd5c3c3679",
+          "267f9404-0601-4191-b96b-ec907bb88074",
+          "6baf8e6b-36f7-4b7d-ba85-52f7052a5fa8",
+          "1bc9f99c-a61c-454e-a039-0d16a03e6072",
+          "137f3243-3608-4cf1-9693-78ad8f852f5d",
+          "f18eec32-d10c-4ae7-b301-8fac09adf5e5",
+          "883494ae-84e8-4555-9a01-824d063c7e33",
+          "793ea68a-b20f-4c9a-bb84-a3a4dbae23b2",
+          "e2c53b19-fd25-4811-b314-74e79da3191a",
+          "1a1c0585-902d-4010-9463-1d0843e684f1",
+          "ff6ca98f-ab6c-477c-8394-6bcd111134fa",
+          "3382e863-faca-4ecc-8941-7663f2f71bfb",
+          "266b2539-1ffa-4a94-9b00-216845cfe963",
+          "9f8978e8-cfcc-4a0e-8490-30582799b54e",
+          "7e886293-1518-4c00-9882-3ab6110eb064",
+          "67ee54d7-ed54-4d49-8ffb-e49d354e9f4d",
+          "665aeddf-ccd6-4ebc-9f17-061b511b106f",
+          "f1c8b38c-9882-4faa-a5db-197b9d1474c3",
+          "5214a7a4-2d93-45c8-9dca-5f3bfb16e3b8",
+          "4173d2b6-ddf1-4cb8-91e9-f5198c08fec1",
+          "9e45b177-dc1c-4766-b925-042d0300d753",
+          "08d3c828-a02d-40ba-882b-10db2f3c0779",
+          "796a84c3-ec01-46fe-8333-afb8951c3016",
+          "3236f665-2b81-4a78-9e98-9f59701bbd9c",
+          "1fd7cb70-365b-4fed-9410-7e8fa36d1c8a",
+          "85b493d9-474a-404b-9ad9-1b103cfb3b53",
+          "4221e74a-d9fd-4a04-a615-6f3e1b4871f3",
+          "a307e462-e6c5-4ef4-9e75-1b458a796d12",
+          "0d74222b-c823-494a-88fa-e7c0a11b15d8",
+          "460da562-5bed-45f9-a52a-7be8caec2556",
+          "2131dfca-a8db-4baa-ae09-ba7c2a29f6fd",
+          "15f6c6e3-c000-4ade-ae71-079613fba68e",
+          "a2498000-7d04-42cf-9874-c0af87369d00",
+          "ed3000ca-13df-488a-9040-f548a1740623",
+          "3b820587-009d-40e9-a590-97a0dbf06cd2",
+          "96f1a7fe-b75e-4366-a955-a175cef09d4b",
+          "d24b68b9-7810-4d5b-a063-3c0be919a78d",
+          "3a281a05-8f0b-4e73-b4b8-e48d6babe288",
+          "c4e57273-3522-4b84-a441-82f70cb39a9c",
+          "14608665-e6ed-4bd1-b3d2-0b94240eb710",
+          "067f2534-5746-4779-93dd-50bf2adca6ec",
+          "4cfcd691-05e8-49a6-980f-33d96eb75676",
+          "5f223dce-8b1f-4acc-91bb-c5defdafbfde",
+          "0721cb08-6c27-4897-b215-b46d5a876554",
+          "093a6ac8-d509-4961-b6c7-a13dd8ca1a4e",
+          "f61e278c-68f4-4a95-aae5-9f923bc043e2",
+          "e17ba88c-2f28-4423-a1d7-4e6f9e604260",
+          "7e855b56-0c67-4c4d-8206-819dade5b849",
+          "3afdf5d6-c8cf-494b-a615-f946202f53f0",
+          "74beaf4a-ea7b-4a77-ad3f-1bfea400cca7",
+          "a8c75030-d687-4bd1-9903-453a6705c2a4",
+          "92e3096e-da03-4aab-a523-183176e6d432",
+          "dade85ac-f3d6-406d-93ed-337ad38c1dd6",
+          "cb9f6962-2800-4a4d-9b0c-5e3419a51a42",
+          "59d975cc-86a5-44da-b394-b5b51a49408e",
+          "7beec83c-8298-46cb-80b7-f466b3ac3255",
+          "80126e04-e7bb-4671-b49f-de55ca0df087"
+        ],
+        "parentId": null,
+        "selectedId": "cb941341-07b7-46af-a651-5abd5c3c3679"
+      }
+    },
+    "file-icons": {
+      "paths": {
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/services/context-switcher.js": {
+          "icon": [
+            1,
+            676,
+            "js-icon"
+          ],
+          "inode": 80178148
+        },
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/components/project-component.js": {
+          "icon": [
+            1,
+            676,
+            "js-icon"
+          ],
+          "inode": 80178074
+        },
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/services/database.js": {
+          "icon": [
+            1,
+            676,
+            "js-icon"
+          ],
+          "inode": 80178112
+        },
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/.all-contributorsrc": {
+          "icon": [
+            1,
+            1300,
+            "gear-icon"
+          ],
+          "inode": 80178094
+        },
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/.babelrc": {
+          "icon": [
+            1,
+            275,
+            "babel-icon"
+          ],
+          "inode": 76245410
+        },
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/.editorconfig": {
+          "icon": [
+            1,
+            459,
+            "editorconfig-icon"
+          ],
+          "inode": 63397582
+        },
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/.eslintignore": {
+          "icon": [
+            1,
+            72,
+            "eslint-icon"
+          ],
+          "inode": 68429557
+        },
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/.eslintrc": {
+          "icon": [
+            1,
+            73,
+            "eslint-icon"
+          ],
+          "inode": 80180065
+        },
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/.gitignore": {
+          "icon": [
+            1,
+            576,
+            "git-icon"
+          ],
+          "inode": 76245412
+        },
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/.nvmrc": {
+          "icon": [
+            1,
+            873,
+            "node-icon"
+          ],
+          "inode": 63397014
+        },
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/.travis.yml": {
+          "icon": [
+            1,
+            162,
+            "travis-icon"
+          ],
+          "inode": 80178095
+        },
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/appveyor.yml": {
+          "icon": [
+            1,
+            14,
+            "appveyor-icon"
+          ],
+          "inode": 80178097
+        },
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/CHANGELOG.md": {
+          "icon": [
+            1,
+            758,
+            "markdown-icon"
+          ],
+          "inode": 76245413
+        },
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/circle.yml": {
+          "icon": [
+            1,
+            47,
+            "circleci-icon"
+          ],
+          "inode": 80178105
+        },
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/CODE_OF_CONDUCT.md": {
+          "icon": [
+            1,
+            758,
+            "markdown-icon"
+          ],
+          "inode": 64349122
+        },
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/CONTRIBUTING.md": {
+          "icon": [
+            1,
+            758,
+            "markdown-icon"
+          ],
+          "inode": 76245414
+        },
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/LICENSE.md": {
+          "icon": [
+            1,
+            758,
+            "markdown-icon"
+          ],
+          "inode": 66727979
+        },
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/package.json": {
+          "icon": [
+            1,
+            126,
+            "npm-icon"
+          ],
+          "inode": 80178113
+        },
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/README.md": {
+          "icon": [
+            1,
+            141,
+            "book-icon"
+          ],
+          "inode": 80178096
+        },
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x": {
+          "icon": null,
+          "inode": 63389324
+        },
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/.git": {
+          "icon": [
+            1,
+            9,
+            "git-icon"
+          ],
+          "inode": 63734506
+        },
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/bundle": {
+          "icon": null,
+          "inode": 80177877
+        },
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/keymaps": {
+          "icon": null,
+          "inode": 63410615
+        },
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib": {
+          "icon": null,
+          "inode": 63389369
+        },
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/node_modules": {
+          "icon": [
+            1,
+            14,
+            "node-icon"
+          ],
+          "inode": 77696805
+        },
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/spec": {
+          "icon": null,
+          "inode": 76245444
+        },
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/styles": {
+          "icon": null,
+          "inode": 63422872
+        },
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/keymaps/project-viewer-x.json": {
+          "icon": [
+            1,
+            414,
+            "database-icon"
+          ],
+          "inode": 63410616
+        },
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/main.js": {
+          "icon": [
+            1,
+            676,
+            "js-icon"
+          ],
+          "inode": 63389376
+        },
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/package.js": {
+          "icon": [
+            1,
+            676,
+            "js-icon"
+          ],
+          "inode": 80178110
+        },
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/components": {
+          "icon": null,
+          "inode": 75606706
+        },
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/constants": {
+          "icon": null,
+          "inode": 76245435
+        },
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/containers": {
+          "icon": null,
+          "inode": 75606700
+        },
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/services": {
+          "icon": null,
+          "inode": 76245441
+        },
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/components/empty-component.js": {
+          "icon": [
+            1,
+            676,
+            "js-icon"
+          ],
+          "inode": 80178106
+        },
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/components/group-component.js": {
+          "icon": [
+            1,
+            676,
+            "js-icon"
+          ],
+          "inode": 80178073
+        },
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/components/main-component.js": {
+          "icon": [
+            1,
+            676,
+            "js-icon"
+          ],
+          "inode": 80178045
+        },
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/components/select-list-component.js": {
+          "icon": [
+            1,
+            676,
+            "js-icon"
+          ],
+          "inode": 80178075
+        },
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/constants/base.js": {
+          "icon": [
+            1,
+            676,
+            "js-icon"
+          ],
+          "inode": 80178146
+        },
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/constants/config.js": {
+          "icon": [
+            1,
+            676,
+            "js-icon"
+          ],
+          "inode": 80178108
+        },
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/containers/groups-container.js": {
+          "icon": [
+            1,
+            676,
+            "js-icon"
+          ],
+          "inode": 80178024
+        },
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/containers/main-container.js": {
+          "icon": [
+            1,
+            676,
+            "js-icon"
+          ],
+          "inode": 80178147
+        },
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/containers/projects-container.js": {
+          "icon": [
+            1,
+            676,
+            "js-icon"
+          ],
+          "inode": 80178025
+        },
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/containers/select-list-container.js": {
+          "icon": [
+            1,
+            676,
+            "js-icon"
+          ],
+          "inode": 80178076
+        },
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/containers/status-container.js": {
+          "icon": [
+            1,
+            676,
+            "js-icon"
+          ],
+          "inode": 80178077
+        },
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/spec/_base-spec.js": {
+          "icon": [
+            1,
+            185,
+            "test-js-icon"
+          ],
+          "inode": 80177972
+        },
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/spec/package-spec.js": {
+          "icon": [
+            1,
+            185,
+            "test-js-icon"
+          ],
+          "inode": 80178115
+        },
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/spec/fixtures": {
+          "icon": null,
+          "inode": 80177934
+        },
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/spec/services": {
+          "icon": null,
+          "inode": 80178116
+        },
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/spec/fixtures/database.json": {
+          "icon": [
+            1,
+            414,
+            "database-icon"
+          ],
+          "inode": 80178114
+        },
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/1.x.x-state.js": {
+          "icon": [
+            1,
+            676,
+            "js-icon"
+          ],
+          "inode": 80843296
+        },
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/spec/fixtures/1.x.x-state.js": {
+          "icon": [
+            1,
+            676,
+            "js-icon"
+          ],
+          "inode": 80843296
+        },
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/spec/fixtures/2.x.x-state.js": {
+          "icon": [
+            1,
+            676,
+            "js-icon"
+          ],
+          "inode": 80843314
+        },
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/spec/fixtures/2.x.x-state.json": {
+          "icon": [
+            1,
+            414,
+            "database-icon"
+          ],
+          "inode": 80843314
+        },
+        "/Users/guimaraesj/personal/devel/atom-project-viewer-x/spec/fixtures/1.x.x-state.json": {
+          "icon": [
+            1,
+            414,
+            "database-icon"
+          ],
+          "inode": 80843296
+        }
+      },
+      "version": 2
+    },
+    "find-and-replace": {
+      "findOptions": {
+        "findPattern": "saveContext",
+        "replacePattern": "",
+        "pathsPattern": "",
+        "useRegex": false,
+        "wholeWord": false,
+        "caseSensitive": false,
+        "inCurrentSelection": false,
+        "leadingContextLineCount": 0,
+        "trailingContextLineCount": 0
+      },
+      "findHistory": [
+        "key",
+        "key:",
+        "facet",
+        "connect",
+        "FMG",
+        "sports-fmg",
+        "router",
+        "market",
+        "cano",
+        "javasc",
+        "comme",
+        ".syntax--storage",
+        "setActiveProject",
+        "onDid",
+        "onDidChan",
+        "did-change-content",
+        "getProjectByPaths",
+        "setActiveProject",
+        "setInitialSelectedProject",
+        "max",
+        "warn",
+        "space",
+        "curly",
+        "setInitialSelectedProject",
+        "saveContext"
+      ],
+      "replaceHistory": [
+        "fmgVersion",
+        "version",
+        "path",
+        "hostname"
+      ],
+      "pathsHistory": []
+    },
+    "pigments": {
+      "project": {
+        "deserializer": "ColorProject",
+        "timestamp": "2017-11-02T07:49:09.694Z",
+        "version": "1.0.2",
+        "markersVersion": "1.0.10",
+        "globalSourceNames": [
+          "**/*.css",
+          "**/*.styl",
+          "**/*.stylus",
+          "**/*.less",
+          "**/*.sass",
+          "**/*.scss"
+        ],
+        "globalIgnoredNames": [
+          "vendor/*",
+          "node_modules/*",
+          "spec/*",
+          "test/*"
+        ],
+        "buffers": {
+          "2": {
+            "id": 2,
+            "path": "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/services/context-switcher.js",
+            "colorMarkers": []
+          },
+          "11": {
+            "id": 11,
+            "path": "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/services/database.js",
+            "colorMarkers": []
+          }
+        },
+        "paths": [
+          "/Users/guimaraesj/personal/devel/atom-project-viewer-x/styles/project-viewer-x.less"
+        ],
+        "variables": {
+          "deserializer": "VariablesCollection",
+          "content": []
+        }
+      }
+    }
+  },
+  "grammars": {
+    "grammarOverridesByPath": {}
+  },
+  "fullScreen": false,
+  "windowDimensions": {
+    "x": 0,
+    "y": 23,
+    "width": 1427,
+    "height": 1146,
+    "maximized": false
+  },
+  "textEditors": {
+    "editorGrammarOverrides": {}
+  },
+  "treeView": {
+    "directoryExpansionStates": {
+      "/Users/guimaraesj/personal/devel/atom-project-viewer-x": {
+        "isExpanded": true,
+        "entries": {
+          ".git": {
+            "isExpanded": false,
+            "entries": {}
+          },
+          "bundle": {
+            "isExpanded": false,
+            "entries": {}
+          },
+          "keymaps": {
+            "isExpanded": false,
+            "entries": {}
+          },
+          "lib": {
+            "isExpanded": true,
+            "entries": {
+              "components": {
+                "isExpanded": false,
+                "entries": {}
+              },
+              "constants": {
+                "isExpanded": true,
+                "entries": {}
+              },
+              "containers": {
+                "isExpanded": true,
+                "entries": {}
+              },
+              "services": {
+                "isExpanded": false,
+                "entries": {}
+              }
+            }
+          },
+          "node_modules": {
+            "isExpanded": false,
+            "entries": {}
+          },
+          "spec": {
+            "isExpanded": true,
+            "entries": {
+              "fixtures": {
+                "isExpanded": true,
+                "entries": {}
+              },
+              "services": {
+                "isExpanded": false,
+                "entries": {}
+              }
+            }
+          },
+          "styles": {
+            "isExpanded": false,
+            "entries": {}
+          }
+        }
+      }
+    },
+    "deserializer": "TreeView",
+    "selectedPath": "/Users/guimaraesj/personal/devel/atom-project-viewer-x/lib/services",
+    "scrollLeft": 0,
+    "scrollTop": 0,
+    "width": 0
+  }
+}
