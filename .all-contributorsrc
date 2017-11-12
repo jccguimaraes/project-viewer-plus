@@ -1,0 +1,172 @@
+{
+  "projectName": "atom-project-viewer",
+  "projectOwner": "jccguimaraes",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "contributors": [
+    {
+      "login": "jccguimaraes",
+      "name": "João Guimarães",
+      "avatar_url": "https://avatars.githubusercontent.com/u/14871650?v=3",
+      "profile": "https://github.com/jccguimaraes",
+      "contributions": [
+        "question",
+        "bug",
+        "code",
+        "design",
+        "doc",
+        "review"
+      ]
+    },
+    {
+      "login": "Hammster",
+      "name": "Hans Koch",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1093709?v=3",
+      "profile": "https://github.com/Hammster",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "DamnedScholar",
+      "name": "Holland Wilson",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4084322?v=3",
+      "profile": "https://github.com/DamnedScholar",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "amilor",
+      "name": "Roman Huba",
+      "avatar_url": "https://avatars.githubusercontent.com/u/7261682?v=3",
+      "profile": "https://github.com/amilor",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "lneveu",
+      "name": "Loann Neveu",
+      "avatar_url": "https://avatars.githubusercontent.com/u/10619585?v=3",
+      "profile": "https://github.com/lneveu",
+      "contributions": [
+        "code",
+        "bug"
+      ]
+    },
+    {
+      "login": "bitkris-dev",
+      "name": "Kristian Barrese",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/12634286?v=3&s=460",
+      "profile": "https://github.com/bitkris-dev",
+      "contributions": [
+        "design",
+        "bug"
+      ]
+    },
+    {
+      "login": "girlandhercode",
+      "name": "Nicole",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2183606?v=3",
+      "profile": "https://github.com/girlandhercode",
+      "contributions": [
+        "bug"
+      ]
+    },
+    {
+      "login": "colorful-tones",
+      "name": "Damon Cook",
+      "avatar_url": "https://avatars.githubusercontent.com/u/405912?v=3",
+      "profile": "http://www.damonacook.com",
+      "contributions": [
+        "bug"
+      ]
+    },
+    {
+      "login": "zhudock",
+      "name": "Zach Hudock",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12414689?v=3",
+      "profile": "https://github.com/zhudock",
+      "contributions": [
+        "bug"
+      ]
+    },
+    {
+      "login": "CKLFP",
+      "name": "Filip Paço",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5192692?v=3",
+      "profile": "https://github.com/CKLFP",
+      "contributions": [
+        "bug"
+      ]
+    },
+    {
+      "login": "stephen-last",
+      "name": "Stephen Last",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/16349203?v=3",
+      "profile": "https://github.com/stephen-last",
+      "contributions": [
+        "bug"
+      ]
+    },
+    {
+      "login": "GreenGremlin",
+      "name": "Jonathan",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/647452?v=3",
+      "profile": "https://github.com/GreenGremlin",
+      "contributions": [
+        "bug"
+      ]
+    },
+    {
+      "login": "skratchdot",
+      "name": "◬",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/434470?v=3",
+      "profile": "http://skratchdot.com/",
+      "contributions": [
+        "bug"
+      ]
+    },
+    {
+      "login": "erikgeiser",
+      "name": "Erik G.",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/14264874?v=3",
+      "profile": "https://github.com/erikgeiser",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "rgawenda",
+      "name": "netizen",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/3426685?v=4",
+      "profile": "https://github.com/rgawenda",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "mdeuerlein",
+      "name": "Markus M. Deuerlein",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/14030524?v=4",
+      "profile": "https://entidia.de",
+      "contributions": [
+        "bug",
+        "code"
+      ]
+    },
+    {
+      "login": "audrummer15",
+      "name": "Adam Brown",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/1392689?v=4",
+      "profile": "https://github.com/audrummer15",
+      "contributions": [
+        "code"
+      ]
+    }
+  ]
+}
