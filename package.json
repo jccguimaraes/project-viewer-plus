@@ -21,7 +21,7 @@
     "etch": "0.12.6"
   },
   "deserializers": {
-    "ProjectViewer": "deserialize"
+    "ProjectViewerPlus": "deserialize"
   },
   "devDependencies": {
     "all-contributors-cli": "latest",
@@ -46,14 +46,10 @@
   },
   "scripts": {
     "contribute": "all-contributors",
-    "clean": "rm -rf bundle",
     "compile": "babel lib --out-dir bundle",
     "linter": "eslint ./build",
-    "precommit": "npm run test",
-    "prepublish": "npm run clean && npm run compile",
-    "prepush": "npm run test",
+    "pretest": "npm run linter",
     "test": "apm test",
-    "dev:test": "npm run clean && npm run compile && npm run linter && npm run test",
     "watch": "babel --watch lib --out-dir bundle"
   },
   "atomTranspilers": [
