@@ -3,6 +3,8 @@
 [![Code of Conduct][coc-badge]][coc]
 
 [![Travis][travis-badge]][travis]
+[![AppVeyor][appveyor-badge]][appveyor]
+[![Circle][circle-badge]][circle]
 
 ## Introduction
 
@@ -35,3 +37,7 @@ Atom changes a lot and, due to this nature, sometimes code breaks, features get 
 [coc]: https://gitlab.com/jccguimaraes/atom-project-viewer-plus/blob/master/CODE_OF_CONDUCT.md
 [travis-badge]: https://img.shields.io/travis/jccguimaraes/project-viewer-plus/master.svg?style=flat-square
 [travis]: https://travis-ci.org/jccguimaraes/project-viewer-plus
+[appveyor-badge]: https://img.shields.io/appveyor/ci/jccguimaraes/project-viewer-plus/master.svg?style=flat-square
+[appveyor]: https://ci.appveyor.com/project/jccguimaraes/project-viewer-plus
+[circle-badge]: https://img.shields.io/circleci/project/jccguimaraes/project-viewer-plus/master.svg?style=flat-square
+[circle]: https://circleci.com/gh/jccguimaraes/project-viewer-plus
