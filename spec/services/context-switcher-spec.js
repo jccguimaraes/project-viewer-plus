@@ -14,7 +14,6 @@ describe("context-switcher", function () {
   });
 
   beforeEach(function () {
-    console.log('PLUGIN_NAME', PLUGIN_NAME);
     waitsForPromise(() => atom.packages.activatePackage(PLUGIN_NAME));
     waitsForPromise(() => atom.packages.activatePackage('tree-view'));
     waitsForPromise(() => atom.packages.activatePackage('status-bar'));
@@ -38,21 +37,6 @@ describe("context-switcher", function () {
 
   it('should return a singleton', function () {
     expect(ContextSwitcher.instance).toBe(this.ctx);
-  });
-
-  it('should get tree-view\'s state', function () {
-    const pkg = this.ctx.getTreeView();
-    expect(pkg.name).toBe('tree-view');
-  });
-
-  it('should get status-bar\'s state', function () {
-    const pkg = this.ctx.getStatusBar();
-    expect(pkg.name).toBe('status-bar');
-  });
-
-  it('should get find-and-replace\'s state', function () {
-    const pkg = this.ctx.getFindAndReplace();
-    expect(pkg.name).toBe('find-and-replace');
   });
 
   describe('when saving a state', function () {
