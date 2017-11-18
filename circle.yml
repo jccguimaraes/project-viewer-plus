@@ -1,22 +1,16 @@
 machine:
-  xcode:
-    version: 8.3
   environment:
-    NVM_DIR: "${HOME}/.nvm"
-    NODE_VERSION: "7.4.0"
-    PATH: "${PATH}:/usr/local/opt/llvm/bin"
+    ATOM_LINT_WITH_BUNDLED_NODE: "true"
+    APM_TEST_PACKAGES: ""
+    ATOM_CHANNEL: "stable"
 
 dependencies:
-  pre:
-  - brew update
-  - brew install nvm llvm
-  - mkdir -p ${NVM_DIR}
-  - echo "source /usr/local/opt/nvm/nvm.sh" >> ~/.bashrc
-  - nvm install ${NODE_VERSION}
-  - nvm alias default ${NODE_VERSION}
   override:
-  - npm install
+    - curl -s -O https://raw.githubusercontent.com/atom/ci/master/build-package.sh
+    - chmod u+x build-package.sh
 
 test:
   override:
-  - npm run test
+    - ./build-package.sh
+    # On MacOS:
+    # - caffeinate -s build-package.sh
