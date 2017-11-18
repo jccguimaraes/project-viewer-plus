@@ -8,12 +8,13 @@
 
 ## Introduction
 
-A community package for organizing groups of projects.
+A community package for organizing groups of projects. Enjoy and contribute! 🌍
 
 *Key features*
 
 - Rewritten with [**Babel**][babel] and [**Etch**][etch];
-- A suite of automation tests for better stability and maintainability.
+- A suite of automation tests for better stability and maintainability;
+- Uses dock instead of panel.
 
 ## Configuration
 

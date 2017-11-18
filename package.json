@@ -13,12 +13,12 @@
   "repository": "https://github.com/jccguimaraes/project-viewer-plus",
   "license": "MIT",
   "engines": {
-    "atom": ">=1.22.0"
+    "atom": ">=1.22.1"
   },
   "private": true,
   "dependencies": {
-    "atom-select-list": "0.3.2",
-    "etch": "0.12.6"
+    "atom-select-list": "0.5.0",
+    "etch": "0.12.7"
   },
   "deserializers": {
     "ProjectViewerPlus": "deserialize"
@@ -28,7 +28,7 @@
     "atom-babel6-transpiler": "1.1.2",
     "babel-cli": "6.26.0",
     "babel-core": "6.26.0",
-    "babel-eslint": "8.0.1",
+    "babel-eslint": "8.0.2",
     "babel-plugin-add-module-exports": "0.2.1",
     "babel-plugin-inline-json-import": "0.2.1",
     "babel-plugin-transform-async-to-generator": "6.24.1",
@@ -41,13 +41,13 @@
     "babel-plugin-transform-function-bind": "6.22.0",
     "babel-plugin-transform-object-rest-spread": "6.26.0",
     "babel-preset-react": "6.24.1",
-    "eslint": "4.9.0",
+    "eslint": "4.11.0",
     "uuid": "^3.1.0"
   },
   "scripts": {
     "contribute": "all-contributors",
     "compile": "babel lib --out-dir bundle",
-    "linter": "eslint ./build",
+    "linter": "eslint ./lib",
     "pretest": "npm run linter",
     "test": "apm test",
     "watch": "babel --watch lib --out-dir bundle"
