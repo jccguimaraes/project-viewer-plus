@@ -35,7 +35,7 @@ Atom changes a lot and, due to this nature, sometimes code breaks, features get 
 [babel]: https://babeljs.io/
 [etch]: https://github.com/atom/etch
 [coc-badge]: https://img.shields.io/badge/%E2%9D%A4-code%20of%20conduct-blue.svg?style=flat-square
-[coc]: https://gitlab.com/jccguimaraes/atom-project-viewer-plus/blob/master/CODE_OF_CONDUCT.md
+[coc]: ./CODE_OF_CONDUCT.md
 [travis-badge]: https://img.shields.io/travis/jccguimaraes/project-viewer-plus/master.svg?style=flat-square
 [travis]: https://travis-ci.org/jccguimaraes/project-viewer-plus
 [appveyor-badge]: https://img.shields.io/appveyor/ci/jccguimaraes/project-viewer-plus/master.svg?style=flat-square
