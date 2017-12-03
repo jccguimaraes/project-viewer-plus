@@ -18,3 +18,31 @@ Settings | Type | Default | Description
 `statusBar` | `boolean` | `false` | Tick to disable messing with `status-bar` package.
 `linter` | `boolean` | `false` | Tick to disable messing with `linter` and `linter-ui-default` packages.
 `github` | `boolean` | `false` | Tick to disable messing with `github` package.
+
+### Database File
+
+```json
+// project-viewer-plus.json
+{
+  "groups": [
+    {
+      "groups": [
+        {
+          "groups": [],
+          "projects": []
+        }
+      ],
+      "projects": []
+    }
+  ],
+  "projects": [
+    {
+      "name": "project-name",
+      "icon": "project-icon",
+      "paths": [
+        "/path/to/project"
+      ]
+    }
+  ]
+}
+```
