@@ -1,5 +1,11 @@
 # Configuration
 
+### Database
+
+Settings | Type | Default | Description
+---------|------|---------|------------
+`path` | `string` | `process.env.ATOM_HOME` | If set to any local path, it will override the default path `ex: ~/atom`.
+
 ### Dock
 
 Settings | Type | Default | Description

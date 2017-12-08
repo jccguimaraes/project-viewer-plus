@@ -10,8 +10,7 @@
     ["transform-do-expressions", {}],
     ["transform-function-bind", {}],
     ["transform-object-rest-spread", {}],
-    ["transform-flow-strip-types", {}],
-    ["inline-json-import", {}]
+    ["transform-flow-strip-types", {}]
   ],
   "presets": ["react"]
 }
