@@ -1,9 +1,25 @@
 'use strict';
 
+const path = require('path');
 const ContextSwitcher = require('../../bundle/services/context-switcher');
 const { PLUGIN_NAME, MESSAGES } = require('../../bundle/constants/base');
 
 describe("context-switcher", function () {
+
+  // INIT - THIS IS REALLY IMPORTANT AND SHOULD BE ON EVERY TEST FILE
+  //      - KEEP IN MIND THE RELATIVE PATH OF __DIRNAME
+  beforeEach(function () {
+    this.CURRENT_PATH = atom.config.get(`${PLUGIN_NAME}.database.localPath`);
+    atom.config.set(
+      `${PLUGIN_NAME}.database.localPath`,
+      path.join(__dirname, '..', 'fixtures')
+    );
+  });
+
+  afterEach(function () {
+    atom.config.set(`${PLUGIN_NAME}.database.localPath`, this.CURRENT_PATH);
+  });
+  // END - THIS IS REALLY IMPORTANT AND SHOULD BE ON EVERY TEST FILE
 
   beforeEach(function () {
     spyOn(atom.getStorageFolder(), 'storeSync');

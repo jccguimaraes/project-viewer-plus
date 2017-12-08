@@ -1,8 +1,25 @@
 'use strict';
 
+const path = require('path');
 const Database = require('../../bundle/services/database');
+const { PLUGIN_NAME } = require('../../bundle/constants/base');
 
 describe('database', function () {
+
+  // INIT - THIS IS REALLY IMPORTANT AND SHOULD BE ON EVERY TEST FILE
+  //      - KEEP IN MIND THE RELATIVE PATH OF __DIRNAME
+  beforeEach(function () {
+    this.CURRENT_PATH = atom.config.get(`${PLUGIN_NAME}.database.localPath`);
+    atom.config.set(
+      `${PLUGIN_NAME}.database.localPath`,
+      path.join(__dirname, '..', 'fixtures')
+    );
+  });
+
+  afterEach(function () {
+    atom.config.set(`${PLUGIN_NAME}.database.localPath`, this.CURRENT_PATH);
+  });
+  // END - THIS IS REALLY IMPORTANT AND SHOULD BE ON EVERY TEST FILE
 
   beforeEach(function () {
     this.db = new Database();
