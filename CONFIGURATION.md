@@ -4,7 +4,7 @@
 
 Settings | Type | Default | Description
 ---------|------|---------|------------
-`path` | `string` | `process.env.ATOM_HOME` | If set to any local path, it will override the default path `ex: ~/atom`.
+`path` | `string` | `process.env.ATOM_HOME` | If set to any local path, it will override the default path `ex: ~/.atom`.
 
 ### Dock
 
