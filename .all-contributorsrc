@@ -6,5 +6,30 @@
   ],
   "imageSize": 50,
   "commit": false,
-  "contributors": []
+  "contributors": [
+    {
+      "login": "jccguimaraes",
+      "name": "João Guimarães",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/14871650?v=4",
+      "profile": "https://github.com/jccguimaraes",
+      "contributions": [
+        "bug",
+        "code",
+        "design",
+        "doc",
+        "ideas"
+      ]
+    },
+    {
+      "login": "Hammster",
+      "name": "Hans Koch",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/1093709?v=4",
+      "profile": "http://hans-koch.me",
+      "contributions": [
+        "code",
+        "doc",
+        "ideas"
+      ]
+    }
+  ]
 }
