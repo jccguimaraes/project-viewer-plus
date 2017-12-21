@@ -13,7 +13,7 @@
   "repository": "https://github.com/jccguimaraes/project-viewer-plus",
   "license": "MIT",
   "engines": {
-    "atom": ">=1.22.1"
+    "atom": ">=1.23.1"
   },
   "dependencies": {
     "atom-select-list": "0.7.0",
@@ -39,7 +39,7 @@
     "babel-plugin-transform-function-bind": "6.22.0",
     "babel-plugin-transform-object-rest-spread": "6.26.0",
     "babel-preset-react": "6.24.1",
-    "eslint": "4.13.0",
+    "eslint": "4.13.1",
     "uuid": "3.1.0"
   },
   "scripts": {
