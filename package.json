@@ -13,7 +13,7 @@
   "repository": "https://github.com/jccguimaraes/project-viewer-plus",
   "license": "MIT",
   "engines": {
-    "atom": ">=1.23.1"
+    "atom": ">=1.23.2"
   },
   "dependencies": {
     "atom-select-list": "0.7.0",
@@ -23,7 +23,7 @@
     "ProjectViewerPlus": "deserialize"
   },
   "devDependencies": {
-    "all-contributors-cli": "4.10.0",
+    "all-contributors-cli": "4.10.1",
     "atom-babel6-transpiler": "1.1.2",
     "babel-cli": "6.26.0",
     "babel-core": "6.26.0",
