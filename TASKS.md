@@ -2,15 +2,25 @@
 
 ### Database
 
-##### Expand / Collapse (*in-progress*)
+##### File (*todo*)
 
-- Remove expand / collapse configuration from the file and pass it to the atom serialization process.
+- Validate when no file exists;
+- Create on no file detected;
+- Convert old file to new one
 
-##### Update (*in-progress*)
+##### Expand / Collapse (*todo*)
 
-- Current implementation is not very performant friendly
+- Remove expand / collapse configuration from the file and pass it to the atom serialisation process.
 
-##### Selected project (*in-progress*)
+##### Update (*todo*)
+
+- Current implementation is not very performant friendly.
+
+##### Gist (*todo*)
+
+- Refactor all logic to be more compact.
+
+##### Selected project (*todo*)
 
 - Every time that an update is done, the selected project is whipped (add state?).
 
