@@ -3,7 +3,7 @@
 const path = require('path');
 const { PLUGIN_NAME } = require('../bundle/constants/base');
 
-describe("package", function () {
+describe('package', function () {
 
   // INIT - THIS IS REALLY IMPORTANT AND SHOULD BE ON EVERY TEST FILE
   //      - KEEP IN MIND THE RELATIVE PATH OF __DIRNAME
