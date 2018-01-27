@@ -1,0 +1,23 @@
+{
+  "context-menu": {},
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "Project Viewer Plus",
+          "submenu": [
+            {
+              "label": "Open/Edit database file",
+              "command": "project-viewer-plus:open-database-file"
+            },
+            {
+              "label": "Open Editor",
+              "command": "project-viewer-plus:open-editor"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
