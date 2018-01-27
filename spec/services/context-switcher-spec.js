@@ -4,7 +4,7 @@ const path = require('path');
 const ContextSwitcher = require('../../bundle/services/context-switcher');
 const { PLUGIN_NAME, MESSAGES } = require('../../bundle/constants/base');
 
-describe("context-switcher", function () {
+describe('context-switcher', function () {
 
   // INIT - THIS IS REALLY IMPORTANT AND SHOULD BE ON EVERY TEST FILE
   //      - KEEP IN MIND THE RELATIVE PATH OF __DIRNAME
