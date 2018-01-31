@@ -32,8 +32,14 @@ Settings | Type | Default | Description
 {
   "groups": [
     {
+      "name": "project-name",
+      "icon": "default-icon",
+      "sortBy": "position",
       "groups": [
         {
+          "name": "project-name",
+          "icon": "default-icon",
+          "sortBy": "alphabetically",
           "groups": [],
           "projects": []
         }
@@ -44,7 +50,7 @@ Settings | Type | Default | Description
   "projects": [
     {
       "name": "project-name",
-      "icon": "project-icon",
+      "icon": "default-icon",
       "paths": [
         "/path/to/project"
       ]
