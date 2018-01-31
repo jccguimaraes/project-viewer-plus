@@ -72,8 +72,16 @@
     }
   }
 
-  .background-message .icon::before {
-    font-size: inherit;
+  .empty-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    button:not(last-child) {
+      margin-bottom: 5px;
+    }
   }
 
   // change this
@@ -151,5 +159,21 @@
     &:hover {
       color: @pv-primary;
     }
+  }
+}
+
+.tooltip.pvp-tooltip {
+
+  &.top {
+
+    div.tooltip-arrow {
+      border-top-color: @pv-primary;
+    }
+  }
+
+  div.tooltip-inner {
+    border-radius: 0;
+    color: @app-background-color;
+    background-color: @pv-primary;
   }
 }
