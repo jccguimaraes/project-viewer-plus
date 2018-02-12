@@ -10,6 +10,7 @@
     ["transform-do-expressions", {}],
     ["transform-function-bind", {}],
     ["transform-object-rest-spread", {}],
+    ["transform-es2015-spread", {}],
     ["transform-flow-strip-types", {}]
   ],
   "presets": [

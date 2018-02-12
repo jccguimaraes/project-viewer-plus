@@ -13,9 +13,9 @@ const isArray = arr => {
     arr &&
     typeof arr.endsWith === 'function' &&
     arr.endsWith('-icon') &&
-    !icons.includes(arr)
+    !icons.includes(arr.replace('-icon', ''))
   ) {
-    icons.push(arr);
+    icons.push(arr.replace('-icon', ''));
   }
 };
 
@@ -23,6 +23,7 @@ const getIcons = () => {
   return JSON.stringify(icons, null, 2).replace(/"/g, '\'');
 };
 
+// v2.1.16
 isArray(require('./../node_modules/file-icons/lib/icons/.icondb'));
 
 if (!icons.length) {
