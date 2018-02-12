@@ -2,15 +2,13 @@
 
 ### Database
 
-##### File (*todo*)
+##### Unsaved state (*in-progress*)
 
-- Validate when no file exists;
-- Create on no file detected;
-- Convert old file to new one
+- For some reason this is not working when switching projects.
 
 ##### Expand / Collapse (*todo*)
 
-- Remove expand / collapse configuration from the file and pass it to the atom serialisation process.
+- Remove expand / collapse configuration from the file and pass it to the atom serialization process.
 
 ##### Update (*todo*)
 
@@ -26,11 +24,11 @@
 
 ##### Selected project (*todo*)
 
-- Every time that an update is done, the selected project is whipped (add state?).
+- Every time that an update is done, the selected project is wipped (add state?).
 
 ### Context Switcher
 
-##### Packages (*in-progress*)
+##### Packages (*todo*)
 
 - Currently `find-and-replace` needs to loose focus to be able to find again in current project using only the keyboard (pressing `Find All` button works perfect);
 - Validate if any more core packages need to be added
@@ -43,6 +41,6 @@
 
 - Don't fall behind on it!
 
-### Contributors
+### All-Contributors (*todo*)
 
 - Find out why README gets messed

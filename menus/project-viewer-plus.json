@@ -8,6 +8,21 @@
           "label": "Project Viewer Plus",
           "submenu": [
             {
+              "label": "Toggle visibility",
+              "command": "project-viewer-plus:toggle-visibility"
+            },
+            {
+              "label": "Toggle Focus",
+              "command": "project-viewer-plus:toggle-focus"
+            },
+            {
+              "label": "Toggle Select List",
+              "command": "project-viewer-plus:toggle-select-list"
+            },
+            {
+              "type": "separator"
+            },
+            {
               "label": "Open/Edit database file",
               "command": "project-viewer-plus:open-database-file"
             },

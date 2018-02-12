@@ -1,59 +1,51 @@
 'use strict';
 
 const path = require('path');
-const { PLUGIN_NAME } = require('../bundle/constants/base');
+const sinon = require('sinon');
+
+const { PLUGIN_NAME } = require('./../bundle/constants/base');
 
 describe('package', function () {
 
-  // INIT - THIS IS REALLY IMPORTANT AND SHOULD BE ON EVERY TEST FILE
-  //      - KEEP IN MIND THE RELATIVE PATH OF __DIRNAME
+  // START - SHOULD BE IN EVERY TEST SUIT
+  before(function () {
+    this.sandbox = sinon.createSandbox();
+  });
+
   beforeEach(function () {
-    this.CURRENT_PATH = atom.config.get(`${PLUGIN_NAME}.database.localPath`);
-    atom.config.set(
-      `${PLUGIN_NAME}.database.localPath`,
-      path.join(__dirname, 'fixtures')
-    );
+    this.sandbox.stub(atom, 'getConfigDirPath')
+      .returns(path.join(__dirname, 'fixtures'));
   });
 
   afterEach(function () {
-    atom.config.set(`${PLUGIN_NAME}.database.localPath`, this.CURRENT_PATH);
+    this.sandbox.restore();
   });
-  // END - THIS IS REALLY IMPORTANT AND SHOULD BE ON EVERY TEST FILE
+  // STOP - SHOULD BE IN EVERY TEST SUIT
 
   describe('when initialized with default config', function () {
     beforeEach(function () {
-      waitsForPromise(() => atom.packages.activatePackage(PLUGIN_NAME));
+      return atom.packages.activatePackage(PLUGIN_NAME).then(() => {
+        return true;
+      });
     });
 
     afterEach(function () {
-      waitsForPromise(() => atom.packages.deactivatePackage(PLUGIN_NAME));
+      return atom.packages.deactivatePackage(PLUGIN_NAME).then(() => {
+        return true;
+      });
     });
 
     it('should have activated', function () {
-      expect(atom.packages.isPackageActive(PLUGIN_NAME)).toBe(true);
+      expect(atom.packages.isPackageActive(PLUGIN_NAME)).to.be.true;
     });
 
     it('should be opened in the right dock as default', function () {
       const panels = atom.workspace.getRightDock().getPaneItems();
       const pkg = atom.packages.getActivePackage(PLUGIN_NAME);
 
-      expect(panels.length).toBe(1);
-      expect(panels[0]).toEqual(pkg.mainModule.projectViewer);
+      expect(panels.length).to.equal(1);
+      expect(panels[0]).to.equal(pkg.mainModule.projectViewer);
     });
   });
 
-  describe('when initialized with dock.position set to left', function () {
-    beforeEach(function () {
-      atom.config.set(`${PLUGIN_NAME}.dock.position`, 'left');
-      waitsForPromise(() => atom.packages.activatePackage(PLUGIN_NAME));
-    });
-
-    it('should be opened in the left dock if set in config', function () {
-      const panels = atom.workspace.getLeftDock().getPaneItems();
-      const pkg = atom.packages.getActivePackage(PLUGIN_NAME);
-
-      expect(panels.length).toBe(1);
-      expect(panels[0]).toEqual(pkg.mainModule.projectViewer);
-    });
-  });
 });

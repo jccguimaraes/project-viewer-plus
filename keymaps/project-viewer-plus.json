@@ -1,5 +1,5 @@
 {
-  ".platform-darwin": {
+  ".platform-darwin, .platform-win32, .platform-linux": {
     "shift-ctrl-alt-v": "project-viewer-plus:toggle-visibility",
     "shift-ctrl-alt-c": "project-viewer-plus:toggle-focus",
     "shift-ctrl-alt-l": "project-viewer-plus:toggle-select-list",
