@@ -43,7 +43,7 @@
     "babel-plugin-transform-object-rest-spread": "6.26.0",
     "babel-preset-env": "1.6.1",
     "babel-preset-react": "6.24.1",
-    "eslint": "4.17.0",
+    "eslint": "4.18.0",
     "file-icons": "git+https://github.com/file-icons/atom.git",
     "rimraf": "2.6.2",
     "sinon": "^4.3.0",
