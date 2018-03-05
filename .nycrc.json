@@ -1,0 +1,6 @@
+{
+  "all": true,
+  "exclude-after-remap": false,
+  "instrument": false,
+  "source-map": false
+}
