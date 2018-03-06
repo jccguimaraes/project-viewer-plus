@@ -1,10 +1,11 @@
 'use strict';
 
+const { testquire } = require('atom-coverage');
 const path = require('path');
 const sinon = require('sinon');
 
-const ProjectViewerPlus = require('./../bundle/main');
-const { PLUGIN_NAME } = require('./../bundle/constants/base');
+const ProjectViewerPlus = testquire('main');
+const { PLUGIN_NAME } = testquire('constants/base');
 let sandbox;
 
 describe('package', function () {
@@ -32,7 +33,6 @@ describe('package', function () {
 
   it('when activated', function () {
     ProjectViewerPlus.activate();
-    console.log(atom.config.get(PLUGIN_NAME));
   });
 
 });

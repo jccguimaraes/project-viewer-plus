@@ -1,5 +1,5 @@
 {
-  "sourceMap": "inline",
+  "sourceMaps": "inline",
   "plugins": [
     ["add-module-exports", {}],
     ["transform-async-to-generator", {}],
@@ -24,5 +24,24 @@
       }
     ],
     "react"
-  ]
+  ],
+  "env": {
+    "test": {
+      "plugins": [
+        ["add-module-exports", {}],
+        ["transform-async-to-generator", {}],
+        ["transform-decorators-legacy", {}],
+        ["transform-class-properties", {}],
+        ["transform-es2015-modules-commonjs", { "strictMode": false }],
+        ["transform-export-extensions", {}],
+        ["transform-do-expressions", {}],
+        ["transform-function-bind", {}],
+        ["transform-object-rest-spread", {}],
+        ["transform-es2015-spread", {}],
+        ["transform-flow-strip-types", {}],
+        "istanbul"
+      ],
+      "sourceMaps": "inline"
+    }
+  }
 }

@@ -1,6 +1,7 @@
 'use strict';
 
-const State = require('./../bundle/services/state');
+const { testquire } = require('atom-coverage');
+const State = testquire('services/state');
 
 describe('state', function () {
 
