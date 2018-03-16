@@ -1,11 +1,9 @@
 {
-  "projectName": "project-viewer-plus",
-  "projectOwner": "João Guimarães",
-  "files": [
-    "README.md"
-  ],
+  "projectOwner": "project-viewer-plus",
+  "projectName": "jccguimaraes",
   "imageSize": 50,
   "commit": false,
+  "contributorsPerLine": 6,
   "contributors": [
     {
       "login": "jccguimaraes",

@@ -33,15 +33,11 @@ Please check this [section](/CONTRIBUTING.md) and this [section](/CODE_OF_CONDUC
 
 ## Contributors
 
-Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
-
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
-| [<img src="https://avatars3.githubusercontent.com/u/14871650?v=4" width="50px;"/><br /><sub><b>João Guimarães</b></sub>](https://github.com/jccguimaraes)<br />[🐛](https://github.com/João Guimarães/project-viewer-plus/issues?q=author%3Ajccguimaraes "Bug reports") [💻](https://github.com/João Guimarães/project-viewer-plus/commits?author=jccguimaraes "Code") [🎨](#design-jccguimaraes "Design") [📖](https://github.com/João Guimarães/project-viewer-plus/commits?author=jccguimaraes "Documentation") [🤔](#ideas-jccguimaraes "Ideas, Planning, & Feedback") | [<img src="https://avatars0.githubusercontent.com/u/1093709?v=4" width="50px;"/><br /><sub><b>Hans Koch</b></sub>](http://hans-koch.me)<br />[💻](https://github.com/João Guimarães/project-viewer-plus/commits?author=Hammster "Code") [📖](https://github.com/João Guimarães/project-viewer-plus/commits?author=Hammster "Documentation") [🤔](#ideas-Hammster "Ideas, Planning, & Feedback") |
+| [<img src="https://avatars3.githubusercontent.com/u/14871650?v=4" width="50px;"/><br /><sub><b>João Guimarães</b></sub>](https://github.com/jccguimaraes)<br />[🐛](https://github.com/project-viewer-plus/jccguimaraes/issues?q=author%3Ajccguimaraes "Bug reports") [💻](https://github.com/project-viewer-plus/jccguimaraes/commits?author=jccguimaraes "Code") [🎨](#design-jccguimaraes "Design") [📖](https://github.com/project-viewer-plus/jccguimaraes/commits?author=jccguimaraes "Documentation") [🤔](#ideas-jccguimaraes "Ideas, Planning, & Feedback") | [<img src="https://avatars0.githubusercontent.com/u/1093709?v=4" width="50px;"/><br /><sub><b>Hans Koch</b></sub>](http://hans-koch.me)<br />[💻](https://github.com/project-viewer-plus/jccguimaraes/commits?author=Hammster "Code") [📖](https://github.com/project-viewer-plus/jccguimaraes/commits?author=Hammster "Documentation") [🤔](#ideas-Hammster "Ideas, Planning, & Feedback") |
 | :---: | :---: |
 <!-- ALL-CONTRIBUTORS-LIST:END -->
-
-This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
 
 [babel]: https://babeljs.io/
 [etch]: https://github.com/atom/etch

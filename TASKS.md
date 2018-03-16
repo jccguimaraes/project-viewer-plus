@@ -1,5 +1,9 @@
 # Tasks
 
+### Async / Promises
+
+- Consider changing `new Promise...` to `async / try catch`.
+
 ### Database
 
 ##### Unsaved state (*in-progress*)
