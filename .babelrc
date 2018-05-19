@@ -18,8 +18,8 @@
       "env",
       {
         "targets": {
-          "node": "7.4",
-          "browsers": "chrome 56"
+          "node": "7.9",
+          "browsers": "chrome 58"
         }
       }
     ],

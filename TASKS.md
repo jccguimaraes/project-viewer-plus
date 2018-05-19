@@ -1,50 +1,29 @@
 # Tasks
 
-### Async / Promises
+## on-progress
 
-- Consider changing `new Promise...` to `async / try catch`.
+## todo
 
-### Database
+- [Expand / Collapse] Remove expand / collapse configuration from the file and pass it to the atom serialization process.
+- [Update] Current implementation is not very performant friendly.
+- [Drag'n'Drop] Dropping (ex: tree-view) catches the drop.
+- [Gist] Refactor all logic to be more compact.
+- [Selected project] Every time that an update is done, the selected project is wipped (add state?).
+- [Context Switcher] [Packages] Currently `find-and-replace` needs to loose focus to be able to find again in current project using only the keyboard (pressing `Find All` button works perfect);
+- [Context Switcher] [Packages] Validate if any more core packages need to be added
+- [Documentation] Don't fall behind on it!
+- [Unit tests] Don't fall behind on it!
+- [All-Contributors] Find out why README gets messed
+- [Async / Promises] Consider changing `new Promise...` to `async / try catch`.
 
-##### Unsaved state (*in-progress*)
+## done
 
-- For some reason this is not working when switching projects.
+- [Database] [Unsaved state] For some reason this is not working when switching projects.
 
-##### Expand / Collapse (*todo*)
+## docs
 
-- Remove expand / collapse configuration from the file and pass it to the atom serialization process.
+- [x] state
 
-##### Update (*todo*)
+## tests
 
-- Current implementation is not very performant friendly.
-
-##### Drag'n'Drop
-
-- Dropping (ex: tree-view) catches the drop.
-
-##### Gist (*todo*)
-
-- Refactor all logic to be more compact.
-
-##### Selected project (*todo*)
-
-- Every time that an update is done, the selected project is wipped (add state?).
-
-### Context Switcher
-
-##### Packages (*todo*)
-
-- Currently `find-and-replace` needs to loose focus to be able to find again in current project using only the keyboard (pressing `Find All` button works perfect);
-- Validate if any more core packages need to be added
-
-### Documentation (*todo*)
-
-- Don't fall behind on it!
-
-### Unit tests (*todo*)
-
-- Don't fall behind on it!
-
-### All-Contributors (*todo*)
-
-- Find out why README gets messed
+- [x] state (100%)
