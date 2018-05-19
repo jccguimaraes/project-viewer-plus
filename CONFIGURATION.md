@@ -58,3 +58,7 @@ Settings | Type | Default | Description
   ]
 }
 ```
+
+### Others
+
+- You can define for how long a notification stays in the screen: `Settings -> packages -> notifications`.

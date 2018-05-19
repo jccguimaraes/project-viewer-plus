@@ -21,7 +21,7 @@
           "nonwords": false,
           "overrides": {
             "new": false,
-            "++": true
+            "++": false
           }
     }],
     "spaced-comment": ["error", "always", {

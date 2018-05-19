@@ -8,7 +8,7 @@ const ProjectViewerPlus = testquire('main');
 const { PLUGIN_NAME } = testquire('constants/base');
 let sandbox;
 
-describe('package', function () {
+describe.skip('package', function () {
 
   // START - SHOULD BE IN EVERY TEST SUIT
   before(function () {
