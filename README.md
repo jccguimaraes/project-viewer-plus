@@ -1,5 +1,7 @@
 # Project Viewer Plus
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/jccguimaraes/project-viewer-plus.svg)](https://greenkeeper.io/)
+
 [![Code of Conduct][coc-badge]][coc]
 [![All Contributors][all-contributors-badge]][all-contributors]
 
