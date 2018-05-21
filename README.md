@@ -1,11 +1,20 @@
 # Project Viewer Plus
 
+**Community**
+
 [![Code of Conduct][coc-badge]][coc]
 [![All Contributors][all-contributors-badge]][all-contributors]
+
+**Releases**
 
 [![Travis][travis-badge]][travis]
 [![AppVeyor][appveyor-badge]][appveyor]
 [![Circle][circle-badge]][circle]
+
+**Quality**
+
+[![CodeClimateMainability][code-climate-maintainability-badge]][code-climate-maintainability]
+[![CodeClimateCoverage][code-climate-coverage-badge]][code-climate-coverage]
 
 ## Introduction
 
@@ -51,3 +60,10 @@ Please check this [section](/CONTRIBUTING.md) and this [section](/CODE_OF_CONDUC
 [appveyor]: https://ci.appveyor.com/project/jccguimaraes/project-viewer-plus
 [circle-badge]: https://img.shields.io/circleci/project/jccguimaraes/project-viewer-plus/master.svg?style=flat-square
 [circle]: https://circleci.com/gh/jccguimaraes/project-viewer-plus
+[code-climate-maintainability]: https://codeclimate.com/github/jccguimaraes/project-viewer-plus/maintainability
+[code-climate-maintainability-badge]: https://api.codeclimate.com/v1/badges/bd825afe8e71dce52f63/maintainability
+[code-climate-coverage]: https://codeclimate.com/github/jccguimaraes/project-viewer-plus/test_coverage
+[code-climate-coverage-badge]: https://api.codeclimate.com/v1/badges/bd825afe8e71dce52f63/test_coverage
+
+
+![Code Climate]()
