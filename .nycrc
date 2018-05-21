@@ -2,9 +2,5 @@
   "all": true,
   "exclude-after-remap": false,
   "instrument": false,
-  "source-map": false,
-  "reporter": [
-    "lcov",
-    "text-summary"
-  ]
+  "source-map": false
 }

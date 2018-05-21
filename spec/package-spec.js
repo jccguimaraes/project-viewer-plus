@@ -4,35 +4,48 @@ const { testquire } = require('atom-coverage');
 const path = require('path');
 const sinon = require('sinon');
 
-const ProjectViewerPlus = testquire('main');
+const Package = testquire('package');
+const Database = testquire('services/database');
 const { PLUGIN_NAME } = testquire('constants/base');
-let sandbox;
 
-describe.skip('package', function () {
+describe('package', async function () {
+  beforeEach(async function () {
+    this.sandbox = sinon.createSandbox();
 
-  // START - SHOULD BE IN EVERY TEST SUIT
-  before(function () {
-    sandbox = sinon.createSandbox();
-    return atom.packages.activatePackage('file-icons').then(() => true);
+    this.sandbox.stub(Database.prototype, 'initialize').callsFake();
+  //   this.database.onDidError.callsFake(() => {});
+  //   this.database.onDidChange.callsFake(() => {});
+  //   this.database.destroy.callsFake(() => {});
+  //   this.database.serialize.callsFake(() => {});
+  //   this.database.setInitialSelectedProject.callsFake(() => {});
+  //   this.database.openFile.callsFake(() => {});
   });
 
-  before(function () {
-    sandbox = sinon.createSandbox();
-  });
+  beforeEach(async function () {
+    this.projectViewerPlus = await new Package();
 
-  beforeEach(function () {
-    const config = ProjectViewerPlus.config;
+    const config = await this.projectViewerPlus.config;
+
     config.database.localPath = path.join(__dirname, 'fixtures');
-    return atom.config.set(PLUGIN_NAME, config);
+    atom.config.set(PLUGIN_NAME, config);
+
+    await this.projectViewerPlus.activate();
   });
 
   afterEach(function () {
-    sandbox.restore();
-  });
-  // STOP - SHOULD BE IN EVERY TEST SUIT
-
-  it('when activated', function () {
-    ProjectViewerPlus.activate();
+    this.sandbox.restore();
+    delete this.projectViewerPlus;
   });
 
+  it('should add instance to right dock', async function () {
+    const rightDocks = atom.workspace.getRightDock().getPaneItems();
+    const projectViewerPlus = await this.projectViewerPlus.getInstance();
+
+    expect(projectViewerPlus).to.equal(rightDocks[0]);
+  });
+
+  // it('should initialize database', function () {
+  //   console.log(this.database);
+  //   expect(this.database.initialize.calledOnce).to.be.true;
+  // });
 });

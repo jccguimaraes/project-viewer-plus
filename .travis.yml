@@ -44,3 +44,5 @@ addons:
     - fakeroot
     - git
     - libsecret-1-dev
+
+after_success: npm run coverage
