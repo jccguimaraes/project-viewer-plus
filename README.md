@@ -16,9 +16,18 @@
 [![CodeClimateMainability][code-climate-maintainability-badge]][code-climate-maintainability]
 [![CodeClimateCoverage][code-climate-coverage-badge]][code-climate-coverage]
 
+[![codecov](https://codecov.io/gh/jccguimaraes/project-viewer-plus/branch/master/graph/badge.svg)](https://codecov.io/gh/jccguimaraes/project-viewer-plus)
+
 [![bitHound Overall Score](https://www.bithound.io/github/jccguimaraes/project-viewer-plus/badges/score.svg)](https://www.bithound.io/github/jccguimaraes/project-viewer-plus)
 [![bitHound Code](https://www.bithound.io/github/jccguimaraes/project-viewer-plus/badges/code.svg)](https://www.bithound.io/github/jccguimaraes/project-viewer-plus)
 [![bitHound Dependencies](https://www.bithound.io/github/jccguimaraes/project-viewer-plus/badges/dependencies.svg)](https://www.bithound.io/github/jccguimaraes/project-viewer-plus/dev/dependencies/npm)
+
+[![Known Vulnerabilities](https://snyk.io/test/github/jccguimaraes/project-viewer-plus/badge.svg?targetFile=package.json)](https://snyk.io/test/github/jccguimaraes/project-viewer-plus?targetFile=package.json)
+
+**Style**
+
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/jccguimaraes/project-viewer-plus)
+
 
 ## Introduction
 
