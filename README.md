@@ -56,7 +56,7 @@ Please check this [section](/CONTRIBUTING.md) and this [section](/CODE_OF_CONDUC
 [etch]: https://github.com/atom/etch
 [coc-badge]: https://img.shields.io/badge/%E2%9D%A4-code%20of%20conduct-blue.svg?style=flat-square
 [coc]: ./CODE_OF_CONDUCT.md
-[all-contributors-badge]: https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square
+[all-contributors-badge]: https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square
 [all-contributors]: #contributors
 [travis-badge]: https://img.shields.io/travis/jccguimaraes/project-viewer-plus/master.svg?style=flat-square
 [travis]: https://travis-ci.org/jccguimaraes/project-viewer-plus
