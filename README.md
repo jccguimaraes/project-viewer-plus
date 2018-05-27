@@ -5,7 +5,7 @@
 [![Code of Conduct][coc-badge]][coc]
 [![All Contributors][all-contributors-badge]][all-contributors]
 
-**Releases**
+**CI/CD**
 
 [![Travis][travis-badge]][travis]
 [![AppVeyor][appveyor-badge]][appveyor]
@@ -15,6 +15,10 @@
 
 [![CodeClimateMainability][code-climate-maintainability-badge]][code-climate-maintainability]
 [![CodeClimateCoverage][code-climate-coverage-badge]][code-climate-coverage]
+
+[![bitHound Overall Score](https://www.bithound.io/github/jccguimaraes/project-viewer-plus/badges/score.svg)](https://www.bithound.io/github/jccguimaraes/project-viewer-plus)
+[![bitHound Code](https://www.bithound.io/github/jccguimaraes/project-viewer-plus/badges/code.svg)](https://www.bithound.io/github/jccguimaraes/project-viewer-plus)
+[![bitHound Dependencies](https://www.bithound.io/github/jccguimaraes/project-viewer-plus/badges/dependencies.svg)](https://www.bithound.io/github/jccguimaraes/project-viewer-plus/dev/dependencies/npm)
 
 ## Introduction
 
@@ -44,8 +48,8 @@ Please check this [section](/CONTRIBUTING.md) and this [section](/CODE_OF_CONDUC
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
-| [<img src="https://avatars3.githubusercontent.com/u/14871650?v=4" width="50px;"/><br /><sub><b>João Guimarães</b></sub>](https://github.com/jccguimaraes)<br />[🐛](https://github.com/project-viewer-plus/jccguimaraes/issues?q=author%3Ajccguimaraes "Bug reports") [💻](https://github.com/project-viewer-plus/jccguimaraes/commits?author=jccguimaraes "Code") [🎨](#design-jccguimaraes "Design") [📖](https://github.com/project-viewer-plus/jccguimaraes/commits?author=jccguimaraes "Documentation") [🤔](#ideas-jccguimaraes "Ideas, Planning, & Feedback") | [<img src="https://avatars0.githubusercontent.com/u/1093709?v=4" width="50px;"/><br /><sub><b>Hans Koch</b></sub>](http://hans-koch.me)<br />[💻](https://github.com/project-viewer-plus/jccguimaraes/commits?author=Hammster "Code") [📖](https://github.com/project-viewer-plus/jccguimaraes/commits?author=Hammster "Documentation") [🤔](#ideas-Hammster "Ideas, Planning, & Feedback") |
-| :---: | :---: |
+| [<img src="https://avatars3.githubusercontent.com/u/14871650?v=4" width="50px;"/><br /><sub><b>João Guimarães</b></sub>](https://github.com/jccguimaraes)<br />[🐛](https://github.com/project-viewer-plus/jccguimaraes/issues?q=author%3Ajccguimaraes "Bug reports") [💻](https://github.com/project-viewer-plus/jccguimaraes/commits?author=jccguimaraes "Code") [🎨](#design-jccguimaraes "Design") [📖](https://github.com/project-viewer-plus/jccguimaraes/commits?author=jccguimaraes "Documentation") [🤔](#ideas-jccguimaraes "Ideas, Planning, & Feedback") | [<img src="https://avatars0.githubusercontent.com/u/1093709?v=4" width="50px;"/><br /><sub><b>Hans Koch</b></sub>](http://hans-koch.me)<br />[💻](https://github.com/project-viewer-plus/jccguimaraes/commits?author=Hammster "Code") [📖](https://github.com/project-viewer-plus/jccguimaraes/commits?author=Hammster "Documentation") [🤔](#ideas-Hammster "Ideas, Planning, & Feedback") | [<img src="https://avatars2.githubusercontent.com/u/10707639?v=4" width="50px;"/><br /><sub><b>Carlos García</b></sub>](https://github.com/cgalvarez)<br />[🚇](#infra-cgalvarez "Infrastructure (Hosting, Build-Tools, etc)") [⚠️](https://github.com/project-viewer-plus/jccguimaraes/commits?author=cgalvarez "Tests") |
+| :---: | :---: | :---: |
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 [babel]: https://babeljs.io/
@@ -64,6 +68,3 @@ Please check this [section](/CONTRIBUTING.md) and this [section](/CODE_OF_CONDUC
 [code-climate-maintainability-badge]: https://api.codeclimate.com/v1/badges/bd825afe8e71dce52f63/maintainability
 [code-climate-coverage]: https://codeclimate.com/github/jccguimaraes/project-viewer-plus/test_coverage
 [code-climate-coverage-badge]: https://api.codeclimate.com/v1/badges/bd825afe8e71dce52f63/test_coverage
-
-
-![Code Climate]()
