@@ -180,7 +180,7 @@ describe('service : state', function () {
       this.state.clear();
     });
 
-    it('should add resourses', function () {
+    it('should add resources', function () {
       this.group = this.state.setGroup({ name: 'group' });
       this.state.setItem(this.group);
       let iterator = this.state.list();
@@ -196,7 +196,7 @@ describe('service : state', function () {
       expect(iterator.next().value).to.not.be.undefined;
     });
 
-    it('should update resourses', function () {
+    it('should update resources', function () {
       this.group.name = 'updated group';
       this.state.setItem(this.group);
       let iterator = this.state.list();
