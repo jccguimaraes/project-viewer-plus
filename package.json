@@ -1,6 +1,6 @@
 {
   "name": "project-viewer-plus",
-  "main": "./dist/main",
+  "main": "./dist/index",
   "version": "0.0.0",
   "description": "Manage all your projects into different groups.",
   "keywords": [
@@ -13,7 +13,7 @@
   "repository": "https://github.com/jccguimaraes/project-viewer-plus",
   "license": "MIT",
   "engines": {
-    "atom": ">=1.27.0"
+    "atom": ">=1.27.1"
   },
   "deserializers": {
     "ProjectViewerPlus": "deserialize"
@@ -24,40 +24,34 @@
     "etch": "0.14.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "6.2.0",
     "all-contributors-cli": "4.11.1",
     "atom-babel6-transpiler": "1.1.3",
     "atom-coverage": "1.1.2",
     "atom-mocha": "2.0.5",
     "babel-cli": "6.26.0",
-    "babel-core": "6.26.3",
+    "babel-core": "^6.26.3",
     "babel-eslint": "8.2.2",
     "babel-plugin-add-module-exports": "0.2.1",
     "babel-plugin-istanbul": "4.1.6",
-    "babel-plugin-transform-async-to-generator": "6.24.1",
     "babel-plugin-transform-class-properties": "6.24.1",
-    "babel-plugin-transform-decorators-legacy": "1.3.4",
-    "babel-plugin-transform-do-expressions": "6.22.0",
-    "babel-plugin-transform-es2015-modules-commonjs": "6.26.2",
-    "babel-plugin-transform-es2015-spread": "6.22.0",
-    "babel-plugin-transform-export-extensions": "6.22.0",
-    "babel-plugin-transform-flow-strip-types": "6.22.0",
-    "babel-plugin-transform-function-bind": "6.22.0",
     "babel-plugin-transform-object-rest-spread": "6.26.0",
     "babel-preset-env": "1.7.0",
     "babel-preset-react": "6.24.1",
-    "codecov": "^3.0.2",
-    "cross-env": "5.1.5",
+    "codecov": "3.0.2",
+    "cross-env": "5.1.6",
     "eslint": "4.19.1",
     "file-icons": "git+https://github.com/file-icons/atom.git",
+    "husky": "0.14.3",
     "nyc": "11.8.0",
-    "proxyquire": "2.0.1",
-    "rewiremock": "^3.7.2",
     "rimraf": "2.6.2",
-    "sinon": "5.0.7",
-    "sinon-chai": "^3.0.0",
+    "sinon": "5.0.10",
+    "sinon-chai": "3.1.0",
     "uuid": "3.2.1"
   },
   "scripts": {
+    "precommit": "npm run commitmsg",
+    "commitmsg": "commitlint -e $GIT_PARAMS",
     "clean": "rimraf ./dist",
     "icons": "node ./bin/file-icons",
     "contribute": "all-contributors",
@@ -65,7 +59,7 @@
     "linter:lib": "eslint ./lib",
     "pretest": "npm run linter:lib",
     "test": "npm run linter:spec",
-    "posttest": "cross-env NODE_ENV=test atom --test spec/**",
+    "posttest": "cross-env NODE_ENV=test atom --test spec/integration/** spec/unit/**",
     "precompile": "npm run clean",
     "compile": "babel lib --out-dir dist",
     "prewatch": "npm run clean",
