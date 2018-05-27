@@ -1,3 +1,5 @@
+/* eslint-disable max-lines */
+
 'use strict';
 
 const { testquire } = require('atom-coverage');
@@ -410,4 +412,65 @@ describe('service : state', function () {
       expect(this.state.getProject('asd-123')).to.be.undefined;
     });
   });
+
+  describe('serialize', function () {
+    before(function () {
+      const content = {
+        groups: [
+          {
+            id: 'asd-123',
+            name: 'group #1',
+            projects: [
+              {
+                id: 'qwe-890',
+                name: 'project #1',
+                icon: 'node'
+              }
+            ]
+          }
+        ],
+        projects: [
+          {
+            id: 'zxc-567',
+            name: 'project #2',
+            icon: 'node'
+          }
+        ]
+      };
+      this.state = new State();
+      this.state.update(content);
+    });
+
+    it.skip('should serialize content', function () {
+      const serialized = this.state.serialize();
+
+      expect(serialized).to.eql({
+        groups: [
+          {
+            id: 'asd-123',
+            name: 'group #1',
+            sortBy: 'position',
+            icon: undefined,
+            groups: [],
+            projects: [
+              {
+                id: 'qwe-890',
+                name: 'project #1',
+                paths: [],
+                icon: 'node'
+              }
+            ]
+          }
+        ],
+        projects: [{
+          id: 'zxc-567',
+          name: 'project #2',
+          paths: [],
+          icon: 'node'
+        }]
+      });
+    });
+  });
+
+  describe('deserialize', function () {});
 });
