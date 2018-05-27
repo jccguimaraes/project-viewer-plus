@@ -62,3 +62,32 @@ Settings | Type | Default | Description
 ### Others
 
 - You can define for how long a notification stays in the screen: `Settings -> packages -> notifications`.
+
+### Dependency Relation
+
+```sh
+ +-------+   +---------------------+      +----------------+
+ | index |-->| project-viewer-plus |--+-->| services/state |
+ +-------+   +---------------------+  |   +----------------+
+                                      |   +-----------------------+
+                                      |-->| services/file-content |
+                                      |   +-----------------------+
+                                      |   +---------------------------+
+                                      |-->| services/context-switcher |
+                                      |   +---------------------------+
+                                      |   +------------------------+   +-----------------------------+
+                                      |-->| containers/select-list |-->| components/select-list-item |
+                                      |   +------------------------+   +-----------------------------+
+                                      |   +-------------------+   +------------------+   +-----------------+
+                                      |-->| containers/editor |-->| containers/icons |-->| components/icon |
+                                      |   +-------------------+   +------------------+   +-----------------+
+                                      |   +-----------------+      +------------------+
+                                      +-->| containers/main |--+-->| components/empty |
+                                          +-----------------+  |   +------------------+
+                                                               |   +-----------------+   +-----------------+      +------------------+
+                                                               +-->| components/main |-->| containers/list |--+-->| components/group |
+                                                                   +-----------------+   +-----------------+  |   +------------------+
+                                                                                                              |   +--------------------+
+                                                                                                              +-->| components/project |
+                                                                                                                  +--------------------+
+```
