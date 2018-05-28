@@ -34,7 +34,7 @@ describe('ProjectViewerPlus', async function () {
 
   it('should add instance to right dock', async function () {
     const rightDocks = atom.workspace.getRightDock().getPaneItems();
-    const projectViewerPlus = await this.projectViewerPlus.getInstance();
+    const projectViewerPlus = await this.projectViewerPlus.getContainer();
 
     // expect(projectViewerPlus).to.equal(rightDocks[0]);
   });
