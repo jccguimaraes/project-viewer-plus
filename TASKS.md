@@ -1,50 +1,77 @@
 # Tasks
 
-### Async / Promises
+## on-progress
 
-- Consider changing `new Promise...` to `async / try catch`.
+## todo
 
-### Database
+- [Expand / Collapse] Remove expand / collapse configuration from the file and pass it to the atom serialization process.
+- [Update] Current implementation is not very performant friendly.
+- [Drag'n'Drop] Dropping (ex: tree-view) catches the drop.
+- [Gist] Refactor all logic to be more compact.
+- [Selected project] Every time that an update is done, the selected project is wipped (add state?).
+- [Context Switcher] [Packages] Currently `find-and-replace` needs to loose focus to be able to find again in current project using only the keyboard (pressing `Find All` button works perfect);
+- [Context Switcher] [Packages] Validate if any more core packages need to be added
+- [Documentation] Don't fall behind on it!
+- [Unit tests] Don't fall behind on it!
+- [All-Contributors] Find out why README gets messed
+- [Async / Promises] Consider changing `new Promise...` to `async / try catch`.
 
-##### Unsaved state (*in-progress*)
+## docs
 
-- For some reason this is not working when switching projects.
+- [ ] components/empty
+- [ ] components/group
+- [ ] components/icon
+- [ ] components/main
+- [ ] components/project
+- [ ] components/select-list-item
+- [ ] constants/base
+- [ ] constants/config
+- [ ] constants/icons
+- [ ] containers/editor
+- [ ] containers/icons
+- [ ] containers/list
+- [ ] containers/main
+- [ ] containers/select-list
+- [ ] services/packages/find-and-replace
+- [ ] services/packages/linter-ui-default
+- [ ] services/packages/linter
+- [ ] services/packages/status-bar
+- [ ] services/packages/tree-view
+- [ ] services/context-switcher
+- [ ] services/file-content
+- [ ] services/github
+- [ ] services/legacy
+- [ ] services/packages
+- [ ] services/state
+- [x] index
+- [x] project-viewer-plus
 
-##### Expand / Collapse (*todo*)
+## tests
 
-- Remove expand / collapse configuration from the file and pass it to the atom serialization process.
-
-##### Update (*todo*)
-
-- Current implementation is not very performant friendly.
-
-##### Drag'n'Drop
-
-- Dropping (ex: tree-view) catches the drop.
-
-##### Gist (*todo*)
-
-- Refactor all logic to be more compact.
-
-##### Selected project (*todo*)
-
-- Every time that an update is done, the selected project is wipped (add state?).
-
-### Context Switcher
-
-##### Packages (*todo*)
-
-- Currently `find-and-replace` needs to loose focus to be able to find again in current project using only the keyboard (pressing `Find All` button works perfect);
-- Validate if any more core packages need to be added
-
-### Documentation (*todo*)
-
-- Don't fall behind on it!
-
-### Unit tests (*todo*)
-
-- Don't fall behind on it!
-
-### All-Contributors (*todo*)
-
-- Find out why README gets messed
+- [ ] components/empty
+- [ ] components/group
+- [ ] components/icon
+- [ ] components/main
+- [ ] components/project
+- [ ] components/select-list-item
+- [ ] constants/base
+- [ ] constants/config
+- [ ] constants/icons
+- [ ] containers/editor
+- [ ] containers/icons
+- [ ] containers/list
+- [ ] containers/main
+- [ ] containers/select-list
+- [ ] services/packages/find-and-replace
+- [ ] services/packages/linter-ui-default
+- [ ] services/packages/linter
+- [ ] services/packages/status-bar
+- [ ] services/packages/tree-view
+- [ ] services/context-switcher
+- [ ] services/file-content
+- [ ] services/github
+- [ ] services/legacy
+- [ ] services/packages
+- [ ] services/state
+- [ ] index
+- [ ] project-viewer-plus

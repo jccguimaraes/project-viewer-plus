@@ -1,6 +1,6 @@
 .git
 .nyc_output
-bundle
+dist
 coverage
 node_modules
 styles

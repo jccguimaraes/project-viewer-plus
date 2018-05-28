@@ -21,7 +21,7 @@
           "nonwords": false,
           "overrides": {
             "new": false,
-            "++": true
+            "++": false
           }
     }],
     "spaced-comment": ["error", "always", {
@@ -52,6 +52,8 @@
     }],
     "max-len": ["warn", 80],
     "max-depth": ["error", 2],
+    "max-lines": ["error", {"max": 350, "skipComments": true}],
+    "max-statements": ["error", 80],
     "eol-last": ["error", "always"],
     "linebreak-style": ["error", "unix"],
     "brace-style": ["error", "stroustrup"],
