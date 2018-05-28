@@ -13,6 +13,7 @@
 
 **Quality**
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/jccguimaraes/project-viewer-plus.svg)](https://greenkeeper.io/)
 [![CodeClimateMainability][code-climate-maintainability-badge]][code-climate-maintainability]
 [![CodeClimateCoverage][code-climate-coverage-badge]][code-climate-coverage]
 
