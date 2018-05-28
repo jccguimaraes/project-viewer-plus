@@ -182,12 +182,9 @@ fi
 
 if [ -d ./spec ]; then
   echo "Running specs..."
-  npm t
-elif [ -d ./test ]; then
-  echo "Running specs..."
-  npm t
+  "${ATOM_SCRIPT_PATH}" --test spec/integration/** spec/unit/**
 else
-  echo "Missing spec folder! Please consider adding a test suite in './spec' or in './test'"
+  echo "Missing spec folder! Please consider adding a test suite in './spec'"
   exit 0
 fi
 exit
