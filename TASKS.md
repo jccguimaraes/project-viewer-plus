@@ -16,14 +16,62 @@
 - [All-Contributors] Find out why README gets messed
 - [Async / Promises] Consider changing `new Promise...` to `async / try catch`.
 
-## done
-
-- [Database] [Unsaved state] For some reason this is not working when switching projects.
-
 ## docs
 
-- [x] state
+- [ ] components/empty
+- [ ] components/group
+- [ ] components/icon
+- [ ] components/main
+- [ ] components/project
+- [ ] components/select-list-item
+- [ ] constants/base
+- [ ] constants/config
+- [ ] constants/icons
+- [ ] containers/editor
+- [ ] containers/icons
+- [ ] containers/list
+- [ ] containers/main
+- [ ] containers/select-list
+- [ ] services/packages/find-and-replace
+- [ ] services/packages/linter-ui-default
+- [ ] services/packages/linter
+- [ ] services/packages/status-bar
+- [ ] services/packages/tree-view
+- [ ] services/context-switcher
+- [ ] services/file-content
+- [ ] services/github
+- [ ] services/legacy
+- [ ] services/packages
+- [ ] services/state
+- [x] index
+- [x] project-viewer-plus
 
 ## tests
 
-- [x] state (100%)
+- [ ] components/empty
+- [ ] components/group
+- [ ] components/icon
+- [ ] components/main
+- [ ] components/project
+- [ ] components/select-list-item
+- [ ] constants/base
+- [ ] constants/config
+- [ ] constants/icons
+- [ ] containers/editor
+- [ ] containers/icons
+- [ ] containers/list
+- [ ] containers/main
+- [ ] containers/select-list
+- [ ] services/packages/find-and-replace
+- [ ] services/packages/linter-ui-default
+- [ ] services/packages/linter
+- [ ] services/packages/status-bar
+- [ ] services/packages/tree-view
+- [ ] services/context-switcher
+- [ ] services/file-content
+- [ ] services/github
+- [ ] services/legacy
+- [ ] services/packages
+- [ ] services/state
+- [ ] index
+- [ ] project-viewer-plus
