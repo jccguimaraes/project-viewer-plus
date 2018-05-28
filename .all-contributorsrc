@@ -28,6 +28,17 @@
         "doc",
         "ideas"
       ]
+    },
+    {
+      "login": "cgalvarez",
+      "name": "Carlos García",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/10707639?v=4",
+      "profile": "https://github.com/cgalvarez",
+      "contributions": [
+        "infra",
+        "test"
+      ]
     }
-  ]
+  ],
+  "repoType": "github"
 }

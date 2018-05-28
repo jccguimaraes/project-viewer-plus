@@ -2,24 +2,16 @@
   "sourceMaps": "inline",
   "plugins": [
     ["add-module-exports", {}],
-    ["transform-async-to-generator", {}],
-    ["transform-decorators-legacy", {}],
     ["transform-class-properties", {}],
-    ["transform-es2015-modules-commonjs", { "strictMode": false }],
-    ["transform-export-extensions", {}],
-    ["transform-do-expressions", {}],
-    ["transform-function-bind", {}],
-    ["transform-object-rest-spread", {}],
-    ["transform-es2015-spread", {}],
-    ["transform-flow-strip-types", {}]
+    ["transform-object-rest-spread", {}]
   ],
   "presets": [
     [
       "env",
       {
         "targets": {
-          "node": "7.4",
-          "browsers": "chrome 56"
+          "node": "7.9.0",
+          "browsers": "chrome 58"
         }
       }
     ],
@@ -27,21 +19,13 @@
   ],
   "env": {
     "test": {
+      "sourceMaps": "inline",
       "plugins": [
         ["add-module-exports", {}],
-        ["transform-async-to-generator", {}],
-        ["transform-decorators-legacy", {}],
         ["transform-class-properties", {}],
-        ["transform-es2015-modules-commonjs", { "strictMode": false }],
-        ["transform-export-extensions", {}],
-        ["transform-do-expressions", {}],
-        ["transform-function-bind", {}],
         ["transform-object-rest-spread", {}],
-        ["transform-es2015-spread", {}],
-        ["transform-flow-strip-types", {}],
         "istanbul"
-      ],
-      "sourceMaps": "inline"
+      ]
     }
   }
 }
