@@ -16,8 +16,8 @@ os:
 
 ### Generic setup follows ###
 script:
-  - chmod u+x bin/build-package.sh
-  - bin/build-package.sh
+  - chmod u+x ./bin/build-package.sh
+  - bash ./bin/build-package.sh
 
 notifications:
   email:
