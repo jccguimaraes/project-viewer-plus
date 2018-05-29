@@ -13,22 +13,22 @@
 
 **Quality**
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/jccguimaraes/project-viewer-plus.svg)](https://greenkeeper.io/)
+[![Greenkeeper badge][greenkeeper-badge]][greenkeeper]
 [![CodeClimateMainability][code-climate-maintainability-badge]][code-climate-maintainability]
 [![CodeClimateCoverage][code-climate-coverage-badge]][code-climate-coverage]
 
-[![codecov](https://codecov.io/gh/jccguimaraes/project-viewer-plus/branch/master/graph/badge.svg)](https://codecov.io/gh/jccguimaraes/project-viewer-plus)
+[![codecov][codecov-badge]][codecov]
 
-[![bitHound Overall Score](https://www.bithound.io/github/jccguimaraes/project-viewer-plus/badges/score.svg)](https://www.bithound.io/github/jccguimaraes/project-viewer-plus)
-[![bitHound Code](https://www.bithound.io/github/jccguimaraes/project-viewer-plus/badges/code.svg)](https://www.bithound.io/github/jccguimaraes/project-viewer-plus)
-[![bitHound Dependencies](https://www.bithound.io/github/jccguimaraes/project-viewer-plus/badges/dependencies.svg)](https://www.bithound.io/github/jccguimaraes/project-viewer-plus/dev/dependencies/npm)
+[![bitHound Overall Score][bithound-overall-badge]][bithound]
+[![bitHound Code][bithound-code-badge]][bithound]
+[![bitHound Dependencies][bithound-dependencies-badge]][bithound]
 
-[![Known Vulnerabilities](https://snyk.io/test/github/jccguimaraes/project-viewer-plus/badge.svg?targetFile=package.json)](https://snyk.io/test/github/jccguimaraes/project-viewer-plus?targetFile=package.json)
+[![Known Vulnerabilities][snyk-badge]][snyk]
 
 **Style**
 
-[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/jccguimaraes/project-viewer-plus)
-[![Inline docs](http://inch-ci.org/github/jccguimaraes/project-viewer-plus.svg?branch=master&style=flat-square)](http://inch-ci.org/github/jccguimaraes/project-viewer-plus)
+[![code style: prettier][prettier-badge]][prettier]
+[![Inline docs][inch-badge]][inch]
 
 ## Introduction
 
@@ -64,17 +64,43 @@ Please check this [section](/CONTRIBUTING.md) and this [section](/CODE_OF_CONDUC
 
 [babel]: https://babeljs.io/
 [etch]: https://github.com/atom/etch
-[coc-badge]: https://img.shields.io/badge/%E2%9D%A4-code%20of%20conduct-blue.svg?style=flat-square
-[coc]: ./CODE_OF_CONDUCT.md
-[all-contributors-badge]: https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square
-[all-contributors]: #contributors
+
 [travis-badge]: https://img.shields.io/travis/jccguimaraes/project-viewer-plus/master.svg?style=flat-square
 [travis]: https://travis-ci.org/jccguimaraes/project-viewer-plus
+
 [appveyor-badge]: https://img.shields.io/appveyor/ci/jccguimaraes/project-viewer-plus/master.svg?style=flat-square
 [appveyor]: https://ci.appveyor.com/project/jccguimaraes/project-viewer-plus
+
 [circle-badge]: https://img.shields.io/circleci/project/jccguimaraes/project-viewer-plus/master.svg?style=flat-square
 [circle]: https://circleci.com/gh/jccguimaraes/project-viewer-plus
-[code-climate-maintainability]: https://codeclimate.com/github/jccguimaraes/project-viewer-plus/maintainability
+
+[coc-badge]: https://img.shields.io/badge/%E2%9D%A4-code%20of%20conduct-blue.svg?style=flat-square
+[coc]: ./CODE_OF_CONDUCT.md
+
+[all-contributors-badge]: https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square
+[all-contributors]: #contributors
+
 [code-climate-maintainability-badge]: https://api.codeclimate.com/v1/badges/bd825afe8e71dce52f63/maintainability
-[code-climate-coverage]: https://codeclimate.com/github/jccguimaraes/project-viewer-plus/test_coverage
+[code-climate-maintainability]: https://codeclimate.com/github/jccguimaraes/project-viewer-plus/maintainability
 [code-climate-coverage-badge]: https://api.codeclimate.com/v1/badges/bd825afe8e71dce52f63/test_coverage
+[code-climate-coverage]: https://codeclimate.com/github/jccguimaraes/project-viewer-plus/test_coverage
+
+[greenkeeper-badge]: https://badges.greenkeeper.io/jccguimaraes/project-viewer-plus.svg
+[greenkeeper]: https://greenkeeper.io/
+
+[codecov-badge]: https://codecov.io/gh/jccguimaraes/project-viewer-plus/branch/master/graph/badge.svg
+[codecov]: https://codecov.io/gh/jccguimaraes/project-viewer-plus
+
+[bithound]: https://www.bithound.io/github/jccguimaraes/project-viewer-plus
+[bithound-overall-badge]: https://www.bithound.io/github/jccguimaraes/project-viewer-plus/badges/score.svg
+[bithound-code-badge]: https://www.bithound.io/github/jccguimaraes/project-viewer-plus/badges/code.svg
+[bithound-dependencies-badge]: https://www.bithound.io/github/jccguimaraes/project-viewer-plus/badges/dependencies.svg
+
+[snyk-badge]: https://snyk.io/test/github/jccguimaraes/project-viewer-plus/badge.svg?targetFile=package.json
+[snyk]: https://snyk.io/test/github/jccguimaraes/project-viewer-plus?targetFile=package.json
+
+[prettier-badge]: https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square
+[prettier]: https://github.com/jccguimaraes/project-viewer-plus
+
+[inch-badge]: http://inch-ci.org/github/jccguimaraes/project-viewer-plus.svg?branch=master&style=flat-square
+[inch]: http://inch-ci.org/github/jccguimaraes/project-viewer-plus
