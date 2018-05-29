@@ -28,7 +28,7 @@
 **Style**
 
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/jccguimaraes/project-viewer-plus)
-
+[![Inline docs](http://inch-ci.org/github/jccguimaraes/project-viewer-plus.svg?branch=master&style=flat-square)](http://inch-ci.org/github/jccguimaraes/project-viewer-plus)
 
 ## Introduction
 
