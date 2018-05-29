@@ -1,7 +1,7 @@
 {
   "name": "project-viewer-plus",
   "main": "./dist/index",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Manage all your projects into different groups.",
   "keywords": [
     "project",
