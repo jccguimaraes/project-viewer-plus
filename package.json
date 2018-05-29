@@ -21,7 +21,8 @@
   "dependencies": {
     "atom-package-deps": "4.6.2",
     "atom-select-list": "0.7.1",
-    "etch": "0.14.0"
+    "etch": "0.14.0",
+    "uuid": "3.2.1"
   },
   "devDependencies": {
     "@commitlint/cli": "6.2.0",
@@ -47,8 +48,7 @@
     "prettier": "1.13.0",
     "rimraf": "2.6.2",
     "sinon": "5.0.10",
-    "sinon-chai": "3.1.0",
-    "uuid": "3.2.1"
+    "sinon-chai": "3.1.0"
   },
   "scripts": {
     "precommit": "npm run commitmsg",
