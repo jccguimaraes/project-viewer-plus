@@ -15,6 +15,7 @@
 - [Unit tests] Don't fall behind on it!
 - [All-Contributors] Find out why README gets messed
 - [Async / Promises] Consider changing `new Promise...` to `async / try catch`.
+- [Editor / Icon] Hover sometimes does not remove the tooltip
 
 ## docs
 
