@@ -44,15 +44,15 @@ A community package for organizing groups of projects. Enjoy and contribute! ðŸŒ
 
 ## Configuration
 
-Please check this [section](/CONFIGURATION.md)!
+Please check this [section](https://github.com/jccguimaraes/project-viewer-plus/CONFIGURATION.md)!
 
 ## Change Log
 
-Please check this [section](/CHANGELOG.md)!
+Please check this [section](https://github.com/jccguimaraes/project-viewer-plus/CHANGELOG.md)!
 
 ## Contributing
 
-Please check this [section](/CONTRIBUTING.md) and this [section](/CODE_OF_CONDUCT.md)!
+Please check this [section](https://github.com/jccguimaraes/project-viewer-plus/CONTRIBUTING.md) and this [section](https://github.com/jccguimaraes/project-viewer-plus/CODE_OF_CONDUCT.md)!
 
 ## Contributors
 
