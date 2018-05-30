@@ -243,7 +243,7 @@ function RunLinters() {
 
 function RunSpecs() {
     $specpath1 = "$script:PACKAGE_FOLDER\spec\integration\**"
-    $testpath2 = "$script:PACKAGE_FOLDER\spec\unit\**"
+    $specpath2 = "$script:PACKAGE_FOLDER\spec\unit\**"
     $specpath1exists = Test-Path $specpath1
     $specpath2exists = Test-Path $specpath2
     if (!$specpath1exists) {
@@ -256,7 +256,7 @@ function RunSpecs() {
     }
     Write-Host "Running specs..."
     if ($specpath1exists -And $specpath2exists) {
-      & "$script:ATOM_EXE_PATH" --test $specpath1 $specpath1 2>&1 | %{ "$_" }
+      & "$script:ATOM_EXE_PATH" --test $specpath1 $specpath2 2>&1 | %{ "$_" }
     }
 
     if ($LASTEXITCODE -ne 0) {
