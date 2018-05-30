@@ -257,6 +257,7 @@ function RunSpecs() {
     Write-Host "Running specs..."
     if ($specpath1exists -And $specpath2exists) {
       & "$script:ATOM_EXE_PATH" --test $specpath1 $specpath1 2>&1 | %{ "$_" }
+    }
 
     if ($LASTEXITCODE -ne 0) {
         Write-Host "Specs Failed"
