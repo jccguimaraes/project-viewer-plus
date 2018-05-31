@@ -242,8 +242,8 @@ function RunLinters() {
 }
 
 function RunSpecs() {
-    $specpath1 = "$script:PACKAGE_FOLDER\spec\integration\**"
-    $specpath2 = "$script:PACKAGE_FOLDER\spec\unit\**"
+    $specpath1 = "$script:PACKAGE_FOLDER\spec\integration"
+    $specpath2 = "$script:PACKAGE_FOLDER\spec\unit"
     $specpath1exists = Test-Path $specpath1
     $specpath2exists = Test-Path $specpath2
     if (!$specpath1exists) {
