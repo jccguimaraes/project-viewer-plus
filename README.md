@@ -1,4 +1,4 @@
-# Project Viewer Plus
+# Project Viewer Plus (early stage)
 
 **Community**
 
@@ -44,22 +44,22 @@ A community package for organizing groups of projects. Enjoy and contribute! �
 
 ## Configuration
 
-Please check this [section](https://github.com/jccguimaraes/project-viewer-plus/CONFIGURATION.md)!
+Please check this [section](CONFIGURATION.md)!
 
 ## Change Log
 
-Please check this [section](https://github.com/jccguimaraes/project-viewer-plus/CHANGELOG.md)!
+Please check this [section](CHANGELOG.md)!
 
 ## Contributing
 
-Please check this [section](https://github.com/jccguimaraes/project-viewer-plus/CONTRIBUTING.md) and this [section](https://github.com/jccguimaraes/project-viewer-plus/CODE_OF_CONDUCT.md)!
+Please check this [section](CONTRIBUTING.md) and this [section](CODE_OF_CONDUCT.md)!
 
 ## Contributors
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
-| [<img src="https://avatars3.githubusercontent.com/u/14871650?v=4" width="50px;"/><br /><sub><b>João Guimarães</b></sub>](https://github.com/jccguimaraes)<br />[🐛](https://github.com/project-viewer-plus/jccguimaraes/issues?q=author%3Ajccguimaraes "Bug reports") [💻](https://github.com/project-viewer-plus/jccguimaraes/commits?author=jccguimaraes "Code") [🎨](#design-jccguimaraes "Design") [📖](https://github.com/project-viewer-plus/jccguimaraes/commits?author=jccguimaraes "Documentation") [🤔](#ideas-jccguimaraes "Ideas, Planning, & Feedback") | [<img src="https://avatars0.githubusercontent.com/u/1093709?v=4" width="50px;"/><br /><sub><b>Hans Koch</b></sub>](http://hans-koch.me)<br />[💻](https://github.com/project-viewer-plus/jccguimaraes/commits?author=Hammster "Code") [📖](https://github.com/project-viewer-plus/jccguimaraes/commits?author=Hammster "Documentation") [🤔](#ideas-Hammster "Ideas, Planning, & Feedback") | [<img src="https://avatars2.githubusercontent.com/u/10707639?v=4" width="50px;"/><br /><sub><b>Carlos García</b></sub>](https://github.com/cgalvarez)<br />[🚇](#infra-cgalvarez "Infrastructure (Hosting, Build-Tools, etc)") [⚠️](https://github.com/project-viewer-plus/jccguimaraes/commits?author=cgalvarez "Tests") |
-| :---: | :---: | :---: |
+| [<img src="https://avatars3.githubusercontent.com/u/14871650?v=4" width="50px;"/><br /><sub><b>João Guimarães</b></sub>](https://github.com/jccguimaraes)<br />[🐛](https://github.com/project-viewer-plus/jccguimaraes/issues?q=author%3Ajccguimaraes "Bug reports") [💻](https://github.com/project-viewer-plus/jccguimaraes/commits?author=jccguimaraes "Code") [🎨](#design-jccguimaraes "Design") [📖](https://github.com/project-viewer-plus/jccguimaraes/commits?author=jccguimaraes "Documentation") [🤔](#ideas-jccguimaraes "Ideas, Planning, & Feedback") | [<img src="https://avatars0.githubusercontent.com/u/1093709?v=4" width="50px;"/><br /><sub><b>Hans Koch</b></sub>](http://hans-koch.me)<br />[💻](https://github.com/project-viewer-plus/jccguimaraes/commits?author=Hammster "Code") [📖](https://github.com/project-viewer-plus/jccguimaraes/commits?author=Hammster "Documentation") [🤔](#ideas-Hammster "Ideas, Planning, & Feedback") | [<img src="https://avatars2.githubusercontent.com/u/10707639?v=4" width="50px;"/><br /><sub><b>Carlos García</b></sub>](https://github.com/cgalvarez)<br />[🚇](#infra-cgalvarez "Infrastructure (Hosting, Build-Tools, etc)") [⚠️](https://github.com/project-viewer-plus/jccguimaraes/commits?author=cgalvarez "Tests") | [<img src="https://avatars0.githubusercontent.com/u/2207980?v=4" width="50px;"/><br /><sub><b>Daniel P. Shannon</b></sub>](https://daniel.sh)<br />[🐛](https://github.com/project-viewer-plus/jccguimaraes/issues?q=author%3Aphyllisstein "Bug reports") |
+| :---: | :---: | :---: | :---: |
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 [babel]: https://babeljs.io/

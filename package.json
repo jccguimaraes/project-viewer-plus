@@ -13,11 +13,46 @@
   "repository": "https://github.com/jccguimaraes/project-viewer-plus",
   "license": "MIT",
   "engines": {
-    "atom": ">=1.27.1"
+    "atom": ">=1.27.2"
+  },
+  "scripts": {
+    "precommit": "npm run commitmsg",
+    "commitmsg": "commitlint -e $GIT_PARAMS",
+    "clean": "rimraf ./dist",
+    "icons": "node ./bin/file-icons",
+    "contribute": "all-contributors",
+    "linter:spec": "eslint ./spec",
+    "linter:lib": "eslint ./lib",
+    "pretest": "npm run linter:lib",
+    "test": "npm run linter:spec",
+    "posttest": "cross-env NODE_ENV=test atom --test spec/integration/** spec/unit/**",
+    "precompile": "npm run clean",
+    "compile": "babel lib --out-dir dist",
+    "prewatch": "npm run clean",
+    "watch": "babel --watch lib --out-dir dist",
+    "test:coverage": "atom-coverage",
+    "check:coverage": "nyc check-coverage",
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
   },
   "deserializers": {
     "ProjectViewerPlus": "deserialize"
   },
+  "atomTranspilers": [
+    {
+      "glob": "lib/**/*.js",
+      "transpiler": "atom-babel6-transpiler",
+      "options": {
+        "cacheKeyFiles": [
+          "package.json",
+          ".babelrc"
+        ]
+      }
+    }
+  ],
+  "atomTestRunner": "atom-mocha",
+  "package-deps": [
+    "file-icons"
+  ],
   "dependencies": {
     "atom-package-deps": "4.6.2",
     "atom-select-list": "0.7.1",
@@ -49,40 +84,5 @@
     "rimraf": "2.6.2",
     "sinon": "5.0.10",
     "sinon-chai": "3.1.0"
-  },
-  "scripts": {
-    "precommit": "npm run commitmsg",
-    "commitmsg": "commitlint -e $GIT_PARAMS",
-    "clean": "rimraf ./dist",
-    "icons": "node ./bin/file-icons",
-    "contribute": "all-contributors",
-    "linter:spec": "eslint ./spec",
-    "linter:lib": "eslint ./lib",
-    "pretest": "npm run linter:lib",
-    "test": "npm run linter:spec",
-    "posttest": "cross-env NODE_ENV=test atom --test spec/integration/** spec/unit/**",
-    "precompile": "npm run clean",
-    "compile": "babel lib --out-dir dist",
-    "prewatch": "npm run clean",
-    "watch": "babel --watch lib --out-dir dist",
-    "test:coverage": "atom-coverage",
-    "check:coverage": "nyc check-coverage",
-    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
-  },
-  "atomTranspilers": [
-    {
-      "glob": "lib/**/*.js",
-      "transpiler": "atom-babel6-transpiler",
-      "options": {
-        "cacheKeyFiles": [
-          "package.json",
-          ".babelrc"
-        ]
-      }
-    }
-  ],
-  "atomTestRunner": "atom-mocha",
-  "package-deps": [
-    "file-icons"
-  ]
+  }
 }
