@@ -45,7 +45,7 @@
     "file-icons": "git+https://github.com/file-icons/atom.git",
     "husky": "0.14.3",
     "nyc": "11.8.0",
-    "prettier": "1.13.0",
+    "prettier": "1.13.3",
     "rimraf": "2.6.2",
     "sinon": "5.0.10",
     "sinon-chai": "3.1.0"
