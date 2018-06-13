@@ -76,7 +76,7 @@
     "babel-preset-env": "1.7.0",
     "babel-preset-react": "6.24.1",
     "codecov": "3.0.2",
-    "cross-env": "5.1.6",
+    "cross-env": "5.2.0",
     "eslint": "4.19.1",
     "file-icons": "git+https://github.com/file-icons/atom.git",
     "husky": "0.14.3",
