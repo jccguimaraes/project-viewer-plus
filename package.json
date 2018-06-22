@@ -81,9 +81,9 @@
     "file-icons": "git+https://github.com/file-icons/atom.git",
     "husky": "0.14.3",
     "nyc": "12.0.1",
-    "prettier": "1.13.4",
+    "prettier": "1.13.5",
     "rimraf": "2.6.2",
-    "sinon": "5.0.10",
+    "sinon": "5.1.0",
     "sinon-chai": "3.1.0"
   }
 }
