@@ -63,13 +63,13 @@
   "devDependencies": {
     "@commitlint/cli": "7.0.0",
     "atom-babel6-transpiler": "1.2.0",
-    "all-contributors-cli": "5.0.0",
+    "all-contributors-cli": "5.2.1",
     "atom-coverage": "1.1.2",
     "atom-mocha": "2.0.5",
     "babel-cli": "6.26.0",
     "babel-core": "6.26.3",
-    "babel-eslint": "8.2.4",
-    "babel-plugin-add-module-exports": "0.2.1",
+    "babel-plugin-add-module-exports": "0.3.0-pre",
+    "babel-eslint": "8.2.5",
     "babel-plugin-istanbul": "4.1.6",
     "babel-plugin-transform-class-properties": "6.24.1",
     "babel-plugin-transform-object-rest-spread": "6.26.0",
@@ -77,13 +77,13 @@
     "babel-preset-react": "6.24.1",
     "codecov": "3.0.2",
     "cross-env": "5.2.0",
-    "eslint": "5.0.0",
+    "eslint": "5.0.1",
     "file-icons": "git+https://github.com/file-icons/atom.git",
     "husky": "0.14.3",
     "nyc": "12.0.1",
-    "prettier": "1.13.5",
+    "prettier": "1.13.6",
     "rimraf": "2.6.2",
-    "sinon": "5.0.10",
+    "sinon": "6.0.1",
     "sinon-chai": "3.2.0"
   }
 }
