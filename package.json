@@ -58,7 +58,7 @@
     "atom-package-deps": "4.6.2",
     "atom-select-list": "0.7.1",
     "etch": "0.14.0",
-    "uuid": "3.2.1"
+    "uuid": "3.3.0"
   },
   "devDependencies": {
     "@commitlint/cli": "7.0.0",
