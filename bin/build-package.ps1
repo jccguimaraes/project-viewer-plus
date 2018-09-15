@@ -243,7 +243,7 @@ function RunLinters() {
 
 function RunSpecs() {
     Write-Host "Running specs..."
-    if ($specpath1exists -And $specpath2exists) {
+    if ($specpathexists) {
       & "$script:ATOM_EXE_PATH" --test spec 2>&1 | %{ "$_" }
     }
 
