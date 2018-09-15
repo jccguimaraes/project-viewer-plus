@@ -13,8 +13,8 @@
   "repository": "https://github.com/jccguimaraes/project-viewer-plus",
   "license": "MIT",
   "engines": {
-    "atom": ">=1.27.2",
-    "node": "7.9.0"
+    "atom": ">=1.30.0",
+    "node": ">=8.9.3"
   },
   "scripts": {
     "precommit": "npm run commitmsg",
@@ -24,16 +24,13 @@
     "contribute": "all-contributors",
     "linter:spec": "eslint ./spec",
     "linter:lib": "eslint ./lib",
-    "pretest": "npm run linter:lib",
-    "test": "npm run linter:spec",
-    "posttest": "cross-env NODE_ENV=test atom --test spec/integration/** spec/unit/**",
+    "pretest": "npm run linter:spec",
+    "test": "atom --test spec",
     "precompile": "npm run clean",
     "compile": "babel lib --out-dir dist",
     "prewatch": "npm run clean",
-    "watch": "babel --watch lib --out-dir dist",
-    "test:coverage": "atom-coverage",
-    "check:coverage": "nyc check-coverage",
-    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
+    "watch": "npm run linter:lib",
+    "postwatch": "babel --watch lib --out-dir dist"
   },
   "deserializers": {
     "ProjectViewerPlus": "deserialize"
@@ -50,40 +47,36 @@
       }
     }
   ],
-  "atomTestRunner": "atom-mocha",
+  "atomTestRunner": "./spec/runner",
   "package-deps": [
     "file-icons"
   ],
   "dependencies": {
     "atom-package-deps": "4.6.2",
-    "atom-select-list": "0.7.1",
+    "atom-select-list": "0.7.2",
     "etch": "0.14.0",
     "uuid": "3.3.2"
   },
   "devDependencies": {
-    "@commitlint/cli": "7.0.0",
+    "@commitlint/cli": "7.1.1",
+    "all-contributors-cli": "5.4.0",
     "atom-babel6-transpiler": "1.2.0",
-    "all-contributors-cli": "5.2.1",
-    "atom-coverage": "1.1.2",
-    "atom-mocha": "2.0.5",
+    "atom-mocha-test-runner": "^1.2.0",
     "babel-cli": "6.26.0",
     "babel-core": "6.26.3",
-    "babel-plugin-add-module-exports": "0.3.0-pre",
-    "babel-eslint": "8.2.5",
-    "babel-plugin-istanbul": "4.1.6",
+    "babel-eslint": "9.0.0",
+    "babel-plugin-add-module-exports": "0.2.1",
     "babel-plugin-transform-class-properties": "6.24.1",
     "babel-plugin-transform-object-rest-spread": "6.26.0",
     "babel-preset-env": "1.7.0",
     "babel-preset-react": "6.24.1",
-    "codecov": "3.0.2",
-    "cross-env": "5.2.0",
-    "eslint": "5.0.1",
+    "chai": "^4.1.2",
+    "codecov": "3.0.4",
+    "eslint": "5.5.0",
     "file-icons": "git+https://github.com/file-icons/atom.git",
     "husky": "0.14.3",
-    "nyc": "12.0.1",
-    "prettier": "1.13.7",
+    "prettier": "1.14.2",
     "rimraf": "2.6.2",
-    "sinon": "6.0.1",
-    "sinon-chai": "3.2.0"
+    "sinon": "6.1.5"
   }
 }

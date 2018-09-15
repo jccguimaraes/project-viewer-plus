@@ -10,22 +10,11 @@
       "env",
       {
         "targets": {
-          "node": "7.9.0",
-          "browsers": "chrome 58"
+          "node": "8.9.3",
+          "browsers": "chrome 61"
         }
       }
     ],
     "react"
-  ],
-  "env": {
-    "test": {
-      "sourceMaps": "inline",
-      "plugins": [
-        ["add-module-exports", {}],
-        ["transform-class-properties", {}],
-        ["transform-object-rest-spread", {}],
-        "istanbul"
-      ]
-    }
-  }
+  ]
 }

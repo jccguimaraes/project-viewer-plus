@@ -242,21 +242,9 @@ function RunLinters() {
 }
 
 function RunSpecs() {
-    $specpath1 = "$script:PACKAGE_FOLDER\spec\integration"
-    $specpath2 = "$script:PACKAGE_FOLDER\spec\unit"
-    $specpath1exists = Test-Path $specpath1
-    $specpath2exists = Test-Path $specpath2
-    if (!$specpath1exists) {
-        Write-Host "Missing spec\integration folder! Please consider adding a test suite in '.\spec\integration'"
-        return
-    }
-    if (!$specpath2exists) {
-        Write-Host "Missing spec\unit folder! Please consider adding a test suite in '.\spec\unit'"
-        return
-    }
     Write-Host "Running specs..."
     if ($specpath1exists -And $specpath2exists) {
-      & "$script:ATOM_EXE_PATH" --test spec/unit spec/integration spec/integration/services 2>&1 | %{ "$_" }
+      & "$script:ATOM_EXE_PATH" --test spec 2>&1 | %{ "$_" }
     }
 
     if ($LASTEXITCODE -ne 0) {

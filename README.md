@@ -1,4 +1,4 @@
-# Project Viewer Plus (early stage)
+# Project Viewer Plus
 
 **Community**
 
@@ -13,15 +13,10 @@
 
 **Quality**
 
-[![Greenkeeper badge][greenkeeper-badge]][greenkeeper]
 [![CodeClimateMainability][code-climate-maintainability-badge]][code-climate-maintainability]
 [![CodeClimateCoverage][code-climate-coverage-badge]][code-climate-coverage]
 
 [![codecov][codecov-badge]][codecov]
-
-[![bitHound Overall Score][bithound-overall-badge]][bithound]
-[![bitHound Code][bithound-code-badge]][bithound]
-[![bitHound Dependencies][bithound-dependencies-badge]][bithound]
 
 [![Known Vulnerabilities][snyk-badge]][snyk]
 
@@ -84,9 +79,6 @@ Please check this [section](CONTRIBUTING.md) and this [section](CODE_OF_CONDUCT.
 [code-climate-maintainability]: https://codeclimate.com/github/jccguimaraes/project-viewer-plus/maintainability
 [code-climate-coverage-badge]: https://api.codeclimate.com/v1/badges/bd825afe8e71dce52f63/test_coverage
 [code-climate-coverage]: https://codeclimate.com/github/jccguimaraes/project-viewer-plus/test_coverage
-
-[greenkeeper-badge]: https://badges.greenkeeper.io/jccguimaraes/project-viewer-plus.svg
-[greenkeeper]: https://greenkeeper.io/
 
 [codecov-badge]: https://codecov.io/gh/jccguimaraes/project-viewer-plus/branch/master/graph/badge.svg
 [codecov]: https://codecov.io/gh/jccguimaraes/project-viewer-plus

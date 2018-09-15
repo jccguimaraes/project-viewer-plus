@@ -12,19 +12,30 @@
               "command": "project-viewer-plus:toggle-visibility"
             },
             {
-              "label": "Toggle Focus",
+              "label": "Toggle focus",
               "command": "project-viewer-plus:toggle-focus"
             },
             {
-              "label": "Toggle Select List",
-              "command": "project-viewer-plus:toggle-select-list"
+              "label": "Toggle list",
+              "command": "project-viewer-plus:toggle-list"
             },
             {
               "type": "separator"
             },
             {
-              "label": "Open/Edit database file",
-              "command": "project-viewer-plus:open-database-file"
+              "label": "File - edit",
+              "command": "project-viewer-plus:edit-file"
+            },
+            {
+              "label": "File - import",
+              "command": "project-viewer-plus:read-file"
+            },
+            {
+              "label": "File - import legacy",
+              "command": "project-viewer-plus:read-legacy-file"
+            },
+            {
+              "type": "separator"
             },
             {
               "label": "Open Editor",

@@ -1,0 +1,50 @@
+{
+  "groups": [
+    {
+      "name": "group #1",
+      "groups": [
+        {
+          "name": "group #1.2",
+          "order": "position",
+          "id": "123-asd",
+          "groups": [],
+          "projects": [
+            {
+              "name": "project #1.2.1",
+              "icon": "node",
+              "paths": [
+                {
+                  "platform": "win32",
+                  "path": "C:\\path\\to\\project-1.2.1"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "projects": [
+        {
+          "name": "project #1.1",
+          "paths": [
+            {
+              "platform": "darwin",
+              "path": "/path/to/project-1_1"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "project #1",
+      "icon": "node",
+      "paths": [
+        {
+          "platform": "win32",
+          "path": "C:\\path\\to\\project-1"
+        }
+      ]
+    }
+  ]
+}
