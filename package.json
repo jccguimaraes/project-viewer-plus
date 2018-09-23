@@ -17,8 +17,6 @@
     "node": ">=8.9.3"
   },
   "scripts": {
-    "precommit": "npm run commitmsg",
-    "commitmsg": "commitlint -e $GIT_PARAMS",
     "clean": "rimraf ./dist",
     "icons": "node ./bin/file-icons",
     "contribute": "all-contributors",
@@ -77,5 +75,11 @@
     "prettier": "1.14.3",
     "rimraf": "2.6.2",
     "sinon": "6.3.4"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -e $GIT_PARAMS",
+      "pre-commit": "npm run commitmsg"
+    }
   }
 }
