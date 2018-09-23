@@ -23,7 +23,7 @@ const getIcons = () => {
   return JSON.stringify(icons, null, 2).replace(/"/g, '\'');
 };
 
-// v2.1.24
+// v2.1.25
 isArray(require('./../node_modules/file-icons/lib/icons/.icondb'));
 
 if (!icons.length) {
