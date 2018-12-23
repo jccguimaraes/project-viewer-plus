@@ -9,7 +9,6 @@
 
 [![Travis][travis-badge]][travis]
 [![AppVeyor][appveyor-badge]][appveyor]
-[![Circle][circle-badge]][circle]
 
 **Quality**
 
@@ -65,9 +64,6 @@ Please check this [section](CONTRIBUTING.md) and this [section](CODE_OF_CONDUCT.
 
 [appveyor-badge]: https://img.shields.io/appveyor/ci/jccguimaraes/project-viewer-plus/master.svg?style=flat-square
 [appveyor]: https://ci.appveyor.com/project/jccguimaraes/project-viewer-plus
-
-[circle-badge]: https://img.shields.io/circleci/project/jccguimaraes/project-viewer-plus/master.svg?style=flat-square
-[circle]: https://circleci.com/gh/jccguimaraes/project-viewer-plus
 
 [coc-badge]: https://img.shields.io/badge/%E2%9D%A4-code%20of%20conduct-blue.svg?style=flat-square
 [coc]: ./CODE_OF_CONDUCT.md

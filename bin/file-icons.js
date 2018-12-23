@@ -23,7 +23,6 @@ const getIcons = () => {
   return JSON.stringify(icons, null, 2).replace(/"/g, '\'');
 };
 
-// v2.1.25
 isArray(require('./../node_modules/file-icons/lib/icons/.icondb'));
 
 if (!icons.length) {
@@ -32,7 +31,9 @@ if (!icons.length) {
 
 fs.writeFile(
   './lib/constants/icons.js',
-  `/* eslint-disable max-lines */\nexport default ${getIcons()};\n`,
+  `/* eslint-disable max-lines */\n// v2.1.27 (total: ${
+    icons.length
+  })\nexport default ${getIcons()};\n`,
   err => {
     if (err) {
       throw err;
