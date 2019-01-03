@@ -34,7 +34,12 @@ A community package for organizing groups of projects. Enjoy and contribute! ðŸŒ
 - A suite of automation tests for better stability and maintainability;
 - Uses dock instead of panel.
 
-> Atom changes a lot and, due to this nature, sometimes code breaks, features get outdated or even pointless. Be kind! :fist:
+*Important changes*
+
+- This package is not a replacement for `project-viewer` but I will only maintain `project-viewer-plus`. **Why?** `project-viewer` got too big too fast. Maintaining it has become hard. `project-viewer-plus` hopefully will not suffer from some mistakes.
+- Each instance of Atom has it's own state. This means that any change will not affect other istances, such as adding new groups or projects, collapsing or expanding. In order to sync them you need to store into the file the state you want and update the others. **Why?** Keeping everything synced is just to much effort.
+
+> Atom changes a lot and, due to this nature, sometimes code breaks, features get outdated or even pointless. Be kind when opening an issue! :fist:
 
 ## Configuration
 
