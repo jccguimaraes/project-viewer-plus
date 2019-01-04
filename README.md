@@ -28,16 +28,19 @@
 
 A community package for organizing groups of projects. Enjoy and contribute! 🌍
 
-*Key features*
+*Importanct changes*
 
 - Rewritten with [**Babel**][babel] and [**Etch**][etch];
+  - **Why?** Etch is maintained by GitHub and Babel to simplify the use of Etch.
 - A suite of automation tests for better stability and maintainability;
-- Uses dock instead of panel.
-
-*Important changes*
-
-- This package is not a replacement for `project-viewer` but I will only maintain `project-viewer-plus`. **Why?** `project-viewer` got too big too fast. Maintaining it has become hard. `project-viewer-plus` hopefully will not suffer from some mistakes.
-- Each instance of Atom has it's own state. This means that any change will not affect other istances, such as adding new groups or projects, collapsing or expanding. In order to sync them you need to store into the file the state you want and update the others. **Why?** Keeping everything synced is just to much effort.
+- Uses dock instead of panel;
+  - **Why?** Trying to keep up with how Atom works.
+- This package is not a replacement for `project-viewer` but I will only maintain `project-viewer-plus`.
+  - **Why?** `project-viewer` got too big too fast. Maintaining it has become hard. `project-viewer-plus` hopefully will not suffer from some mistakes.
+- Each instance of Atom has it's own state. This means that any change will not affect other istances, such as adding new groups or projects, collapsing or expanding groups. In order to sync them you need to explicit save a state and load on other instances. Each new instance inherits from the current file state;
+  - **Why?** Keeping everything synced is just to much effort.
+- Deprecated `devicons` in favour of `file-icons`.
+  - **Why?** `devicons` is not maintained and `file-icons` offers more than 600 icons at the moment. The only downside is that you need to install it (`project-viewer-plus` always verifies if it's installed on startup and gives you a click install).
 
 > Atom changes a lot and, due to this nature, sometimes code breaks, features get outdated or even pointless. Be kind when opening an issue! :fist:
 
@@ -52,6 +55,11 @@ Please check this [section](CHANGELOG.md)!
 ## Contributing
 
 Please check this [section](CONTRIBUTING.md) and this [section](CODE_OF_CONDUCT.md)!
+
+## Screenshots
+
+File icons verification:
+![file-icons][file-icons]
 
 ## Contributors
 
@@ -97,3 +105,5 @@ Please check this [section](CONTRIBUTING.md) and this [section](CODE_OF_CONDUCT.
 
 [inch-badge]: http://inch-ci.org/github/jccguimaraes/project-viewer-plus.svg?branch=master&style=flat-square
 [inch]: http://inch-ci.org/github/jccguimaraes/project-viewer-plus
+
+[file-icons]: images/pvp-file-icons.png

@@ -13,7 +13,7 @@
   "repository": "https://github.com/jccguimaraes/project-viewer-plus",
   "license": "MIT",
   "engines": {
-    "atom": ">=1.33.0",
+    "atom": ">=1.33.1",
     "node": ">=8.9.3"
   },
   "scripts": {
