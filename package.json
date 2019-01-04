@@ -69,7 +69,7 @@
     "babel-preset-env": "1.7.0",
     "babel-preset-react": "6.24.1",
     "chai": "4.2.0",
-    "eslint": "5.11.1",
+    "eslint": "5.12.0",
     "file-icons": "git+https://github.com/file-icons/atom.git",
     "prettier": "1.15.3",
     "rimraf": "2.6.3",

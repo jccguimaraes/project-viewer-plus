@@ -58,8 +58,8 @@ Please check this [section](CONTRIBUTING.md) and this [section](CODE_OF_CONDUCT.
 
 ## Screenshots
 
-File icons verification:
-![file-icons][file-icons]
+| File icons verification: ![file-icons][file-icons] |
+|---|
 
 ## Contributors
 
