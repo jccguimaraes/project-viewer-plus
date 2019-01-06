@@ -39,8 +39,10 @@ A community package for organizing groups of projects. Enjoy and contribute! ğŸŒ
   - **Why?** `project-viewer` got too big too fast. Maintaining it has become hard. `project-viewer-plus` hopefully will not suffer from some mistakes.
 - Each instance of Atom has it's own state. This means that any change will not affect other istances, such as adding new groups or projects, collapsing or expanding groups. In order to sync them you need to explicit save a state and load on other instances. Each new instance inherits from the current file state;
   - **Why?** Keeping everything synced is just to much effort.
-- Deprecated `devicons` in favour of `file-icons`.
+- Deprecated `devicons` in favour of `file-icons`;
   - **Why?** `devicons` is not maintained and `file-icons` offers more than 600 icons at the moment. The only downside is that you need to install it (`project-viewer-plus` always verifies if it's installed on startup and gives you a click install).
+- No more coloring groups / projects.
+  - **Why?** it's just too much to add for now (maybe later...)
 
 > Atom changes a lot and, due to this nature, sometimes code breaks, features get outdated or even pointless. Be kind when opening an issue! :fist:
 

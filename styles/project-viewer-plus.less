@@ -31,28 +31,31 @@
   .list-nested-item > .list-item:hover {
     cursor: pointer;
     color: @text-color-highlight;
-    transition: color 0.2s;
+    transition: color @pv-transition-delay;
   }
 
   .list-item.pv-project,
   .list-item.pv-group {
     -webkit-app-region: no-drag;
 
+    &.dragging {
+      color: @pv-primary;
+    }
+
     &.dragging + .list-tree {
-      opacity: 0.3;
-      transition: opacity 0.2s;
+      display: none;
     }
   }
 
   .list-item.pv-project,
   .list-item.pv-project span {
-    transition: padding 0.2s;
+    transition: padding @pv-transition-delay, color @pv-transition-delay;
 
     &:hover {
       cursor: pointer;
       color: @text-color-highlight;
       padding-left: 10px;
-      transition: color 0.2s;
+      transition: color @pv-transition-delay;
     }
   }
 
@@ -66,7 +69,7 @@
       background-color: @text-color-selected;
       visibility: hidden;
       transform: scaleY(0);
-      transition: transform 0.2s, visibility 0.2s;
+      transition: transform @pv-transition-delay, visibility @pv-transition-delay;
       padding-left: 0;
     }
 
@@ -87,15 +90,6 @@
       margin-bottom: 5px;
     }
   }
-
-  // change this
-  // .list-item.pv-project.selected {
-  //   color: @app-background-color;
-  //
-  //   &::before {
-  //     background-color: @text-color-success;
-  //   }
-  // }
 }
 
 .project-viewer-plus-editor {
