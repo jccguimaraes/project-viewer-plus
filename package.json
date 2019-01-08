@@ -57,7 +57,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "7.2.1",
-    "all-contributors-cli": "5.6.0",
+    "all-contributors-cli": "5.6.1",
     "atom-babel6-transpiler": "1.2.0",
     "atom-mocha-test-runner": "^1.2.0",
     "babel-cli": "6.26.0",
