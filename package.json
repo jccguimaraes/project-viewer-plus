@@ -74,11 +74,5 @@
     "prettier": "1.15.3",
     "rimraf": "2.6.3",
     "sinon": "7.2.2"
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "ccommitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "npm t"
-    }
   }
 }

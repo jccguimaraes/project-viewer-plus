@@ -1,0 +1,6 @@
+{
+  "hooks": {
+    "commit-msg": "ccommitlint -E HUSKY_GIT_PARAMS",
+    "pre-commit": "npm t"
+  }
+}
