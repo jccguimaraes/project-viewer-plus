@@ -138,22 +138,13 @@ function RunLinters() {
     $testpathexists = Test-Path $testpath
     $eslintpath = "$script:PACKAGE_FOLDER\node_modules\.bin\eslint.cmd"
     $lintwitheslint = HasLinter -LinterName "eslint"
-    $standardpath = "$script:PACKAGE_FOLDER\node_modules\.bin\standard.cmd"
-    $lintwithstandard = HasLinter -LinterName "standard"
-    if (($libpathexists -or $srcpathexists) -and ($lintwitheslint -or $lintwithstandard)) {
+    if (($libpathexists -or $srcpathexists) -and ($lintwitheslint)) {
         Write-Host "Linting package..."
     }
 
     if ($libpathexists) {
         if ($lintwitheslint) {
             & "$eslintpath" lib
-            if ($LASTEXITCODE -ne 0) {
-                ExitWithCode -exitcode $LASTEXITCODE
-            }
-        }
-
-        if ($lintwithstandard) {
-            & "$standardpath" lib/**/*.js
             if ($LASTEXITCODE -ne 0) {
                 ExitWithCode -exitcode $LASTEXITCODE
             }
@@ -167,16 +158,9 @@ function RunLinters() {
                 ExitWithCode -exitcode $LASTEXITCODE
             }
         }
-
-        if ($lintwithstandard) {
-            & "$standardpath" src/**/*.js
-            if ($LASTEXITCODE -ne 0) {
-                ExitWithCode -exitcode $LASTEXITCODE
-            }
-        }
     }
 
-    if ($specpathexists -and ($lintwitheslint -or $lintwithstandard)) {
+    if ($specpathexists -and ($lintwitheslint)) {
         Write-Host "Linting package specs..."
         if ($lintwitheslint) {
             & "$eslintpath" spec
@@ -184,27 +168,13 @@ function RunLinters() {
                 ExitWithCode -exitcode $LASTEXITCODE
             }
         }
-
-        if ($lintwithstandard) {
-            & "$standardpath" spec/**/*.js
-            if ($LASTEXITCODE -ne 0) {
-                ExitWithCode -exitcode $LASTEXITCODE
-            }
-        }
     }
 
-    if ($testpathexists -and ($lintwitheslint -or $lintwithstandard)) {
+    if ($testpathexists -and ($lintwitheslint)) {
         Write-Host "Linting package tests..."
 
         if ($lintwitheslint) {
             & "$eslintpath" test
-            if ($LASTEXITCODE -ne 0) {
-                ExitWithCode -exitcode $LASTEXITCODE
-            }
-        }
-
-        if ($lintwithstandard) {
-            & "$standardpath" test/**/*.js
             if ($LASTEXITCODE -ne 0) {
                 ExitWithCode -exitcode $LASTEXITCODE
             }

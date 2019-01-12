@@ -149,24 +149,6 @@ if has_linter "eslint"; then
   fi
 fi
 
-if has_linter "standard"; then
-  if [ -d ./lib ]; then
-    echo "Linting package using standard..."
-    ./node_modules/.bin/standard "lib/**/*.js"
-    rc=$?; if [ $rc -ne 0 ]; then exit $rc; fi
-  fi
-  if [ -d ./spec ]; then
-    echo "Linting package specs using standard..."
-    ./node_modules/.bin/standard "spec/**/*.js"
-    rc=$?; if [ $rc -ne 0 ]; then exit $rc; fi
-  fi
-  if [ -d ./test ]; then
-    echo "Linting package tests using standard..."
-    ./node_modules/.bin/standard "test/**/*.js"
-    rc=$?; if [ $rc -ne 0 ]; then exit $rc; fi
-  fi
-fi
-
 if [ -d ./spec ]; then
   echo "Running specs..."
   "${ATOM_SCRIPT_PATH}" --test spec
