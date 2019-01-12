@@ -77,8 +77,8 @@
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -e $GIT_PARAMS",
-      "pre-commit": "npm run commitmsg"
+      "commit-msg": "ccommitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "npm t"
     }
   }
 }
