@@ -31,7 +31,7 @@ if (!icons.length) {
 
 fs.writeFile(
   './lib/constants/icons.js',
-  `/* eslint-disable max-lines */\n// v2.1.27 (total: ${
+  `/* eslint-disable max-lines */\n// v2.1.28 (total: ${
     icons.length
   })\nexport default ${getIcons()};\n`,
   err => {
