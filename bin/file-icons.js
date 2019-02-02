@@ -3,6 +3,7 @@
 const fs = require('fs');
 
 const icons = [];
+const version = '2.1.29';
 
 const isArray = arr => {
   if (Array.isArray(arr)) {
@@ -31,7 +32,7 @@ if (!icons.length) {
 
 fs.writeFile(
   './lib/constants/icons.js',
-  `/* eslint-disable max-lines */\n// v2.1.28 (total: ${
+  `/* eslint-disable max-lines */\n// v${version} (total: ${
     icons.length
   })\nexport default ${getIcons()};\n`,
   err => {
