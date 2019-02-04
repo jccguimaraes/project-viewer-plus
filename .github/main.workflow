@@ -1,14 +1,8 @@
-workflow "New workflow" {
-  on = "push"
-  resolves = ["GitHub Action for Docker"]
-}
-
 action "Build" {
   uses = "actions/npm@master"
   args = "install"
 }
 
-action "GitHub Action for Docker" {
-  uses = "actions/docker/cli@c08a5fc9e0286844156fefff2c141072048141f6"
-  runs = "bin/build-package.sh"
+action "Filters for GitHub Actions" {
+  uses = "actions/bin/filter@c6471707d308175c57dfe91963406ef205837dbd"
 }
