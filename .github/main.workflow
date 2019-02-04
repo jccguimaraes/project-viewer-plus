@@ -1,6 +1,6 @@
 workflow "New workflow" {
   on = "push"
-  resolves = ["Test"]
+  resolves = ["GitHub Action for Docker"]
 }
 
 action "Build" {
@@ -8,8 +8,7 @@ action "Build" {
   args = "install"
 }
 
-action "Test" {
-  needs = "Build"
-  uses = "actions/npm@master"
-  args = "test"
+action "GitHub Action for Docker" {
+  uses = "actions/docker/cli@c08a5fc9e0286844156fefff2c141072048141f6"
+  runs = "bin/build-package.sh"
 }
