@@ -13,15 +13,15 @@
   "repository": "https://github.com/jccguimaraes/project-viewer-plus",
   "license": "MIT",
   "engines": {
-    "atom": ">=1.34.0",
+    "atom": ">=1.38.1",
     "node": ">=8.9.3"
   },
   "scripts": {
     "clean": "rimraf ./dist",
     "icons": "node ./bin/file-icons",
     "contribute": "all-contributors",
-    "linter:spec": "eslint ./spec",
-    "linter:lib": "eslint ./lib",
+    "linter:spec": "eslint ./spec --fix",
+    "linter:lib": "eslint ./lib --fix",
     "pretest": "npm run linter:spec",
     "test": "atom --test spec",
     "precompile": "npm run clean",
@@ -50,29 +50,30 @@
     "file-icons"
   ],
   "dependencies": {
-    "atom-package-deps": "5.0.0",
+    "atom-package-deps": "5.1.0",
     "atom-select-list": "0.7.2",
     "etch": "0.14.0",
     "uuid": "3.3.2"
   },
   "devDependencies": {
-    "@commitlint/cli": "7.5.0",
-    "all-contributors-cli": "5.11.0",
+    "@commitlint/cli": "8.0.0",
+    "all-contributors-cli": "6.7.0",
     "atom-babel6-transpiler": "1.2.0",
     "atom-mocha-test-runner": "1.2.0",
     "babel-cli": "6.26.0",
     "babel-core": "6.26.3",
     "babel-eslint": "10.0.1",
-    "babel-plugin-add-module-exports": "1.0.0",
+    "babel-plugin-add-module-exports": "1.0.2",
     "babel-plugin-transform-class-properties": "6.24.1",
     "babel-plugin-transform-object-rest-spread": "6.26.0",
     "babel-preset-env": "1.7.0",
     "babel-preset-react": "6.24.1",
     "chai": "4.2.0",
-    "eslint": "5.13.0",
-    "file-icons": "git+https://github.com/file-icons/atom.git",
-    "prettier": "1.16.3",
+    "eslint": "5.16.0",
+    "file-icons": "git+https://github.com/file-icons/atom#v2.1.33",
+    "husky": "2.4.1",
+    "prettier": "1.18.2",
     "rimraf": "2.6.3",
-    "sinon": "7.2.3"
+    "sinon": "7.3.2"
   }
 }

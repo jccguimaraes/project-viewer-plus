@@ -26,8 +26,12 @@ describe('state', () => {
     const group1 = storedState.groups[0];
     expect(group1.name).to.equal('group #1');
     expect(group1.id).to.be.a('string');
-    expect(group1.order).to.be.a('string').to.equal('alphabetically');
-    expect(group1.icon).to.be.a('string').to.equal('');
+    expect(group1.order)
+      .to.be.a('string')
+      .to.equal('alphabetically');
+    expect(group1.icon)
+      .to.be.a('string')
+      .to.equal('');
 
     const project1 = storedState.projects[0];
     expect(project1.name).to.equal('project #1');
@@ -43,7 +47,7 @@ describe('state', () => {
       .to.equal('win32');
   });
 
-  it('should update only the icon for entry with id \'123-asd\'', () => {
+  it('should update only the icon for entry with id "123-asd"', () => {
     state.deserializeGroupAndReturnId(fileState, true);
 
     const id = '123-asd';

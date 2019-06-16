@@ -1,9 +1,9 @@
 'use strict';
 
 const fs = require('fs');
+const { version } = require('./../node_modules/file-icons/package.json');
 
 const icons = [];
-const version = '2.1.29';
 
 const isArray = arr => {
   if (Array.isArray(arr)) {
@@ -21,7 +21,7 @@ const isArray = arr => {
 };
 
 const getIcons = () => {
-  return JSON.stringify(icons, null, 2).replace(/"/g, '\'');
+  return JSON.stringify(icons, null, 2).replace(/"/g, "'");
 };
 
 isArray(require('./../node_modules/file-icons/lib/icons/.icondb'));
