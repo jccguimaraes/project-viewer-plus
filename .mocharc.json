@@ -1,0 +1,6 @@
+{
+	"mocha": {
+		"bail": true,
+		"ui": "bdd"
+	}
+}

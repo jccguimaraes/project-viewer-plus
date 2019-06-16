@@ -45,7 +45,7 @@
       }
     }
   ],
-  "atomTestRunner": "./spec/runner",
+  "atomTestRunner": "atom-mocha",
   "package-deps": [
     "file-icons"
   ],
@@ -59,7 +59,7 @@
     "@commitlint/cli": "8.0.0",
     "all-contributors-cli": "6.7.0",
     "atom-babel6-transpiler": "1.2.0",
-    "atom-mocha-test-runner": "1.2.0",
+    "atom-mocha": "^2.1.2",
     "babel-cli": "6.26.0",
     "babel-core": "6.26.3",
     "babel-eslint": "10.0.1",
