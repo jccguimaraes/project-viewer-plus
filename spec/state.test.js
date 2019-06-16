@@ -3,9 +3,9 @@
 import { expect } from 'chai';
 import sinon from 'sinon';
 
-import state from '../../lib/services/state';
+import state from '../lib/services/state';
 
-import fileState from '../mocks/file.json';
+import fileState from './mocks/file.json';
 
 describe('state', () => {
   it('should serialize the state', () => {

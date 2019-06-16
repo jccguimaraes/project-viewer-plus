@@ -23,7 +23,7 @@
     "linter:spec": "eslint ./spec --fix",
     "linter:lib": "eslint ./lib --fix",
     "pretest": "npm run linter:spec",
-    "test": "atom --test spec",
+    "test": "atom -t spec/",
     "precompile": "npm run clean",
     "compile": "babel lib --out-dir dist",
     "prewatch": "npm run clean",
@@ -72,7 +72,6 @@
     "eslint": "5.16.0",
     "file-icons": "git+https://github.com/file-icons/atom#v2.1.33",
     "husky": "2.4.1",
-    "prettier": "1.18.2",
     "rimraf": "2.6.3",
     "sinon": "7.3.2"
   }

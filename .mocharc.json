@@ -1,6 +1,7 @@
 {
 	"mocha": {
 		"bail": true,
-		"ui": "bdd"
+		"ui": "bdd",
+		"recursive": true
 	}
 }
