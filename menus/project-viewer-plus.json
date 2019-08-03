@@ -23,6 +23,14 @@
               "type": "separator"
             },
             {
+              "label": "State - clear (read README)",
+              "command": "project-viewer-plus:clear-current-state"
+            },
+            {
+              "label": "File - save",
+              "command": "project-viewer-plus:save-file"
+            },
+            {
               "label": "File - edit",
               "command": "project-viewer-plus:edit-file"
             },

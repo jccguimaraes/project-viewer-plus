@@ -10,8 +10,8 @@
       "env",
       {
         "targets": {
-          "node": "8.9.3",
-          "browsers": "chrome 61"
+          "node": "10.2.0",
+          "browsers": "chrome 66"
         }
       }
     ],
