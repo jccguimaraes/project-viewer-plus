@@ -1,42 +1,35 @@
-'use strict';
+"use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.default = void 0;
 
-var _type = require('./type');
+var _type = _interopRequireDefault(require("./type"));
 
-var _type2 = _interopRequireDefault(_type);
+var _order = _interopRequireDefault(require("./order"));
 
-var _order = require('./order');
+var _options = _interopRequireDefault(require("./options"));
 
-var _order2 = _interopRequireDefault(_order);
+var _name = _interopRequireDefault(require("./name"));
 
-var _options = require('./options');
+var _paths = _interopRequireDefault(require("./paths"));
 
-var _options2 = _interopRequireDefault(_options);
+var _path = _interopRequireDefault(require("./path"));
 
-var _name = require('./name');
-
-var _name2 = _interopRequireDefault(_name);
-
-var _paths = require('./paths');
-
-var _paths2 = _interopRequireDefault(_paths);
-
-var _path = require('./path');
-
-var _path2 = _interopRequireDefault(_path);
+var _groups = _interopRequireDefault(require("./groups"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-exports.default = {
-  EditorType: _type2.default,
-  EditorOrder: _order2.default,
-  EditorOptions: _options2.default,
-  EditorName: _name2.default,
-  EditorPaths: _paths2.default,
-  EditorPath: _path2.default
+var _default = {
+  EditorType: _type.default,
+  EditorOrder: _order.default,
+  EditorOptions: _options.default,
+  EditorName: _name.default,
+  EditorPaths: _paths.default,
+  EditorPath: _path.default,
+  EditorGroups: _groups.default
 };
+exports.default = _default;
 module.exports = exports.default;
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uL2xpYi9jb21wb25lbnRzL2VkaXRvci9pbmRleC5qcyJdLCJuYW1lcyI6WyJFZGl0b3JUeXBlIiwiRWRpdG9yT3JkZXIiLCJFZGl0b3JPcHRpb25zIiwiRWRpdG9yTmFtZSIsIkVkaXRvclBhdGhzIiwiRWRpdG9yUGF0aCJdLCJtYXBwaW5ncyI6Ijs7Ozs7O0FBQUE7Ozs7QUFDQTs7OztBQUNBOzs7O0FBQ0E7Ozs7QUFDQTs7OztBQUNBOzs7Ozs7a0JBRWU7QUFDYkEsNEJBRGE7QUFFYkMsOEJBRmE7QUFHYkMsa0NBSGE7QUFJYkMsNEJBSmE7QUFLYkMsOEJBTGE7QUFNYkM7QUFOYSxDIiwiZmlsZSI6ImluZGV4LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IEVkaXRvclR5cGUgZnJvbSAnLi90eXBlJztcbmltcG9ydCBFZGl0b3JPcmRlciBmcm9tICcuL29yZGVyJztcbmltcG9ydCBFZGl0b3JPcHRpb25zIGZyb20gJy4vb3B0aW9ucyc7XG5pbXBvcnQgRWRpdG9yTmFtZSBmcm9tICcuL25hbWUnO1xuaW1wb3J0IEVkaXRvclBhdGhzIGZyb20gJy4vcGF0aHMnO1xuaW1wb3J0IEVkaXRvclBhdGggZnJvbSAnLi9wYXRoJztcblxuZXhwb3J0IGRlZmF1bHQge1xuICBFZGl0b3JUeXBlLFxuICBFZGl0b3JPcmRlcixcbiAgRWRpdG9yT3B0aW9ucyxcbiAgRWRpdG9yTmFtZSxcbiAgRWRpdG9yUGF0aHMsXG4gIEVkaXRvclBhdGhcbn07XG4iXX0=
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uL2xpYi9jb21wb25lbnRzL2VkaXRvci9pbmRleC5qcyJdLCJuYW1lcyI6WyJFZGl0b3JUeXBlIiwiRWRpdG9yT3JkZXIiLCJFZGl0b3JPcHRpb25zIiwiRWRpdG9yTmFtZSIsIkVkaXRvclBhdGhzIiwiRWRpdG9yUGF0aCIsIkVkaXRvckdyb3VwcyJdLCJtYXBwaW5ncyI6Ijs7Ozs7OztBQUFBOztBQUNBOztBQUNBOztBQUNBOztBQUNBOztBQUNBOztBQUNBOzs7O2VBRWU7QUFDYkEsRUFBQUEsVUFBVSxFQUFWQSxhQURhO0FBRWJDLEVBQUFBLFdBQVcsRUFBWEEsY0FGYTtBQUdiQyxFQUFBQSxhQUFhLEVBQWJBLGdCQUhhO0FBSWJDLEVBQUFBLFVBQVUsRUFBVkEsYUFKYTtBQUtiQyxFQUFBQSxXQUFXLEVBQVhBLGNBTGE7QUFNYkMsRUFBQUEsVUFBVSxFQUFWQSxhQU5hO0FBT2JDLEVBQUFBLFlBQVksRUFBWkE7QUFQYSxDIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IEVkaXRvclR5cGUgZnJvbSAnLi90eXBlJztcbmltcG9ydCBFZGl0b3JPcmRlciBmcm9tICcuL29yZGVyJztcbmltcG9ydCBFZGl0b3JPcHRpb25zIGZyb20gJy4vb3B0aW9ucyc7XG5pbXBvcnQgRWRpdG9yTmFtZSBmcm9tICcuL25hbWUnO1xuaW1wb3J0IEVkaXRvclBhdGhzIGZyb20gJy4vcGF0aHMnO1xuaW1wb3J0IEVkaXRvclBhdGggZnJvbSAnLi9wYXRoJztcbmltcG9ydCBFZGl0b3JHcm91cHMgZnJvbSAnLi9ncm91cHMnO1xuXG5leHBvcnQgZGVmYXVsdCB7XG4gIEVkaXRvclR5cGUsXG4gIEVkaXRvck9yZGVyLFxuICBFZGl0b3JPcHRpb25zLFxuICBFZGl0b3JOYW1lLFxuICBFZGl0b3JQYXRocyxcbiAgRWRpdG9yUGF0aCxcbiAgRWRpdG9yR3JvdXBzXG59O1xuIl19

@@ -1,18 +1,19 @@
-'use strict';
+"use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.default = void 0;
 
-var _projectViewerPlus = require('./project-viewer-plus');
-
-var _projectViewerPlus2 = _interopRequireDefault(_projectViewerPlus);
+var _projectViewerPlus = _interopRequireDefault(require("./project-viewer-plus"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /**
  * Activate Project Viewer Plus in Atom
  */
-exports.default = new _projectViewerPlus2.default();
+var _default = new _projectViewerPlus.default();
+
+exports.default = _default;
 module.exports = exports.default;
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL2xpYi9pbmRleC5qcyJdLCJuYW1lcyI6WyJQcm9qZWN0Vmlld2VyUGx1cyJdLCJtYXBwaW5ncyI6Ijs7Ozs7O0FBQUE7Ozs7OztBQUVBOzs7a0JBR2UsSUFBSUEsMkJBQUosRSIsImZpbGUiOiJpbmRleC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBQcm9qZWN0Vmlld2VyUGx1cyBmcm9tICcuL3Byb2plY3Qtdmlld2VyLXBsdXMnO1xuXG4vKipcbiAqIEFjdGl2YXRlIFByb2plY3QgVmlld2VyIFBsdXMgaW4gQXRvbVxuICovXG5leHBvcnQgZGVmYXVsdCBuZXcgUHJvamVjdFZpZXdlclBsdXMoKTtcbiJdfQ==
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL2xpYi9pbmRleC5qcyJdLCJuYW1lcyI6WyJQcm9qZWN0Vmlld2VyUGx1cyJdLCJtYXBwaW5ncyI6Ijs7Ozs7OztBQUFBOzs7O0FBQ0E7OztlQUdlLElBQUlBLDBCQUFKLEUiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUHJvamVjdFZpZXdlclBsdXMgZnJvbSAnLi9wcm9qZWN0LXZpZXdlci1wbHVzJztcbi8qKlxuICogQWN0aXZhdGUgUHJvamVjdCBWaWV3ZXIgUGx1cyBpbiBBdG9tXG4gKi9cbmV4cG9ydCBkZWZhdWx0IG5ldyBQcm9qZWN0Vmlld2VyUGx1cygpO1xuIl19
