@@ -11,6 +11,11 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Each instance of Atom has it's own state.
 - Deprecated `devicons` in favour of `file-icons` package.
 
+## [0.0.5] - 2019-07-07
+### Fixed
+- Improvements to the Editor
+- Fix state issues
+
 ## [0.0.4] - 2019-06-20
 ### Fixed
 - Improvements to the Editor
