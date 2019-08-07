@@ -12,7 +12,6 @@
 .project-viewer-plus {
   contain: size;
   overflow: auto;
-  z-index: 2;
 
   .list-tree.has-collapsable-children {
     height: 100%;
@@ -106,6 +105,14 @@
 
     &.as-row {
       flex-direction: row;
+    }
+
+    .list-item {
+      cursor: pointer;
+
+      &:hover {
+        color: @pv-primary;
+      }
     }
   }
 
