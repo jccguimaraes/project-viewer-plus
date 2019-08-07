@@ -7,7 +7,7 @@ import state from '../lib/services/state';
 
 import fileState from './mocks/file.json';
 
-describe('state', () => {
+describe.skip('state', () => {
   it('should serialize the state', () => {
     state.deserializeGroupAndReturnId(fileState, true);
 

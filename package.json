@@ -67,6 +67,6 @@
     "file-icons": "git+https://github.com/file-icons/atom#v2.1.33",
     "husky": "^3.0.2",
     "rimraf": "^2.6.3",
-    "sinon": "^7.4.0"
+    "sinon": "^7.4.1"
   }
 }
