@@ -6,6 +6,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased] - 2019-08-10
 - A suite of automation tests for better stability and maintainability;
 
+## [0.0.8] - 2019-08-10
+## Fixed
+- Dependency for `file-icons` added again.
+
 ## [0.0.7] - 2019-08-10
 ## Fixed
 - Temporary remove list functionality;
