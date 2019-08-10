@@ -31,20 +31,13 @@
     "postwatch": "babel --watch lib --out-dir dist"
   },
   "deserializers": {
-    "ProjectViewerPlus": "deserialize"
+    "project-viewer-plus/mainView": "deserializeProjectViewerPlusView"
   },
-  "atomTranspilers": [
-    {
-      "glob": "lib/**/*.js",
-      "transpiler": "@atom/babel7-transpiler"
-    }
-  ],
   "atomTestRunner": "atom-mocha",
   "package-deps": [
     "file-icons"
   ],
   "dependencies": {
-    "@atom/babel7-transpiler": "^1.0.0-1",
     "atom-package-deps": "^5.1.0",
     "atom-select-list": "^0.7.2",
     "etch": "^0.14.0",
@@ -65,7 +58,7 @@
     "chai": "^4.2.0",
     "eslint": "^6.1.0",
     "file-icons": "git+https://github.com/file-icons/atom#v2.1.33",
-    "husky": "^3.0.2",
+    "husky": "^3.0.3",
     "rimraf": "^2.6.3",
     "sinon": "^7.4.1"
   }
