@@ -6,6 +6,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased] - 2019-08-10
 - A suite of automation tests for better stability and maintainability;
 
+## [0.0.7] - 2019-08-10
+## Fixed
+- Temporary remove list functionality;
+
 ## [0.0.6] - 2019-08-10
 ## Added
 - Rewritten with **Babel** and **Etch**;
