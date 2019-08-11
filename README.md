@@ -13,17 +13,14 @@
 **Quality**
 
 [![CodeClimateMainability][code-climate-maintainability-badge]][code-climate-maintainability]
-[![CodeClimateCoverage][code-climate-coverage-badge]][code-climate-coverage]
-
-[![codecov][codecov-badge]][codecov]
-
 [![Known Vulnerabilities][snyk-badge]][snyk]
 
+<!--
 **Style**
 
 [![code style: prettier][prettier-badge]][prettier]
 [![Inline docs][inch-badge]][inch]
-
+-->
 ## Introduction
 
 A community package for organizing groups of projects. Enjoy and contribute! 🌍
