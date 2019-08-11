@@ -21,7 +21,7 @@ const isArray = arr => {
 };
 
 const getIcons = () => {
-  return JSON.stringify(icons, null, 2).replace(/"/g, "'");
+  return JSON.stringify(icons, null, 2).replace(/"/g, '\'');
 };
 
 isArray(require('./../node_modules/file-icons/lib/icons/.icondb'));

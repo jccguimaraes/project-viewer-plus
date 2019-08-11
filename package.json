@@ -17,18 +17,15 @@
     "node": ">=10.2.0"
   },
   "scripts": {
-    "clean": "rimraf ./dist",
     "icons": "node ./bin/file-icons",
     "contribute": "all-contributors",
     "linter:spec": "eslint ./spec --fix",
     "linter:lib": "eslint ./lib --fix",
     "pretest": "npm run linter:spec",
-    "test": "atom -t spec/",
-    "precompile": "npm run clean",
+    "test": "atom -t ./spec",
     "compile": "babel lib --out-dir dist",
-    "prewatch": "npm run clean",
-    "watch": "npm run linter:lib",
-    "postwatch": "babel --watch lib --out-dir dist"
+    "prewatch": "npm run linter:lib",
+    "watch": "babel --verbose --delete-dir-on-start --watch lib --out-dir dist"
   },
   "deserializers": {
     "project-viewer-plus/mainView": "deserializeProjectViewerPlusView"
@@ -59,7 +56,6 @@
     "eslint": "^6.1.0",
     "file-icons": "git+https://github.com/file-icons/atom#v2.1.33",
     "husky": "^3.0.3",
-    "rimraf": "^2.6.3",
     "sinon": "^7.4.1"
   }
 }
