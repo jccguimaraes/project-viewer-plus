@@ -3,8 +3,12 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased] - 2019-08-10
+## [Unreleased]
 - A suite of automation tests for better stability and maintainability;
+
+## [0.0.10] - 2019-08-11
+## Fixed
+- Reload view when `file-icons` is activated after view is activated.
 
 ## [0.0.9] - 2019-08-11
 ## Fixed

@@ -7,6 +7,7 @@ let pkg;
 
 describe('package lifecycle', () => {
   before(async () => {
+    attachToDOM(atom.workspace.getElement());
     pane = atom.workspace.getActivePane();
     dock = atom.workspace.getRightDock();
     pkg = await atom.packages.loadPackage(pvpPackage);
