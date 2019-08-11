@@ -16,7 +16,7 @@
               "command": "project-viewer-plus:toggle-focus"
             },
             {
-              "label": "Toggle list",
+              "label": "Toggle list (disabled)",
               "command": "project-viewer-plus:toggle-list"
             },
             {

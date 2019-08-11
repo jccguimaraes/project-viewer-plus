@@ -8,7 +8,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [0.0.10] - 2019-08-11
 ## Fixed
-- Reload view when `file-icons` is activated after view is activated.
+- Reload view when `file-icons` is activated after view is activated;
+- Focus issue when no view is active;
+- Show on menu that select list is disabled.
 
 ## [0.0.9] - 2019-08-11
 ## Fixed
