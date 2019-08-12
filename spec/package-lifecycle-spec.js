@@ -27,26 +27,6 @@ describe('package lifecycle', () => {
     pkg = atom.packages.getLoadedPackage(packageName);
   });
 
-  it('should have all commands available', () => {
-    const { label, submenu } = atom.menu.template.filter(menu =>
-      menu.label === 'Packages'
-    )[0].submenu[0];
-
-    expect(label).to.equal('Project Viewer Plus');
-    expect(submenu).to.have.length(11);
-    expect(submenu[0].label).to.equal('Toggle visibility');
-    expect(submenu[1].label).to.equal('Toggle focus');
-    expect(submenu[2].label).to.equal('Toggle list (disabled)');
-    expect(submenu[3].type).to.equal('separator');
-    expect(submenu[4].label).to.equal('State - clear (read README)');
-    expect(submenu[5].label).to.equal('File - save');
-    expect(submenu[6].label).to.equal('File - edit');
-    expect(submenu[7].label).to.equal('File - import');
-    expect(submenu[8].label).to.equal('File - import legacy');
-    expect(submenu[9].type).to.equal('separator');
-    expect(submenu[10].label).to.equal('Open Editor');
-  });
-
   it('should not open the view on new Atom instance', async () => {
     expect(dock.getPaneItems().length).to.equal(0);
   });

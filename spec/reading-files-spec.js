@@ -3,6 +3,9 @@
 const path = require('path');
 const etch = require('etch');
 
+const wait = ms =>
+  new Promise(resolve => window.setTimeout(() => resolve(), ms));
+
 const pvpPackage = path.resolve(__dirname, '..');
 const databasePath = 'project-viewer-plus.database.localPath';
 const databaseName = 'project-viewer-plus.database.fileName';
@@ -12,10 +15,6 @@ const uri = `atom://${packageName}:`;
 
 let dock;
 let pkg;
-
-/* eslint-disable-next-line require-jsdoc */
-const setTimeoutPromise = ms =>
-  new Promise(resolve => window.setTimeout(() => resolve(), ms));
 
 describe('reading files', () => {
   when('no current or legacy files exists', () => {
@@ -37,7 +36,7 @@ describe('reading files', () => {
 
       // hack - force etch to update and render
       await etch.getScheduler().getNextUpdatePromise();
-      await setTimeoutPromise(50);
+      await wait(10);
 
       expect(paneItem.groups).to.be.an('array').that.is.empty;
       expect(paneItem.projects).to.be.an('array').that.is.empty;
@@ -63,7 +62,7 @@ describe('reading files', () => {
 
       // hack - force etch to update and render
       await etch.getScheduler().getNextUpdatePromise();
-      await setTimeoutPromise(50);
+      await wait(10);
 
       expect(paneItem.groups).to.be.an('array').that.is.not.empty;
       expect(paneItem.projects).to.be.an('array').that.is.empty;
@@ -95,7 +94,7 @@ describe('reading files', () => {
 
       // hack - force etch to update and render
       await etch.getScheduler().getNextUpdatePromise();
-      await setTimeoutPromise(50);
+      await wait(10);
 
       expect(paneItem.groups).to.be.an('array').that.is.not.empty;
       expect(paneItem.projects).to.be.an('array').that.is.not.empty;
