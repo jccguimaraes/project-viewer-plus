@@ -13,10 +13,7 @@
               "name": "project #1.2.1",
               "icon": "node",
               "paths": [
-                {
-                  "platform": "win32",
-                  "path": "C:\\path\\to\\project-1.2.1"
-                }
+                "C:\\path\\to\\project-1.2.1"
               ]
             }
           ]
@@ -26,10 +23,7 @@
         {
           "name": "project #1.1",
           "paths": [
-            {
-              "platform": "darwin",
-              "path": "/path/to/project-1_1"
-            }
+            "/path/to/project-1_1"
           ]
         }
       ]

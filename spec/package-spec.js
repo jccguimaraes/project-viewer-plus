@@ -14,7 +14,7 @@ const uri = `atom://${packageName}:`;
 
 describe('package lifecycle', () => {
   before('set config database file path', () => {
-    atom.config.set(databasePath, path.resolve(__dirname, './mocks'));
+    atom.config.set(databasePath, path.resolve(__dirname, './fixtures'));
     atom.config.set(databaseName, 'no-existing.json');
   });
 
@@ -40,28 +40,18 @@ describe('package lifecycle', () => {
     expect(dock.getPaneItems().length).to.equal(0);
   });
 
-  it('should open the view', done => {
-    dock.onDidAddPaneItem(
-      pane => {
-        expect(dock.getPaneItems().length).to.equal(1);
-        const paneItem = dock.getPaneItems()[0];
-        expect(paneItem).to.eql(pkg.mainModule.mainContainer);
-        done();
-      }
-    );
+  it('should open the view', async () => {
+    await atom.workspace.open('atom://project-viewer-plus');
 
-    atom.workspace.open('atom://project-viewer-plus');
+    const paneItem = dock.getPaneItems()[0];
+
+    expect(dock.getPaneItems().length).to.equal(1);
+    expect(paneItem).to.eql(pkg.mainModule.mainContainer);
   });
 
-  it('should dettach from the right dock', done => {
-    dock.onDidDestroyPaneItem(
-      pane => {
-        expect(dock.getPaneItems().length).to.equal(0);
-        expect(pane.item).to.eql(pkg.mainModule.mainContainer);
-        done();
-      }
-    );
+  it('should dettach from the right dock', async () => {
+    await atom.packages.deactivatePackage(packageName);
 
-    atom.packages.deactivatePackage(packageName);
+    expect(dock.getPaneItems().length).to.equal(0);
   });
 });
