@@ -6,6 +6,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 - A suite of automation tests for better stability and maintainability;
 
+## [0.0.11] - 2019-08-12
+## Fixed
+- Reading state from files.
+
 ## [0.0.10] - 2019-08-11
 ## Fixed
 - Reload view when `file-icons` is activated;
