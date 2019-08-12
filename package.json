@@ -43,7 +43,6 @@
   "devDependencies": {
     "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",
-    "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
     "@babel/plugin-transform-modules-commonjs": "^7.5.0",
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
@@ -52,7 +51,6 @@
     "atom-mocha": "^2.2.1",
     "babel-eslint": "^10.0.2",
     "babel-plugin-add-module-exports": "^1.0.2",
-    "chai": "^4.2.0",
     "eslint": "^6.1.0",
     "file-icons": "git+https://github.com/file-icons/atom#v2.1.33",
     "husky": "^3.0.3",
