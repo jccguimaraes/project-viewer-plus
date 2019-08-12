@@ -34,10 +34,7 @@
       "name": "project #1",
       "icon": "node",
       "paths": [
-        {
-          "platform": "win32",
-          "path": "C:\\path\\to\\project-1"
-        }
+        "/path/to/project-1"
       ]
     }
   ]
