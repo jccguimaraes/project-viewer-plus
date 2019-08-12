@@ -7,6 +7,7 @@ let dock;
 let pkg;
 
 const databasePath = 'project-viewer-plus.database.localPath';
+const databaseName = 'project-viewer-plus.database.fileName';
 const packageName = 'project-viewer-plus';
 const commandStart = `${packageName}:`;
 const uri = `atom://${packageName}:`;
@@ -14,10 +15,11 @@ const uri = `atom://${packageName}:`;
 describe('package lifecycle', () => {
   before('set config database file path', () => {
     atom.config.set(databasePath, path.resolve(__dirname, './mocks'));
+    atom.config.set(databaseName, 'no-existing.json');
   });
 
   beforeEach('Activating package', async () => {
-    attachToDOM(atom.views.getView(atom.workspace));
+    // attachToDOM(atom.views.getView(atom.workspace));
     dock = atom.workspace.getRightDock();
     return atom.packages.activatePackage(pvpPackage);
   });

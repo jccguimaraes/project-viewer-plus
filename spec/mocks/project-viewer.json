@@ -1,0 +1,26 @@
+{
+  "info": {},
+  "root": [
+    {
+      "type": "group",
+      "name": "group #1",
+      "sortBy": "alphabetically",
+      "icon": "",
+      "color": "",
+      "expanded": true,
+      "list": [
+        {
+          "type": "project",
+          "name": "project #1.1",
+          "icon": "",
+          "color": "",
+          "devMode": false,
+          "config": {},
+          "paths": [
+            "/path/to/project-1_1"
+          ]
+        }
+      ]
+    }
+  ]
+}
