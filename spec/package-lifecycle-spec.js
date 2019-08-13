@@ -28,7 +28,7 @@ describe('package lifecycle', () => {
   });
 
   it('should not open the view on new Atom instance', async () => {
-    expect(dock.getPaneItems().length).to.equal(0);
+    expect(dock.getPaneItems()).to.be.empty;
   });
 
   it('should open the view', async () => {
@@ -36,13 +36,13 @@ describe('package lifecycle', () => {
 
     const paneItem = dock.getPaneItems()[0];
 
-    expect(dock.getPaneItems().length).to.equal(1);
+    expect(dock.getPaneItems()).to.have.lengthOf(1);
     expect(paneItem).to.eql(pkg.mainModule.mainContainer);
   });
 
   it('should dettach from the right dock', async () => {
     await atom.packages.deactivatePackage(packageName);
 
-    expect(dock.getPaneItems().length).to.equal(0);
+    expect(dock.getPaneItems()).to.be.empty;
   });
 });

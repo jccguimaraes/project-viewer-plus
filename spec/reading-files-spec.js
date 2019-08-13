@@ -10,7 +10,6 @@ const pvpPackage = path.resolve(__dirname, '..');
 const databasePath = 'project-viewer-plus.database.localPath';
 const databaseName = 'project-viewer-plus.database.fileName';
 const packageName = 'project-viewer-plus';
-const commandStart = `${packageName}:`;
 const uri = `atom://${packageName}:`;
 
 let dock;
@@ -36,7 +35,7 @@ describe('reading files', () => {
 
       // hack - force etch to update and render
       await etch.getScheduler().getNextUpdatePromise();
-      await wait(10);
+      await wait(50);
 
       expect(paneItem.groups).to.be.an('array').that.is.empty;
       expect(paneItem.projects).to.be.an('array').that.is.empty;
@@ -62,9 +61,9 @@ describe('reading files', () => {
 
       // hack - force etch to update and render
       await etch.getScheduler().getNextUpdatePromise();
-      await wait(10);
+      await wait(50);
 
-      expect(paneItem.groups).to.be.an('array').that.is.not.empty;
+      expect(paneItem.groups).to.be.an('array').to.have.lengthOf(1);
       expect(paneItem.projects).to.be.an('array').that.is.empty;
 
       const group = paneItem.groups[0];
@@ -94,10 +93,10 @@ describe('reading files', () => {
 
       // hack - force etch to update and render
       await etch.getScheduler().getNextUpdatePromise();
-      await wait(10);
+      await wait(50);
 
-      expect(paneItem.groups).to.be.an('array').that.is.not.empty;
-      expect(paneItem.projects).to.be.an('array').that.is.not.empty;
+      expect(paneItem.groups).to.be.an('array').to.have.lengthOf(1);
+      expect(paneItem.projects).to.be.an('array').to.have.lengthOf(1);
 
       const group = paneItem.groups[0];
 
@@ -107,8 +106,8 @@ describe('reading files', () => {
       expect(group.folding).to.equal('collapsed');
       expect(group.order).to.equal('alphabetically');
       expect(group.parentId).to.be.undefined;
-      expect(group.groups).to.be.an('array').that.is.not.empty;
-      expect(group.projects).to.be.an('array').that.is.not.empty;
+      expect(group.groups).to.be.an('array').to.have.lengthOf(1);
+      expect(group.projects).to.be.an('array').to.have.lengthOf(1);
 
       const project = paneItem.projects[0];
 
