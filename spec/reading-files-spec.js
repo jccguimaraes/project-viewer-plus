@@ -101,7 +101,7 @@ describe('reading files', () => {
       const group = paneItem.groups[0];
 
       expect(group.id).to.be.a('string');
-      expect(group.icon).to.equal('');
+      expect(group.icon).to.equal('atom');
       expect(group.name).to.equal('group #1');
       expect(group.folding).to.equal('collapsed');
       expect(group.order).to.equal('alphabetically');

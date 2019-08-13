@@ -13,7 +13,7 @@
   "repository": "https://github.com/jccguimaraes/project-viewer-plus",
   "license": "MIT",
   "engines": {
-    "atom": ">=1.39.1",
+    "atom": ">=1.40.0",
     "node": ">=10.2.0"
   },
   "scripts": {
@@ -52,7 +52,7 @@
     "babel-eslint": "^10.0.2",
     "babel-plugin-add-module-exports": "^1.0.2",
     "eslint": "^6.1.0",
-    "file-icons": "git+https://github.com/file-icons/atom#v2.1.33",
+    "file-icons": "git+https://github.com/file-icons/atom#v2.1.34",
     "husky": "^3.0.3",
     "sinon": "^7.4.1"
   }

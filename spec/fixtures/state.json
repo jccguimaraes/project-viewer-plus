@@ -2,6 +2,7 @@
   "groups": [
     {
       "name": "group #1",
+      "icon": "atom",
       "groups": [
         {
           "name": "group #1.2",

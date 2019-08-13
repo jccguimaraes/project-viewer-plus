@@ -5,7 +5,7 @@
       "type": "group",
       "name": "group #1",
       "sortBy": "alphabetically",
-      "icon": "",
+      "icon": "node",
       "color": "",
       "expanded": true,
       "list": [

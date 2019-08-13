@@ -80,18 +80,90 @@ describe('renders views', () => {
       expect(groups.classList.contains('list-nested-item')).to.be.true;
       expect(groups.classList.contains('collapsed')).to.be.true;
 
-      const subGroups = groups.childNodes[0];
-      const subProjects = groups.childNodes[1];
-      console.log(subGroups);
-      console.log(subProjects);
-
       expect(project.nodeName).to.equal('LI');
       expect(project.draggable).to.be.true;
       expect(project.classList.contains('list-item')).to.be.true;
       expect(project.classList.contains('pv-project')).to.be.true;
       expect(project.childNodes).to.be.have.lengthOf(1);
       expect(project.firstChild.nodeName).to.equal('SPAN');
+      expect(project.firstChild.classList.contains('icon')).to.be.true;
+      expect(project.firstChild.classList.contains('node-icon')).to.be.true;
       expect(project.firstChild.innerHTML).to.equal('project #1');
+
+      const subGroups = groups.childNodes[0];
+      const subProjects = groups.childNodes[1];
+
+      expect(subGroups.nodeName).to.equal('DIV');
+      expect(project.draggable).to.be.true;
+      expect(subGroups.classList.contains('list-item')).to.be.true;
+      expect(subGroups.classList.contains('pv-group')).to.be.true;
+      expect(subGroups.firstChild.nodeName).to.equal('SPAN');
+      expect(subGroups.firstChild.classList.contains('icon')).to.be.true;
+      expect(subGroups.firstChild.classList.contains('atom-icon')).to.be.true;
+    });
+  });
+
+  when('expanding group',  () => {
+    before('set config database file path', () => {
+      atom.packages.reset();
+      atom.config.set(databasePath, path.resolve(__dirname, './fixtures'));
+      atom.config.set(databaseName, 'state.json');
+    });
+
+    beforeEach('activating package', async () => {
+      dock = atom.workspace.getRightDock();
+      return atom.packages.activatePackage(pvpPackage);
+    });
+
+    after('deactivating package', async () => {
+      return await atom.packages.deactivatePackage(packageName);
+    });
+
+    it('should show it\'s groups and projects', async () => {
+      const workspace = atom.views.getView(atom.workspace);
+      attachToDOM(workspace);
+
+      await atom.workspace.open('atom://project-viewer-plus');
+
+      const paneItem = dock.getPaneItems()[0];
+
+      // hack - force etch to update and render
+      await etch.getScheduler().getNextUpdatePromise();
+      await wait(100);
+
+      const listTree = paneItem.element.firstChild;
+      const group = listTree.firstChild;
+      const css = window.getComputedStyle(group.childNodes[1], null);
+
+      expect(css.display).to.equal('none');
+
+      expect(group.classList.contains('collapsed')).to.be.true;
+      expect(group.classList.contains('expanded')).to.be.false;
+
+      group.firstChild.click();
+      await wait(10);
+
+      expect(group.classList.contains('collapsed')).to.be.false;
+      expect(group.classList.contains('expanded')).to.be.true;
+
+      expect(css.display).to.equal('block');
+    });
+  });
+
+  when('restarting',  () => {
+    before('set config database file path', () => {
+      atom.config.set(databasePath, path.resolve(__dirname, './fixtures'));
+      atom.config.set(databaseName, 'state.json');
+    });
+
+    beforeEach('activating package', async () => {
+      dock = atom.workspace.getRightDock();
+      return atom.packages.activatePackage(pvpPackage);
+    });
+
+    it('should keep view\'s state', async () => {
+      const workspace = atom.views.getView(atom.workspace);
+      attachToDOM(workspace);
     });
   });
 });

@@ -41,3 +41,5 @@ fs.writeFile(
     }
   }
 );
+
+console.log('file-icons', version, '-', icons.length);
