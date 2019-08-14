@@ -1,6 +1,6 @@
 {
   "name": "project-viewer-plus",
-  "main": "./dist/index",
+  "main": "./lib/index",
   "version": "0.0.11",
   "description": "Manage all your projects into different groups.",
   "keywords": [
@@ -19,41 +19,69 @@
   "scripts": {
     "icons": "node ./bin/file-icons",
     "contribute": "all-contributors",
-    "linter:spec": "eslint ./spec --fix",
-    "linter:lib": "eslint ./lib --fix",
-    "pretest": "npm run linter:spec",
-    "test": "atom -t ./spec",
-    "compile": "babel lib --out-dir dist",
-    "prewatch": "npm run linter:lib",
-    "watch": "babel --verbose --delete-dir-on-start --watch lib --out-dir dist"
+    "linter": "eslint test lib",
+    "pretest": "npm run linter",
+    "test": "cross-env-shell NODE_ENV=development \"${ATOM_SCRIPT_PATH:-atom} --test test\"",
+    "test:coverage": "cross-env ATOM_GITHUB_BABEL_ENV=coverage npm run test",
+    "test:coverage:text": "nyc --reporter=text npm run test:coverage",
+    "test:coverage:html": "nyc --reporter=html npm run test:coverage",
+    "test:coverage:lcov": "npm run test:coverage",
+    "report:coverage": "nyc report --reporter=cobertura --reporter=html --reporter=lcovonly",
+    "codecov": "codecov"
   },
   "deserializers": {
     "project-viewer-plus/mainView": "deserializeProjectViewerPlusView"
   },
-  "atomTestRunner": "atom-mocha",
+  "atomTestRunner": "./test/runner",
+  "atomTranspilers": [
+    {
+      "glob": "{lib,test}/**/*.js",
+      "transpiler": "@atom/babel7-transpiler",
+      "options": {
+        "cacheKeyFiles": [
+          "package.json",
+          ".babelrc.js",
+          ".nycrc.json"
+        ],
+        "setBabelEnv": "ATOM_GITHUB_BABEL_ENV"
+      }
+    }
+  ],
   "package-deps": [
     "file-icons"
   ],
   "dependencies": {
+    "@atom/babel-plugin-chai-assert-async": "^1.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/register": "^7.5.5",
     "atom-package-deps": "^5.1.0",
     "atom-select-list": "^0.7.2",
     "etch": "^0.14.0",
     "uuid": "^3.3.2"
   },
   "devDependencies": {
+    "@atom/babel7-transpiler": "^1.0.0-1",
+    "@atom/mocha-test-runner": "^1.6.0",
     "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
     "@babel/plugin-transform-modules-commonjs": "^7.5.0",
     "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
     "@commitlint/cli": "^8.1.0",
     "all-contributors-cli": "^6.8.1",
-    "atom-mocha": "^2.2.1",
     "babel-eslint": "^10.0.2",
     "babel-plugin-add-module-exports": "^1.0.2",
+    "babel-plugin-istanbul": "^5.2.0",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "codecov": "^3.5.0",
+    "cross-env": "^5.2.0",
     "eslint": "^6.1.0",
     "file-icons": "git+https://github.com/file-icons/atom#v2.1.34",
     "husky": "^3.0.3",
-    "sinon": "^7.4.1"
+    "nyc": "^14.1.1",
+    "sinon": "^7.4.1",
+    "test-until": "^1.1.1"
   }
 }

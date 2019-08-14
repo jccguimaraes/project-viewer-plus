@@ -1,5 +1,6 @@
 'use strict';
 
+const { expect } = require('chai');
 const path = require('path');
 const pvpPackage = path.resolve(__dirname, '..');
 
@@ -28,10 +29,16 @@ describe('package lifecycle', () => {
   });
 
   it('should not open the view on new Atom instance', async () => {
+    const workspace = atom.views.getView(atom.workspace);
+    attachToDOM(workspace);
+
     expect(dock.getPaneItems()).to.be.empty;
   });
 
   it('should open the view', async () => {
+    const workspace = atom.views.getView(atom.workspace);
+    attachToDOM(workspace);
+
     await atom.workspace.open('atom://project-viewer-plus');
 
     const paneItem = dock.getPaneItems()[0];
@@ -41,6 +48,9 @@ describe('package lifecycle', () => {
   });
 
   it('should dettach from the right dock', async () => {
+    const workspace = atom.views.getView(atom.workspace);
+    attachToDOM(workspace);
+
     await atom.packages.deactivatePackage(packageName);
 
     expect(dock.getPaneItems()).to.be.empty;

@@ -1,5 +1,6 @@
 'use strict';
 
+const { expect } = require('chai');
 const path = require('path');
 const etch = require('etch');
 
@@ -16,7 +17,7 @@ let dock;
 let pkg;
 
 describe('reading files', () => {
-  when('no current or legacy files exists', () => {
+  context('no current or legacy files exists', () => {
     before('set config database file path', () => {
       atom.packages.reset();
       atom.config.set(databasePath, path.resolve(__dirname, './DUMMY'));
@@ -29,6 +30,9 @@ describe('reading files', () => {
     });
 
     it('should open the view and create a clean state', async () => {
+      const workspace = atom.views.getView(atom.workspace);
+      // attachToDOM(workspace);
+
       await atom.workspace.open('atom://project-viewer-plus');
 
       const paneItem = dock.getPaneItems()[0];
@@ -42,7 +46,7 @@ describe('reading files', () => {
     });
   });
 
-  when('no current file exists, only legacy file', () => {
+  context('no current file exists, only legacy file', () => {
     before('set config database file path', () => {
       atom.packages.reset();
       atom.config.set(databasePath, path.resolve(__dirname, './fixtures'));
@@ -55,6 +59,9 @@ describe('reading files', () => {
     });
 
     it('should open the view and read state from file', async () => {
+      const workspace = atom.views.getView(atom.workspace);
+      // attachToDOM(workspace);
+
       await atom.workspace.open('atom://project-viewer-plus');
 
       const paneItem = dock.getPaneItems()[0];
@@ -74,7 +81,7 @@ describe('reading files', () => {
     });
   });
 
-  when('file exists', () => {
+  context('file exists', () => {
     before('set config database file path', () => {
       atom.packages.reset();
       atom.config.set(databasePath, path.resolve(__dirname, './fixtures'));
@@ -87,6 +94,9 @@ describe('reading files', () => {
     });
 
     it('should open the view and read state from file', async () => {
+      const workspace = atom.views.getView(atom.workspace);
+      // attachToDOM(workspace);
+
       await atom.workspace.open('atom://project-viewer-plus');
 
       const paneItem = dock.getPaneItems()[0];

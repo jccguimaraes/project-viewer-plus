@@ -1,5 +1,6 @@
 'use strict';
 
+const { expect } = require('chai');
 const path = require('path');
 const etch = require('etch');
 
@@ -16,7 +17,7 @@ let dock;
 let pkg;
 
 describe('renders views', () => {
-  when('when no groups or projects', () => {
+  context('when no groups or projects', () => {
     before('set config database file path', () => {
       atom.packages.reset();
       atom.config.set(databasePath, path.resolve(__dirname, './DUMMY'));
@@ -28,6 +29,9 @@ describe('renders views', () => {
     });
 
     it('should open the view without any groups or projects', async () => {
+      const workspace = atom.views.getView(atom.workspace);
+      attachToDOM(workspace);
+
       await atom.workspace.open('atom://project-viewer-plus');
 
       const paneItem = dock.getPaneItems()[0];
@@ -48,7 +52,7 @@ describe('renders views', () => {
     });
   });
 
-  when('when groups and projects', () => {
+  context('when groups and projects', () => {
     before('set config database file path', () => {
       atom.packages.reset();
       atom.config.set(databasePath, path.resolve(__dirname, './fixtures'));
@@ -61,6 +65,9 @@ describe('renders views', () => {
     });
 
     it('should open the view with groups and projects', async () => {
+      const workspace = atom.views.getView(atom.workspace);
+      attachToDOM(workspace);
+
       await atom.workspace.open('atom://project-viewer-plus');
 
       const paneItem = dock.getPaneItems()[0];
@@ -103,7 +110,7 @@ describe('renders views', () => {
     });
   });
 
-  when('expanding group',  () => {
+  context('expanding group',  () => {
     before('set config database file path', () => {
       atom.packages.reset();
       atom.config.set(databasePath, path.resolve(__dirname, './fixtures'));
@@ -115,11 +122,11 @@ describe('renders views', () => {
       return atom.packages.activatePackage(pvpPackage);
     });
 
-    after('deactivating package', async () => {
-      return await atom.packages.deactivatePackage(packageName);
-    });
+    after('deactivating package', async () =>
+      atom.packages.deactivatePackage(packageName)
+    );
 
-    it('should show it\'s groups and projects', async () => {
+    it.skip('should show it\'s groups and projects', async () => {
       const workspace = atom.views.getView(atom.workspace);
       attachToDOM(workspace);
 
@@ -142,7 +149,7 @@ describe('renders views', () => {
 
       group.firstChild.click();
       await wait(10);
-
+      console.log(group.classList);
       expect(group.classList.contains('collapsed')).to.be.false;
       expect(group.classList.contains('expanded')).to.be.true;
 
@@ -150,7 +157,7 @@ describe('renders views', () => {
     });
   });
 
-  when('restarting',  () => {
+  context('restarting',  () => {
     before('set config database file path', () => {
       atom.config.set(databasePath, path.resolve(__dirname, './fixtures'));
       atom.config.set(databaseName, 'state.json');

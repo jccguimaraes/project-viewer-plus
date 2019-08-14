@@ -1,0 +1,8 @@
+{
+  "extends": "@istanbuljs/nyc-config-babel",
+  "instrument": false,
+  "source-map": false,
+  "include": [
+    "lib/**/*.js"
+  ]
+}
