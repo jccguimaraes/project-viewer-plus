@@ -1,20 +1,12 @@
 import { createRunner } from '@atom/mocha-test-runner';
-import chai from 'chai';
-import chaiAsPromised from 'chai-as-promised';
 import path from 'path';
 
-import until from 'test-until';
 import NYC from 'nyc';
-
-chai.use(chaiAsPromised);
-global.assert = chai.assert;
 
 global.attachToDOM = function (element) {
   const { body } = document;
   body.appendChild(element);
 };
-
-until.setDefaultTimeout(parseInt(process.env.UNTIL_TIMEOUT || '3000', 10));
 
 if (
   process.env.ATOM_GITHUB_BABEL_ENV === 'coverage' &&

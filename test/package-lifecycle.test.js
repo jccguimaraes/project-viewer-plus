@@ -11,7 +11,7 @@ const databasePath = 'project-viewer-plus.database.localPath';
 const databaseName = 'project-viewer-plus.database.fileName';
 const packageName = 'project-viewer-plus';
 const commandStart = `${packageName}:`;
-const uri = `atom://${packageName}:`;
+const uri = `atom://${packageName}`;
 
 describe('package lifecycle', () => {
   before('set config database file path', () => {
@@ -21,7 +21,7 @@ describe('package lifecycle', () => {
 
   beforeEach('activating package', async () => {
     dock = atom.workspace.getRightDock();
-    return atom.packages.activatePackage(pvpPackage);
+    await atom.packages.activatePackage(pvpPackage);
   });
 
   beforeEach('get package', () => {
@@ -39,7 +39,7 @@ describe('package lifecycle', () => {
     const workspace = atom.views.getView(atom.workspace);
     attachToDOM(workspace);
 
-    await atom.workspace.open('atom://project-viewer-plus');
+    await atom.workspace.open(uri);
 
     const paneItem = dock.getPaneItems()[0];
 

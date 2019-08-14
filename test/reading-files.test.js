@@ -4,42 +4,35 @@ const { expect } = require('chai');
 const path = require('path');
 const etch = require('etch');
 
-const wait = ms =>
-  new Promise(resolve => window.setTimeout(() => resolve(), ms));
-
 const pvpPackage = path.resolve(__dirname, '..');
 const databasePath = 'project-viewer-plus.database.localPath';
 const databaseName = 'project-viewer-plus.database.fileName';
 const packageName = 'project-viewer-plus';
-const uri = `atom://${packageName}:`;
+const uri = `atom://${packageName}`;
 
 let dock;
 let pkg;
 
 describe('reading files', () => {
   context('no current or legacy files exists', () => {
-    before('set config database file path', () => {
-      atom.packages.reset();
+    before('set config database file path', async () => {
+      await atom.packages.reset();
       atom.config.set(databasePath, path.resolve(__dirname, './DUMMY'));
       atom.config.set(databaseName, 'no-existing.json');
     });
 
     beforeEach('activating package', async () => {
       dock = atom.workspace.getRightDock();
-      return atom.packages.activatePackage(pvpPackage);
+      await atom.packages.activatePackage(pvpPackage);
     });
 
     it('should open the view and create a clean state', async () => {
-      const workspace = atom.views.getView(atom.workspace);
-      // attachToDOM(workspace);
-
-      await atom.workspace.open('atom://project-viewer-plus');
+      await atom.workspace.open(uri);
 
       const paneItem = dock.getPaneItems()[0];
 
       // hack - force etch to update and render
       await etch.getScheduler().getNextUpdatePromise();
-      await wait(50);
 
       expect(paneItem.groups).to.be.an('array').that.is.empty;
       expect(paneItem.projects).to.be.an('array').that.is.empty;
@@ -47,28 +40,24 @@ describe('reading files', () => {
   });
 
   context('no current file exists, only legacy file', () => {
-    before('set config database file path', () => {
-      atom.packages.reset();
+    before('set config database file path', async () => {
+      await atom.packages.reset();
       atom.config.set(databasePath, path.resolve(__dirname, './fixtures'));
       atom.config.set(databaseName, 'no-existing.json');
     });
 
     beforeEach('activating package', async () => {
       dock = atom.workspace.getRightDock();
-      return atom.packages.activatePackage(pvpPackage);
+      await atom.packages.activatePackage(pvpPackage);
     });
 
     it('should open the view and read state from file', async () => {
-      const workspace = atom.views.getView(atom.workspace);
-      // attachToDOM(workspace);
-
-      await atom.workspace.open('atom://project-viewer-plus');
+      await atom.workspace.open(uri);
 
       const paneItem = dock.getPaneItems()[0];
 
       // hack - force etch to update and render
       await etch.getScheduler().getNextUpdatePromise();
-      await wait(50);
 
       expect(paneItem.groups).to.be.an('array').to.have.lengthOf(1);
       expect(paneItem.projects).to.be.an('array').that.is.empty;
@@ -82,28 +71,24 @@ describe('reading files', () => {
   });
 
   context('file exists', () => {
-    before('set config database file path', () => {
-      atom.packages.reset();
+    before('set config database file path', async () => {
+      await atom.packages.reset();
       atom.config.set(databasePath, path.resolve(__dirname, './fixtures'));
       atom.config.set(databaseName, 'state.json');
     });
 
     beforeEach('activating package', async () => {
       dock = atom.workspace.getRightDock();
-      return atom.packages.activatePackage(pvpPackage);
+      await atom.packages.activatePackage(pvpPackage);
     });
 
     it('should open the view and read state from file', async () => {
-      const workspace = atom.views.getView(atom.workspace);
-      // attachToDOM(workspace);
-
-      await atom.workspace.open('atom://project-viewer-plus');
+      await atom.workspace.open(uri);
 
       const paneItem = dock.getPaneItems()[0];
 
       // hack - force etch to update and render
       await etch.getScheduler().getNextUpdatePromise();
-      await wait(50);
 
       expect(paneItem.groups).to.be.an('array').to.have.lengthOf(1);
       expect(paneItem.projects).to.be.an('array').to.have.lengthOf(1);

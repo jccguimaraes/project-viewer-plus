@@ -4,41 +4,39 @@ const { expect } = require('chai');
 const path = require('path');
 const etch = require('etch');
 
-const wait = ms =>
-  new Promise(resolve => window.setTimeout(() => resolve(), ms));
-
-const pvpPackage = path.resolve(__dirname, '..');
-const databasePath = 'project-viewer-plus.database.localPath';
-const databaseName = 'project-viewer-plus.database.fileName';
-const packageName = 'project-viewer-plus';
-const uri = `atom://${packageName}:`;
+import {
+  pvpPackage,
+  databasePath,
+  databaseName,
+  packageName,
+  uri
+} from './utils';
 
 let dock;
 let pkg;
 
-describe('renders views', () => {
+describe.only('renders views', () => {
   context('when no groups or projects', () => {
-    before('set config database file path', () => {
-      atom.packages.reset();
+    before('set config database file path', async () => {
+      await atom.packages.reset();
       atom.config.set(databasePath, path.resolve(__dirname, './DUMMY'));
     });
 
     beforeEach('activating package', async () => {
       dock = atom.workspace.getRightDock();
-      return atom.packages.activatePackage(pvpPackage);
+      await atom.packages.activatePackage(pvpPackage);
     });
 
     it('should open the view without any groups or projects', async () => {
       const workspace = atom.views.getView(atom.workspace);
       attachToDOM(workspace);
 
-      await atom.workspace.open('atom://project-viewer-plus');
+      await atom.workspace.open(uri);
 
       const paneItem = dock.getPaneItems()[0];
 
       // hack - force etch to update and render
-      await etch.getScheduler().getNextUpdatePromise();
-      await wait(50);
+      // await etch.getScheduler().getNextUpdatePromise();
 
       expect(paneItem.element.childNodes).to.have.lengthOf(1);
 
@@ -53,28 +51,27 @@ describe('renders views', () => {
   });
 
   context('when groups and projects', () => {
-    before('set config database file path', () => {
-      atom.packages.reset();
+    before('set config database file path', async () => {
+      await atom.packages.reset();
       atom.config.set(databasePath, path.resolve(__dirname, './fixtures'));
       atom.config.set(databaseName, 'state.json');
     });
 
     beforeEach('activating package', async () => {
       dock = atom.workspace.getRightDock();
-      return atom.packages.activatePackage(pvpPackage);
+      await atom.packages.activatePackage(pvpPackage);
     });
 
     it('should open the view with groups and projects', async () => {
       const workspace = atom.views.getView(atom.workspace);
       attachToDOM(workspace);
 
-      await atom.workspace.open('atom://project-viewer-plus');
+      await atom.workspace.open(uri);
 
       const paneItem = dock.getPaneItems()[0];
 
       // hack - force etch to update and render
       await etch.getScheduler().getNextUpdatePromise();
-      await wait(50);
 
       const listTree = paneItem.element.firstChild;
 
@@ -110,46 +107,46 @@ describe('renders views', () => {
     });
   });
 
-  context('expanding group',  () => {
-    before('set config database file path', () => {
-      atom.packages.reset();
+  context('expanding group', () => {
+    before('set config database file path', async () => {
+      await atom.packages.reset();
       atom.config.set(databasePath, path.resolve(__dirname, './fixtures'));
       atom.config.set(databaseName, 'state.json');
     });
 
     beforeEach('activating package', async () => {
       dock = atom.workspace.getRightDock();
-      return atom.packages.activatePackage(pvpPackage);
+      await atom.packages.activatePackage(pvpPackage);
     });
 
-    after('deactivating package', async () =>
-      atom.packages.deactivatePackage(packageName)
-    );
+    after('deactivating package', async () => {
+      await atom.packages.deactivatePackage(packageName);
+    });
 
-    it.skip('should show it\'s groups and projects', async () => {
+    it('should show it\'s groups and projects', async () => {
       const workspace = atom.views.getView(atom.workspace);
       attachToDOM(workspace);
 
-      await atom.workspace.open('atom://project-viewer-plus');
+      await atom.workspace.open(uri);
 
       const paneItem = dock.getPaneItems()[0];
 
       // hack - force etch to update and render
       await etch.getScheduler().getNextUpdatePromise();
-      await wait(100);
 
       const listTree = paneItem.element.firstChild;
       const group = listTree.firstChild;
       const css = window.getComputedStyle(group.childNodes[1], null);
 
       expect(css.display).to.equal('none');
-
       expect(group.classList.contains('collapsed')).to.be.true;
       expect(group.classList.contains('expanded')).to.be.false;
 
       group.firstChild.click();
-      await wait(10);
-      console.log(group.classList);
+
+      // hack - force etch to update and render
+      await etch.getScheduler().getNextUpdatePromise();
+
       expect(group.classList.contains('collapsed')).to.be.false;
       expect(group.classList.contains('expanded')).to.be.true;
 
@@ -157,7 +154,7 @@ describe('renders views', () => {
     });
   });
 
-  context('restarting',  () => {
+  context('restarting', () => {
     before('set config database file path', () => {
       atom.config.set(databasePath, path.resolve(__dirname, './fixtures'));
       atom.config.set(databaseName, 'state.json');
@@ -165,7 +162,7 @@ describe('renders views', () => {
 
     beforeEach('activating package', async () => {
       dock = atom.workspace.getRightDock();
-      return atom.packages.activatePackage(pvpPackage);
+      await atom.packages.activatePackage(pvpPackage);
     });
 
     it('should keep view\'s state', async () => {
