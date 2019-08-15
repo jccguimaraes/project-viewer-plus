@@ -1,8 +1,11 @@
-'use strict';
-
 import { expect } from 'chai';
 import path from 'path';
+// import etch from 'etch';
+import sinon from 'sinon';
 
+import * as pkgDeps from 'atom-package-deps';
+
+import PVP from '../lib/project-viewer-plus';
 import {
   pvpPackage,
   databasePath,
@@ -11,49 +14,54 @@ import {
   uri
 } from './utils';
 
-let dock;
-let pkg;
-
 describe('package lifecycle', () => {
-  before('set config database file path', () => {
+  before(function () {
     atom.config.set(databasePath, path.resolve(__dirname, './fixtures'));
     atom.config.set(databaseName, 'state.json');
+
+    this.stub = sinon.stub(pkgDeps, 'install').resolves();
+    this.pvp = new PVP();
   });
 
-  beforeEach('activating package', async () => {
-    dock = atom.workspace.getRightDock();
-    await atom.packages.activatePackage(pvpPackage);
+  beforeEach(async function () {
+    await atom.packages.reset();
+    await this.pvp.activate();
   });
 
-  beforeEach('get package', () => {
-    pkg = atom.packages.getLoadedPackage(packageName);
+  afterEach(async function () {
+    this.stub.reset();
+    await this.pvp.deactivate();
   });
 
-  it('should not open the view on new Atom instance', async () => {
-    const workspace = atom.views.getView(atom.workspace);
-    attachToDOM(workspace);
+  after(function () {
+    this.stub.restore();
+  });
 
-    expect(dock.getPaneItems()).to.be.empty;
+  it('should not open the view on new Atom instance', async function () {
+    const dock = atom.workspace.getRightDock();
+
+    process.nextTick(() => {
+      expect(dock.getPaneItems()).to.be.empty;
+    });
   });
 
   it('should open the view', async () => {
-    const workspace = atom.views.getView(atom.workspace);
-    attachToDOM(workspace);
+    const dock = atom.workspace.getRightDock();
+    const paneItem = dock.getPaneItems()[0];
 
     await atom.workspace.open(uri);
 
-    const paneItem = dock.getPaneItems()[0];
-
-    expect(dock.getPaneItems()).to.have.lengthOf(1);
-    expect(paneItem).to.eql(pkg.mainModule.mainContainer);
+    process.nextTick(() => {
+      expect(dock.getPaneItems()).to.have.lengthOf(1);
+      expect(paneItem).to.eql(pkg.mainModule.mainContainer);
+    });
   });
 
   it('should dettach from the right dock', async () => {
-    const workspace = atom.views.getView(atom.workspace);
-    attachToDOM(workspace);
-
     await atom.packages.deactivatePackage(packageName);
 
-    expect(dock.getPaneItems()).to.be.empty;
+    process.nextTick(() => {
+      expect(dock.getPaneItems()).to.be.empty;
+    });
   });
 });

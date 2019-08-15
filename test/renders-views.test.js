@@ -1,12 +1,11 @@
-'use strict';
-
 import { expect } from 'chai';
 import path from 'path';
-import etch from 'etch';
+// import etch from 'etch';
 import sinon from 'sinon';
 
 import * as pkgDeps from 'atom-package-deps';
 
+import PVP from '../lib/project-viewer-plus';
 import {
   pvpPackage,
   databasePath,
@@ -15,19 +14,22 @@ import {
   uri
 } from './utils';
 
-import PVP from '../lib/project-viewer-plus';
-
 describe('renders views', () => {
   before(function () {
     this.stub = sinon.stub(pkgDeps, 'install').resolves();
     this.pvp = new PVP();
   });
 
-  afterEach(function () {
+  afterEach(async function () {
     this.stub.reset();
+    await this.pvp.deactivate();
   });
 
-  context.only('when no groups or projects', function () {
+  after(function () {
+    this.stub.restore();
+  });
+
+  context('when no groups or projects', function () {
     before(async function () {
       atom.config.set(databasePath, path.resolve(__dirname, './DUMMY'));
 
@@ -36,7 +38,11 @@ describe('renders views', () => {
       await atom.workspace.open(uri);
     });
 
-    it.only('should open an empty view', async function () {
+    after(async function () {
+      await this.pvp.deactivate();
+    });
+
+    it('should open an empty view', async function () {
       const dock = atom.workspace.getRightDock();
       const paneItem = dock.getPaneItems()[0];
 
@@ -55,13 +61,9 @@ describe('renders views', () => {
         expect(listTree.childNodes).to.have.lengthOf(0);
       });
     });
-
-    after(async function () {
-      await this.pvp.deactivate();
-    });
   });
 
-  context.only('when groups and projects', function () {
+  context('when groups and projects', function () {
     before(async function () {
       atom.config.set(databasePath, path.resolve(__dirname, './fixtures'));
       atom.config.set(databaseName, 'state.json');
@@ -69,6 +71,10 @@ describe('renders views', () => {
       await atom.packages.reset();
       await this.pvp.activate();
       await atom.workspace.open(uri);
+    });
+
+    after(async function () {
+      await this.pvp.deactivate();
     });
 
     it('should open the view with groups and projects', async function () {
@@ -112,73 +118,83 @@ describe('renders views', () => {
         expect(subGroups.firstChild.classList.contains('atom-icon')).to.be.true;
       });
     });
+  });
+
+  context('expanding group', function () {
+    before(async function () {
+      atom.config.set(databasePath, path.resolve(__dirname, './fixtures'));
+      atom.config.set(databaseName, 'state.json');
+
+      await atom.packages.reset();
+      await this.pvp.activate();
+      await atom.workspace.open(uri);
+    });
 
     after(async function () {
       await this.pvp.deactivate();
     });
-  });
-
-  context('expanding group', () => {
-    before('set config database file path', async () => {
-      await atom.packages.reset();
-      atom.config.set(databasePath, path.resolve(__dirname, './fixtures'));
-      atom.config.set(databaseName, 'state.json');
-    });
-
-    beforeEach('activating package', async () => {
-      dock = atom.workspace.getRightDock();
-      await atom.packages.activatePackage(pvpPackage);
-    });
-
-    after('deactivating package', async () => {
-      await atom.packages.deactivatePackage(packageName);
-    });
 
     it('should show it\'s groups and projects', async () => {
-      const workspace = atom.views.getView(atom.workspace);
-      attachToDOM(workspace);
-
-      await atom.workspace.open(uri);
-
+      const dock = atom.workspace.getRightDock();
       const paneItem = dock.getPaneItems()[0];
 
       // hack - force etch to update and render
       // await etch.getScheduler().getNextUpdatePromise();
 
-      const listTree = paneItem.element.firstChild;
-      const group = listTree.firstChild;
-      const css = window.getComputedStyle(group.childNodes[1], null);
+      process.nextTick(() => {
+        const listTree = paneItem.element.firstChild;
+        const group = listTree.firstChild;
+        const css = window.getComputedStyle(group.childNodes[1], null);
 
-      expect(css.display).to.equal('none');
-      expect(group.classList.contains('collapsed')).to.be.true;
-      expect(group.classList.contains('expanded')).to.be.false;
+        expect(css.display).to.equal('none');
+        expect(group.classList.contains('collapsed')).to.be.true;
+        expect(group.classList.contains('expanded')).to.be.false;
 
-      group.firstChild.click();
+        group.firstChild.click();
 
-      // hack - force etch to update and render
-      // await etch.getScheduler().getNextUpdatePromise();
+        // hack - force etch to update and render
+        // await etch.getScheduler().getNextUpdatePromise();
 
-      expect(group.classList.contains('collapsed')).to.be.false;
-      expect(group.classList.contains('expanded')).to.be.true;
+        process.nextTick(() => {
+          expect(group.classList.contains('collapsed')).to.be.false;
+          expect(group.classList.contains('expanded')).to.be.true;
 
-      expect(css.display).to.equal('block');
+          expect(css.display).to.equal('block');
+        });
+      });
     });
   });
 
   context('restarting', () => {
-    before('set config database file path', () => {
+    before(async function () {
       atom.config.set(databasePath, path.resolve(__dirname, './fixtures'));
       atom.config.set(databaseName, 'state.json');
+
+      await this.pvp.activate();
+      await atom.workspace.open(uri);
     });
 
-    beforeEach('activating package', async () => {
-      dock = atom.workspace.getRightDock();
-      await atom.packages.activatePackage(pvpPackage);
+    after(async function () {
+      await this.pvp.deactivate();
     });
 
     it('should keep view\'s state', async () => {
-      const workspace = atom.views.getView(atom.workspace);
-      attachToDOM(workspace);
+      const dock = atom.workspace.getRightDock();
+      const paneItem = dock.getPaneItems()[0];
+
+      // hack - force etch to update and render
+      // await etch.getScheduler().getNextUpdatePromise();
+
+      process.nextTick(() => {
+        const listTree = paneItem.element.firstChild;
+        const group = listTree.firstChild;
+        const css = window.getComputedStyle(group.childNodes[1], null);
+
+        expect(group.classList.contains('collapsed')).to.be.false;
+        expect(group.classList.contains('expanded')).to.be.true;
+
+        expect(css.display).to.equal('block');
+      });
     });
   });
 });
