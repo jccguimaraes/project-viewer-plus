@@ -23,9 +23,9 @@ describe('renders views', () => {
     this.pvp = new PVP();
   });
 
-  // afterEach(function () {
-  //   this.stub.restore();
-  // });
+  afterEach(function () {
+    this.stub.reset();
+  });
 
   context.only('when no groups or projects', function () {
     before(async function () {
@@ -43,15 +43,17 @@ describe('renders views', () => {
       // hack - force etch to update and render
       // await etch.getScheduler().getNextUpdatePromise();
 
-      expect(paneItem.element.childNodes).to.have.lengthOf(1);
+      process.nextTick(() => {
+        expect(paneItem.element.childNodes).to.have.lengthOf(1);
 
-      const listTree = paneItem.element.firstChild;
+        const listTree = paneItem.element.firstChild;
 
-      expect(listTree.classList.contains('list-tree')).to.be.true;
-      expect(listTree.classList.contains('has-collapsable-children')).to.be
-        .true;
+        expect(listTree.classList.contains('list-tree')).to.be.true;
+        expect(listTree.classList.contains('has-collapsable-children')).to.be
+          .true;
 
-      expect(listTree.childNodes).to.have.lengthOf(0);
+        expect(listTree.childNodes).to.have.lengthOf(0);
+      });
     });
 
     after(async function () {
@@ -74,39 +76,41 @@ describe('renders views', () => {
       const paneItem = dock.getPaneItems()[0];
 
       // hack - force etch to update and render
-      await etch.getScheduler().getNextUpdatePromise();
+      // await etch.getScheduler().getNextUpdatePromise();
 
-      const listTree = paneItem.element.firstChild;
+      process.nextTick(() => {
+        const listTree = paneItem.element.firstChild;
 
-      expect(listTree.childNodes).to.have.lengthOf(2);
+        expect(listTree.childNodes).to.have.lengthOf(2);
 
-      const groups = listTree.childNodes[0];
-      const project = listTree.childNodes[1];
+        const groups = listTree.childNodes[0];
+        const project = listTree.childNodes[1];
 
-      expect(groups.nodeName).to.equal('LI');
-      expect(groups.classList.contains('list-nested-item')).to.be.true;
-      expect(groups.classList.contains('collapsed')).to.be.true;
+        expect(groups.nodeName).to.equal('LI');
+        expect(groups.classList.contains('list-nested-item')).to.be.true;
+        expect(groups.classList.contains('collapsed')).to.be.true;
 
-      expect(project.nodeName).to.equal('LI');
-      expect(project.draggable).to.be.true;
-      expect(project.classList.contains('list-item')).to.be.true;
-      expect(project.classList.contains('pv-project')).to.be.true;
-      expect(project.childNodes).to.be.have.lengthOf(1);
-      expect(project.firstChild.nodeName).to.equal('SPAN');
-      expect(project.firstChild.classList.contains('icon')).to.be.true;
-      expect(project.firstChild.classList.contains('node-icon')).to.be.true;
-      expect(project.firstChild.innerHTML).to.equal('project #1');
+        expect(project.nodeName).to.equal('LI');
+        expect(project.draggable).to.be.true;
+        expect(project.classList.contains('list-item')).to.be.true;
+        expect(project.classList.contains('pv-project')).to.be.true;
+        expect(project.childNodes).to.be.have.lengthOf(1);
+        expect(project.firstChild.nodeName).to.equal('SPAN');
+        expect(project.firstChild.classList.contains('icon')).to.be.true;
+        expect(project.firstChild.classList.contains('node-icon')).to.be.true;
+        expect(project.firstChild.innerHTML).to.equal('project #1');
 
-      const subGroups = groups.childNodes[0];
-      const subProjects = groups.childNodes[1];
+        const subGroups = groups.childNodes[0];
+        const subProjects = groups.childNodes[1];
 
-      expect(subGroups.nodeName).to.equal('DIV');
-      expect(project.draggable).to.be.true;
-      expect(subGroups.classList.contains('list-item')).to.be.true;
-      expect(subGroups.classList.contains('pv-group')).to.be.true;
-      expect(subGroups.firstChild.nodeName).to.equal('SPAN');
-      expect(subGroups.firstChild.classList.contains('icon')).to.be.true;
-      expect(subGroups.firstChild.classList.contains('atom-icon')).to.be.true;
+        expect(subGroups.nodeName).to.equal('DIV');
+        expect(project.draggable).to.be.true;
+        expect(subGroups.classList.contains('list-item')).to.be.true;
+        expect(subGroups.classList.contains('pv-group')).to.be.true;
+        expect(subGroups.firstChild.nodeName).to.equal('SPAN');
+        expect(subGroups.firstChild.classList.contains('icon')).to.be.true;
+        expect(subGroups.firstChild.classList.contains('atom-icon')).to.be.true;
+      });
     });
 
     after(async function () {
