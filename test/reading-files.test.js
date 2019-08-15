@@ -1,14 +1,16 @@
 'use strict';
 
-const { expect } = require('chai');
-const path = require('path');
-const etch = require('etch');
+import { expect } from 'chai';
+import path from 'path';
+import etch from 'etch';
 
-const pvpPackage = path.resolve(__dirname, '..');
-const databasePath = 'project-viewer-plus.database.localPath';
-const databaseName = 'project-viewer-plus.database.fileName';
-const packageName = 'project-viewer-plus';
-const uri = `atom://${packageName}`;
+import {
+  pvpPackage,
+  databasePath,
+  databaseName,
+  packageName,
+  uri
+} from './utils';
 
 let dock;
 let pkg;
@@ -59,7 +61,9 @@ describe('reading files', () => {
       // hack - force etch to update and render
       await etch.getScheduler().getNextUpdatePromise();
 
-      expect(paneItem.groups).to.be.an('array').to.have.lengthOf(1);
+      expect(paneItem.groups)
+        .to.be.an('array')
+        .to.have.lengthOf(1);
       expect(paneItem.projects).to.be.an('array').that.is.empty;
 
       const group = paneItem.groups[0];
@@ -90,8 +94,12 @@ describe('reading files', () => {
       // hack - force etch to update and render
       await etch.getScheduler().getNextUpdatePromise();
 
-      expect(paneItem.groups).to.be.an('array').to.have.lengthOf(1);
-      expect(paneItem.projects).to.be.an('array').to.have.lengthOf(1);
+      expect(paneItem.groups)
+        .to.be.an('array')
+        .to.have.lengthOf(1);
+      expect(paneItem.projects)
+        .to.be.an('array')
+        .to.have.lengthOf(1);
 
       const group = paneItem.groups[0];
 
@@ -101,8 +109,12 @@ describe('reading files', () => {
       expect(group.folding).to.equal('collapsed');
       expect(group.order).to.equal('alphabetically');
       expect(group.parentId).to.be.undefined;
-      expect(group.groups).to.be.an('array').to.have.lengthOf(1);
-      expect(group.projects).to.be.an('array').to.have.lengthOf(1);
+      expect(group.groups)
+        .to.be.an('array')
+        .to.have.lengthOf(1);
+      expect(group.projects)
+        .to.be.an('array')
+        .to.have.lengthOf(1);
 
       const project = paneItem.projects[0];
 

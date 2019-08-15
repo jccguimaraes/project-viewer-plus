@@ -1,17 +1,18 @@
 'use strict';
 
-const { expect } = require('chai');
-const path = require('path');
-const pvpPackage = path.resolve(__dirname, '..');
+import { expect } from 'chai';
+import path from 'path';
+
+import {
+  pvpPackage,
+  databasePath,
+  databaseName,
+  packageName,
+  uri
+} from './utils';
 
 let dock;
 let pkg;
-
-const databasePath = 'project-viewer-plus.database.localPath';
-const databaseName = 'project-viewer-plus.database.fileName';
-const packageName = 'project-viewer-plus';
-const commandStart = `${packageName}:`;
-const uri = `atom://${packageName}`;
 
 describe('package lifecycle', () => {
   before('set config database file path', () => {
