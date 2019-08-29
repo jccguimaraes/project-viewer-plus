@@ -21,8 +21,7 @@
     "contribute": "all-contributors",
     "linter": "eslint test lib",
     "pretest": "npm run linter",
-    "test": "atom --test test",
-    "test2": "cross-env-shell NODE_ENV=development \"${ATOM_SCRIPT_PATH:-atom} --test test\"",
+    "test": "cross-env-shell NODE_ENV=development \"${ATOM_SCRIPT_PATH:-atom} --test test\"",
     "test:coverage": "cross-env ATOM_GITHUB_BABEL_ENV=coverage npm run test",
     "test:coverage:text": "nyc --reporter=text npm run test:coverage",
     "test:coverage:html": "nyc --reporter=html npm run test:coverage",
@@ -60,20 +59,20 @@
     "atom-package-deps": "^5.1.0",
     "atom-select-list": "^0.7.2",
     "etch": "^0.14.0",
-    "uuid": "^3.3.2"
+    "uuid": "^3.3.3"
   },
   "devDependencies": {
     "@atom/mocha-test-runner": "^1.6.0",
     "@commitlint/cli": "^8.1.0",
     "all-contributors-cli": "^6.8.1",
-    "babel-eslint": "^10.0.2",
+    "babel-eslint": "^10.0.3",
     "babel-plugin-istanbul": "^5.2.0",
     "chai": "^4.2.0",
     "codecov": "^3.5.0",
     "cross-env": "^5.2.0",
-    "eslint": "^6.1.0",
-    "file-icons": "git+https://github.com/file-icons/atom#v2.1.34",
-    "husky": "^3.0.3",
+    "eslint": "^6.2.2",
+    "file-icons": "git+https://github.com/file-icons/atom#v2.1.35",
+    "husky": "^3.0.4",
     "nyc": "^14.1.1",
     "sinon": "^7.4.1"
   }

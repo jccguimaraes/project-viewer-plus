@@ -9,6 +9,7 @@
 
 [![Travis][travis-badge]][travis]
 [![AppVeyor][appveyor-badge]][appveyor]
+[![CodeCov][codecov-badge]][codecov]
 
 **Quality**
 
